@@ -1,0 +1,45 @@
+Register Test 1 (Empty ALL FIELDS)  [NEGATIVE TESTCASE]   Results :  PASSED
+Register Test 2 (WRONG ALL FIELDS)  [NEGATIVE TESTCASE]   Results :  PASSED
+Register Test 3 (POSITIVE TEST CASE)  [POSTIVE TESTCASE]   Results :  PASSED
+Register Test 4 (DUPLICATE REGISTRATION)  [NEGATIVE TESTCASE]   Results :  PASSED
+Login Test 1 (Empty ALL FIELDS)  [NEGATIVE TESTCASE]   Results :  PASSED
+Login Test 2 (WRONG PASSWORD)  [NEGATIVE TESTCASE]   Results :  PASSED
+Login Test 3 (WRONG EMAIL)  [NEGATIVE TESTCASE]   Results :  PASSED
+Login Test 4 (POSITIVE TEST CASE)  [POSTIVE TESTCASE]   Results :  PASSED
+Edit Profile Test 1 (Empty ALL FIELDS)  [NEGATIVE TESTCASE]   Results :  PASSED
+Edit Profile Test 2 (WRONG ALL FIELDS)  [NEGATIVE TESTCASE]   Results :  PASSED
+Edit Profile Test 3 (POSITIVE TEST CASE)  [POSTIVE TESTCASE]   Results :  PASSED
+Logout Test 1 (REGULAR LOGOUT)  [POSTIVE TESTCASE]   Results :  PASSED
+Add Doc Test 1 (Empty ALL FIELDS)  [NEGATIVE TESTCASE]   Results :  PASSED
+Add Doc Test 2 (POSITIVE TEST CASE)  [NEGATIVE TESTCASE]   Results :  PASSED
+Add Doc Test 3 (POSITIVE TEST CASE)  [POSTIVE TESTCASE]   Results :  PASSED
+Add Doc Test 4 (POSITIVE TEST CASE 2)  [POSTIVE TESTCASE]   Results :  PASSED
+Toggle Doc Approval 1 (TOGGLE APPROVE TEST)  [POSTIVE TESTCASE]   Results :  PASSED
+Toggle Doc Approval 2 (TOGGLE NEGATIVE TEST)  [POSTIVE TESTCASE]   Results :  PASSED
+Toggle Doc Approval 3 (TOGGLE APPROVE TEST)  [POSTIVE TESTCASE]   Results :  PASSED
+Toggle Doc Approval 4 (TOGGLE APPROVE TEST)  [POSTIVE TESTCASE]   Results :  PASSED
+Toggle Doc Approval 5 (TOGGLE APPROVE TEST)  [POSTIVE TESTCASE]   Results :  PASSED
+Add Center Test 1 (Empty ALL FIELDS)  [NEGATIVE TESTCASE]   Results :  PASSED
+Add Center Test 2 (POSITIVE TEST CASE)  [POSTIVE TESTCASE]   Results :  PASSED
+Edit Center Test 1 (Empty ALL FIELDS)  [NEGATIVE TESTCASE]   Results :  PASSED
+Edit Center Test 2 (POSITIVE TESTCASE )  [POSTIVE TESTCASE]   Results :  PASSED
+Add Room Test 1 (Empty ALL FIELDS)  [NEGATIVE TESTCASE]   Results :  PASSED
+Add Room Test 2 (POSITIVE TEST CASE)  [POSTIVE TESTCASE]   Results :  PASSED
+Add Room Test 3 (POSITIVE TEST CASE)  [POSTIVE TESTCASE]   Results :  PASSED
+Edit Room Test 1 (Empty ALL FIELDS)  [NEGATIVE TESTCASE]   Results :  PASSED
+Edit Room Test 2 (POSITIVE TEST CASE)  [POSTIVE TESTCASE]   Results :  PASSED
+Admin Assign Doc to Room Test 1 (SET ROOM 1)  [POSTIVE TESTCASE]   Results :  PASSED
+Admin Assign Doc to Room Test 2 (SET ROOM 2)  [POSTIVE TESTCASE]   Results :  PASSED
+Admin Assign Doc to Room Test 2 (SET TO EMPTY)  [POSTIVE TESTCASE]   Results :  PASSED
+Admin Assign Room to Doc Test 1 (SET DOC 1)  [POSTIVE TESTCASE]   Results :  PASSED
+Admin Assign Room to Doc Test 2 (SET DOC 2)  [POSTIVE TESTCASE]   Results :  PASSED
+Admin Assign Room to Doc Test 3 (SET TO EMPTY)  [POSTIVE TESTCASE]   Results :  PASSED
+Doc Assign Own Roster Test 1 (SET ROOM 1)  [POSTIVE TESTCASE]   Results :  PASSED
+Doc Assign Own Roster Test 2 (SET ROOM 2)  [POSTIVE TESTCASE]   Results :  PASSED
+Doc Assign Own Roster Test 2 (SET TO EMPTY)  [POSTIVE TESTCASE]   Results :  PASSED
+Delete Test 1 (POSITIVE TEST CASE)  [POSTIVE TESTCASE]   Results :  PASSED
+Delete Doc Test 1 (POSITIVE TEST CASE)  [POSTIVE TESTCASE]   Results :  PASSED
+Delete Doc Test 2 (POSITIVE TEST CASE)  [POSTIVE TESTCASE]   Results :  PASSED
+Delete Room Test 1 (Empty ALL FIELDS)  [POSTIVE TESTCASE]   Results :  PASSED
+Delete Center Test 1 (Empty ALL FIELDS)  [POSTIVE TESTCASE]   Results :  PASSED
+Logout Test 1 (REGULAR LOGOUT)  [POSTIVE TESTCASE]   Results :  PASSED

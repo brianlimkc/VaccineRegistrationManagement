@@ -1,0 +1,4031 @@
+[{
+  "_id": {
+    "$oid": "6188c5f414285e97dffb7d69"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636329600000,
+  "roomID": {
+    "$oid": "6188c5f414285e97dffb7d65"
+  },
+  "roomName": "Room A",
+  "centerName": "Radin Mas Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f414285e97dffb7d6c"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636416000000,
+  "roomID": {
+    "$oid": "6188c5f414285e97dffb7d65"
+  },
+  "roomName": "Room A",
+  "centerName": "Radin Mas Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f414285e97dffb7d6f"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636502400000,
+  "roomID": {
+    "$oid": "6188c5f414285e97dffb7d65"
+  },
+  "roomName": "Room A",
+  "centerName": "Radin Mas Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f414285e97dffb7d72"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636588800000,
+  "roomID": {
+    "$oid": "6188c5f414285e97dffb7d65"
+  },
+  "roomName": "Room A",
+  "centerName": "Radin Mas Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f414285e97dffb7d75"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636675200000,
+  "roomID": {
+    "$oid": "6188c5f414285e97dffb7d65"
+  },
+  "roomName": "Room A",
+  "centerName": "Radin Mas Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f414285e97dffb7d78"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636761600000,
+  "roomID": {
+    "$oid": "6188c5f414285e97dffb7d65"
+  },
+  "roomName": "Room A",
+  "centerName": "Radin Mas Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f414285e97dffb7d7b"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636848000000,
+  "roomID": {
+    "$oid": "6188c5f414285e97dffb7d65"
+  },
+  "roomName": "Room A",
+  "centerName": "Radin Mas Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f414285e97dffb7d7e"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636934400000,
+  "roomID": {
+    "$oid": "6188c5f414285e97dffb7d65"
+  },
+  "roomName": "Room A",
+  "centerName": "Radin Mas Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f414285e97dffb7d81"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637020800000,
+  "roomID": {
+    "$oid": "6188c5f414285e97dffb7d65"
+  },
+  "roomName": "Room A",
+  "centerName": "Radin Mas Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f414285e97dffb7d84"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637107200000,
+  "roomID": {
+    "$oid": "6188c5f414285e97dffb7d65"
+  },
+  "roomName": "Room A",
+  "centerName": "Radin Mas Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f414285e97dffb7d87"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637193600000,
+  "roomID": {
+    "$oid": "6188c5f414285e97dffb7d65"
+  },
+  "roomName": "Room A",
+  "centerName": "Radin Mas Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f414285e97dffb7d8a"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637280000000,
+  "roomID": {
+    "$oid": "6188c5f414285e97dffb7d65"
+  },
+  "roomName": "Room A",
+  "centerName": "Radin Mas Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f414285e97dffb7d8d"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637366400000,
+  "roomID": {
+    "$oid": "6188c5f414285e97dffb7d65"
+  },
+  "roomName": "Room A",
+  "centerName": "Radin Mas Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f414285e97dffb7d90"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637452800000,
+  "roomID": {
+    "$oid": "6188c5f414285e97dffb7d65"
+  },
+  "roomName": "Room A",
+  "centerName": "Radin Mas Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f414285e97dffb7d93"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637539200000,
+  "roomID": {
+    "$oid": "6188c5f414285e97dffb7d65"
+  },
+  "roomName": "Room A",
+  "centerName": "Radin Mas Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f414285e97dffb7d96"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637625600000,
+  "roomID": {
+    "$oid": "6188c5f414285e97dffb7d65"
+  },
+  "roomName": "Room A",
+  "centerName": "Radin Mas Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f414285e97dffb7d99"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637712000000,
+  "roomID": {
+    "$oid": "6188c5f414285e97dffb7d65"
+  },
+  "roomName": "Room A",
+  "centerName": "Radin Mas Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f414285e97dffb7d9c"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637798400000,
+  "roomID": {
+    "$oid": "6188c5f414285e97dffb7d65"
+  },
+  "roomName": "Room A",
+  "centerName": "Radin Mas Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f414285e97dffb7d9f"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637884800000,
+  "roomID": {
+    "$oid": "6188c5f414285e97dffb7d65"
+  },
+  "roomName": "Room A",
+  "centerName": "Radin Mas Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f414285e97dffb7da2"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637971200000,
+  "roomID": {
+    "$oid": "6188c5f414285e97dffb7d65"
+  },
+  "roomName": "Room A",
+  "centerName": "Radin Mas Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f414285e97dffb7da5"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638057600000,
+  "roomID": {
+    "$oid": "6188c5f414285e97dffb7d65"
+  },
+  "roomName": "Room A",
+  "centerName": "Radin Mas Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f414285e97dffb7da8"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638144000000,
+  "roomID": {
+    "$oid": "6188c5f414285e97dffb7d65"
+  },
+  "roomName": "Room A",
+  "centerName": "Radin Mas Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f414285e97dffb7dab"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638230400000,
+  "roomID": {
+    "$oid": "6188c5f414285e97dffb7d65"
+  },
+  "roomName": "Room A",
+  "centerName": "Radin Mas Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f414285e97dffb7dae"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638316800000,
+  "roomID": {
+    "$oid": "6188c5f414285e97dffb7d65"
+  },
+  "roomName": "Room A",
+  "centerName": "Radin Mas Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f414285e97dffb7db1"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638403200000,
+  "roomID": {
+    "$oid": "6188c5f414285e97dffb7d65"
+  },
+  "roomName": "Room A",
+  "centerName": "Radin Mas Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f414285e97dffb7db4"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638489600000,
+  "roomID": {
+    "$oid": "6188c5f414285e97dffb7d65"
+  },
+  "roomName": "Room A",
+  "centerName": "Radin Mas Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f414285e97dffb7db7"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638576000000,
+  "roomID": {
+    "$oid": "6188c5f414285e97dffb7d65"
+  },
+  "roomName": "Room A",
+  "centerName": "Radin Mas Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f414285e97dffb7dba"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638662400000,
+  "roomID": {
+    "$oid": "6188c5f414285e97dffb7d65"
+  },
+  "roomName": "Room A",
+  "centerName": "Radin Mas Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f414285e97dffb7dbd"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638748800000,
+  "roomID": {
+    "$oid": "6188c5f414285e97dffb7d65"
+  },
+  "roomName": "Room A",
+  "centerName": "Radin Mas Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f414285e97dffb7dc0"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638835200000,
+  "roomID": {
+    "$oid": "6188c5f414285e97dffb7d65"
+  },
+  "roomName": "Room A",
+  "centerName": "Radin Mas Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f414285e97dffb7dc3"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638921600000,
+  "roomID": {
+    "$oid": "6188c5f414285e97dffb7d65"
+  },
+  "roomName": "Room A",
+  "centerName": "Radin Mas Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f914285e97dffb7dcf"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636329600000,
+  "roomID": {
+    "$oid": "6188c5f914285e97dffb7dcb"
+  },
+  "roomName": "Room 1",
+  "centerName": "Buona Vista Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f914285e97dffb7dd2"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636416000000,
+  "roomID": {
+    "$oid": "6188c5f914285e97dffb7dcb"
+  },
+  "roomName": "Room 1",
+  "centerName": "Buona Vista Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f914285e97dffb7dd5"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636502400000,
+  "roomID": {
+    "$oid": "6188c5f914285e97dffb7dcb"
+  },
+  "roomName": "Room 1",
+  "centerName": "Buona Vista Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f914285e97dffb7dd8"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636588800000,
+  "roomID": {
+    "$oid": "6188c5f914285e97dffb7dcb"
+  },
+  "roomName": "Room 1",
+  "centerName": "Buona Vista Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f914285e97dffb7ddb"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636675200000,
+  "roomID": {
+    "$oid": "6188c5f914285e97dffb7dcb"
+  },
+  "roomName": "Room 1",
+  "centerName": "Buona Vista Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f914285e97dffb7dde"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636761600000,
+  "roomID": {
+    "$oid": "6188c5f914285e97dffb7dcb"
+  },
+  "roomName": "Room 1",
+  "centerName": "Buona Vista Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f914285e97dffb7de1"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636848000000,
+  "roomID": {
+    "$oid": "6188c5f914285e97dffb7dcb"
+  },
+  "roomName": "Room 1",
+  "centerName": "Buona Vista Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f914285e97dffb7de4"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636934400000,
+  "roomID": {
+    "$oid": "6188c5f914285e97dffb7dcb"
+  },
+  "roomName": "Room 1",
+  "centerName": "Buona Vista Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f914285e97dffb7de7"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637020800000,
+  "roomID": {
+    "$oid": "6188c5f914285e97dffb7dcb"
+  },
+  "roomName": "Room 1",
+  "centerName": "Buona Vista Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f914285e97dffb7dea"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637107200000,
+  "roomID": {
+    "$oid": "6188c5f914285e97dffb7dcb"
+  },
+  "roomName": "Room 1",
+  "centerName": "Buona Vista Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f914285e97dffb7ded"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637193600000,
+  "roomID": {
+    "$oid": "6188c5f914285e97dffb7dcb"
+  },
+  "roomName": "Room 1",
+  "centerName": "Buona Vista Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f914285e97dffb7df0"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637280000000,
+  "roomID": {
+    "$oid": "6188c5f914285e97dffb7dcb"
+  },
+  "roomName": "Room 1",
+  "centerName": "Buona Vista Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f914285e97dffb7df3"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637366400000,
+  "roomID": {
+    "$oid": "6188c5f914285e97dffb7dcb"
+  },
+  "roomName": "Room 1",
+  "centerName": "Buona Vista Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f914285e97dffb7df6"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637452800000,
+  "roomID": {
+    "$oid": "6188c5f914285e97dffb7dcb"
+  },
+  "roomName": "Room 1",
+  "centerName": "Buona Vista Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f914285e97dffb7df9"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637539200000,
+  "roomID": {
+    "$oid": "6188c5f914285e97dffb7dcb"
+  },
+  "roomName": "Room 1",
+  "centerName": "Buona Vista Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f914285e97dffb7dfc"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637625600000,
+  "roomID": {
+    "$oid": "6188c5f914285e97dffb7dcb"
+  },
+  "roomName": "Room 1",
+  "centerName": "Buona Vista Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f914285e97dffb7dff"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637712000000,
+  "roomID": {
+    "$oid": "6188c5f914285e97dffb7dcb"
+  },
+  "roomName": "Room 1",
+  "centerName": "Buona Vista Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f914285e97dffb7e02"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637798400000,
+  "roomID": {
+    "$oid": "6188c5f914285e97dffb7dcb"
+  },
+  "roomName": "Room 1",
+  "centerName": "Buona Vista Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f914285e97dffb7e05"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637884800000,
+  "roomID": {
+    "$oid": "6188c5f914285e97dffb7dcb"
+  },
+  "roomName": "Room 1",
+  "centerName": "Buona Vista Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f914285e97dffb7e08"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637971200000,
+  "roomID": {
+    "$oid": "6188c5f914285e97dffb7dcb"
+  },
+  "roomName": "Room 1",
+  "centerName": "Buona Vista Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f914285e97dffb7e0b"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638057600000,
+  "roomID": {
+    "$oid": "6188c5f914285e97dffb7dcb"
+  },
+  "roomName": "Room 1",
+  "centerName": "Buona Vista Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f914285e97dffb7e0e"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638144000000,
+  "roomID": {
+    "$oid": "6188c5f914285e97dffb7dcb"
+  },
+  "roomName": "Room 1",
+  "centerName": "Buona Vista Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f914285e97dffb7e11"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638230400000,
+  "roomID": {
+    "$oid": "6188c5f914285e97dffb7dcb"
+  },
+  "roomName": "Room 1",
+  "centerName": "Buona Vista Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f914285e97dffb7e14"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638316800000,
+  "roomID": {
+    "$oid": "6188c5f914285e97dffb7dcb"
+  },
+  "roomName": "Room 1",
+  "centerName": "Buona Vista Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f914285e97dffb7e17"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638403200000,
+  "roomID": {
+    "$oid": "6188c5f914285e97dffb7dcb"
+  },
+  "roomName": "Room 1",
+  "centerName": "Buona Vista Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f914285e97dffb7e1a"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638489600000,
+  "roomID": {
+    "$oid": "6188c5f914285e97dffb7dcb"
+  },
+  "roomName": "Room 1",
+  "centerName": "Buona Vista Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f914285e97dffb7e1d"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638576000000,
+  "roomID": {
+    "$oid": "6188c5f914285e97dffb7dcb"
+  },
+  "roomName": "Room 1",
+  "centerName": "Buona Vista Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f914285e97dffb7e20"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638662400000,
+  "roomID": {
+    "$oid": "6188c5f914285e97dffb7dcb"
+  },
+  "roomName": "Room 1",
+  "centerName": "Buona Vista Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f914285e97dffb7e23"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638748800000,
+  "roomID": {
+    "$oid": "6188c5f914285e97dffb7dcb"
+  },
+  "roomName": "Room 1",
+  "centerName": "Buona Vista Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f914285e97dffb7e26"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638835200000,
+  "roomID": {
+    "$oid": "6188c5f914285e97dffb7dcb"
+  },
+  "roomName": "Room 1",
+  "centerName": "Buona Vista Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f914285e97dffb7e29"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638921600000,
+  "roomID": {
+    "$oid": "6188c5f914285e97dffb7dcb"
+  },
+  "roomName": "Room 1",
+  "centerName": "Buona Vista Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5fe14285e97dffb7e35"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636329600000,
+  "roomID": {
+    "$oid": "6188c5fe14285e97dffb7e31"
+  },
+  "roomName": "Room 1",
+  "centerName": "Potong Pasir Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5fe14285e97dffb7e38"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636416000000,
+  "roomID": {
+    "$oid": "6188c5fe14285e97dffb7e31"
+  },
+  "roomName": "Room 1",
+  "centerName": "Potong Pasir Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5fe14285e97dffb7e3b"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636502400000,
+  "roomID": {
+    "$oid": "6188c5fe14285e97dffb7e31"
+  },
+  "roomName": "Room 1",
+  "centerName": "Potong Pasir Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5fe14285e97dffb7e3e"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636588800000,
+  "roomID": {
+    "$oid": "6188c5fe14285e97dffb7e31"
+  },
+  "roomName": "Room 1",
+  "centerName": "Potong Pasir Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5fe14285e97dffb7e41"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636675200000,
+  "roomID": {
+    "$oid": "6188c5fe14285e97dffb7e31"
+  },
+  "roomName": "Room 1",
+  "centerName": "Potong Pasir Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5fe14285e97dffb7e44"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636761600000,
+  "roomID": {
+    "$oid": "6188c5fe14285e97dffb7e31"
+  },
+  "roomName": "Room 1",
+  "centerName": "Potong Pasir Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5fe14285e97dffb7e47"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636848000000,
+  "roomID": {
+    "$oid": "6188c5fe14285e97dffb7e31"
+  },
+  "roomName": "Room 1",
+  "centerName": "Potong Pasir Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5fe14285e97dffb7e4a"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636934400000,
+  "roomID": {
+    "$oid": "6188c5fe14285e97dffb7e31"
+  },
+  "roomName": "Room 1",
+  "centerName": "Potong Pasir Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5fe14285e97dffb7e4d"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637020800000,
+  "roomID": {
+    "$oid": "6188c5fe14285e97dffb7e31"
+  },
+  "roomName": "Room 1",
+  "centerName": "Potong Pasir Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5fe14285e97dffb7e50"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637107200000,
+  "roomID": {
+    "$oid": "6188c5fe14285e97dffb7e31"
+  },
+  "roomName": "Room 1",
+  "centerName": "Potong Pasir Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5fe14285e97dffb7e53"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637193600000,
+  "roomID": {
+    "$oid": "6188c5fe14285e97dffb7e31"
+  },
+  "roomName": "Room 1",
+  "centerName": "Potong Pasir Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5fe14285e97dffb7e56"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637280000000,
+  "roomID": {
+    "$oid": "6188c5fe14285e97dffb7e31"
+  },
+  "roomName": "Room 1",
+  "centerName": "Potong Pasir Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5fe14285e97dffb7e59"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637366400000,
+  "roomID": {
+    "$oid": "6188c5fe14285e97dffb7e31"
+  },
+  "roomName": "Room 1",
+  "centerName": "Potong Pasir Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5fe14285e97dffb7e5c"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637452800000,
+  "roomID": {
+    "$oid": "6188c5fe14285e97dffb7e31"
+  },
+  "roomName": "Room 1",
+  "centerName": "Potong Pasir Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5fe14285e97dffb7e5f"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637539200000,
+  "roomID": {
+    "$oid": "6188c5fe14285e97dffb7e31"
+  },
+  "roomName": "Room 1",
+  "centerName": "Potong Pasir Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5fe14285e97dffb7e62"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637625600000,
+  "roomID": {
+    "$oid": "6188c5fe14285e97dffb7e31"
+  },
+  "roomName": "Room 1",
+  "centerName": "Potong Pasir Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5fe14285e97dffb7e65"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637712000000,
+  "roomID": {
+    "$oid": "6188c5fe14285e97dffb7e31"
+  },
+  "roomName": "Room 1",
+  "centerName": "Potong Pasir Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5fe14285e97dffb7e68"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637798400000,
+  "roomID": {
+    "$oid": "6188c5fe14285e97dffb7e31"
+  },
+  "roomName": "Room 1",
+  "centerName": "Potong Pasir Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5fe14285e97dffb7e6b"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637884800000,
+  "roomID": {
+    "$oid": "6188c5fe14285e97dffb7e31"
+  },
+  "roomName": "Room 1",
+  "centerName": "Potong Pasir Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5fe14285e97dffb7e6e"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637971200000,
+  "roomID": {
+    "$oid": "6188c5fe14285e97dffb7e31"
+  },
+  "roomName": "Room 1",
+  "centerName": "Potong Pasir Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5fe14285e97dffb7e71"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638057600000,
+  "roomID": {
+    "$oid": "6188c5fe14285e97dffb7e31"
+  },
+  "roomName": "Room 1",
+  "centerName": "Potong Pasir Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5fe14285e97dffb7e74"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638144000000,
+  "roomID": {
+    "$oid": "6188c5fe14285e97dffb7e31"
+  },
+  "roomName": "Room 1",
+  "centerName": "Potong Pasir Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5fe14285e97dffb7e77"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638230400000,
+  "roomID": {
+    "$oid": "6188c5fe14285e97dffb7e31"
+  },
+  "roomName": "Room 1",
+  "centerName": "Potong Pasir Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5fe14285e97dffb7e7a"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638316800000,
+  "roomID": {
+    "$oid": "6188c5fe14285e97dffb7e31"
+  },
+  "roomName": "Room 1",
+  "centerName": "Potong Pasir Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5fe14285e97dffb7e7d"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638403200000,
+  "roomID": {
+    "$oid": "6188c5fe14285e97dffb7e31"
+  },
+  "roomName": "Room 1",
+  "centerName": "Potong Pasir Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5fe14285e97dffb7e80"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638489600000,
+  "roomID": {
+    "$oid": "6188c5fe14285e97dffb7e31"
+  },
+  "roomName": "Room 1",
+  "centerName": "Potong Pasir Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5fe14285e97dffb7e83"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638576000000,
+  "roomID": {
+    "$oid": "6188c5fe14285e97dffb7e31"
+  },
+  "roomName": "Room 1",
+  "centerName": "Potong Pasir Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5fe14285e97dffb7e86"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638662400000,
+  "roomID": {
+    "$oid": "6188c5fe14285e97dffb7e31"
+  },
+  "roomName": "Room 1",
+  "centerName": "Potong Pasir Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5fe14285e97dffb7e89"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638748800000,
+  "roomID": {
+    "$oid": "6188c5fe14285e97dffb7e31"
+  },
+  "roomName": "Room 1",
+  "centerName": "Potong Pasir Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5fe14285e97dffb7e8c"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638835200000,
+  "roomID": {
+    "$oid": "6188c5fe14285e97dffb7e31"
+  },
+  "roomName": "Room 1",
+  "centerName": "Potong Pasir Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5fe14285e97dffb7e8f"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638921600000,
+  "roomID": {
+    "$oid": "6188c5fe14285e97dffb7e31"
+  },
+  "roomName": "Room 1",
+  "centerName": "Potong Pasir Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60414285e97dffb7e9b"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636329600000,
+  "roomID": {
+    "$oid": "6188c60414285e97dffb7e97"
+  },
+  "roomName": "Room 1",
+  "centerName": "Raffles City Convention Centre",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60414285e97dffb7e9e"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636416000000,
+  "roomID": {
+    "$oid": "6188c60414285e97dffb7e97"
+  },
+  "roomName": "Room 1",
+  "centerName": "Raffles City Convention Centre",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60414285e97dffb7ea1"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636502400000,
+  "roomID": {
+    "$oid": "6188c60414285e97dffb7e97"
+  },
+  "roomName": "Room 1",
+  "centerName": "Raffles City Convention Centre",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60414285e97dffb7ea4"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636588800000,
+  "roomID": {
+    "$oid": "6188c60414285e97dffb7e97"
+  },
+  "roomName": "Room 1",
+  "centerName": "Raffles City Convention Centre",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60414285e97dffb7ea7"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636675200000,
+  "roomID": {
+    "$oid": "6188c60414285e97dffb7e97"
+  },
+  "roomName": "Room 1",
+  "centerName": "Raffles City Convention Centre",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60414285e97dffb7eaa"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636761600000,
+  "roomID": {
+    "$oid": "6188c60414285e97dffb7e97"
+  },
+  "roomName": "Room 1",
+  "centerName": "Raffles City Convention Centre",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60414285e97dffb7ead"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636848000000,
+  "roomID": {
+    "$oid": "6188c60414285e97dffb7e97"
+  },
+  "roomName": "Room 1",
+  "centerName": "Raffles City Convention Centre",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60414285e97dffb7eb0"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636934400000,
+  "roomID": {
+    "$oid": "6188c60414285e97dffb7e97"
+  },
+  "roomName": "Room 1",
+  "centerName": "Raffles City Convention Centre",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60414285e97dffb7eb3"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637020800000,
+  "roomID": {
+    "$oid": "6188c60414285e97dffb7e97"
+  },
+  "roomName": "Room 1",
+  "centerName": "Raffles City Convention Centre",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60414285e97dffb7eb6"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637107200000,
+  "roomID": {
+    "$oid": "6188c60414285e97dffb7e97"
+  },
+  "roomName": "Room 1",
+  "centerName": "Raffles City Convention Centre",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60414285e97dffb7eb9"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637193600000,
+  "roomID": {
+    "$oid": "6188c60414285e97dffb7e97"
+  },
+  "roomName": "Room 1",
+  "centerName": "Raffles City Convention Centre",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60414285e97dffb7ebc"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637280000000,
+  "roomID": {
+    "$oid": "6188c60414285e97dffb7e97"
+  },
+  "roomName": "Room 1",
+  "centerName": "Raffles City Convention Centre",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60414285e97dffb7ebf"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637366400000,
+  "roomID": {
+    "$oid": "6188c60414285e97dffb7e97"
+  },
+  "roomName": "Room 1",
+  "centerName": "Raffles City Convention Centre",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60414285e97dffb7ec2"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637452800000,
+  "roomID": {
+    "$oid": "6188c60414285e97dffb7e97"
+  },
+  "roomName": "Room 1",
+  "centerName": "Raffles City Convention Centre",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60414285e97dffb7ec5"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637539200000,
+  "roomID": {
+    "$oid": "6188c60414285e97dffb7e97"
+  },
+  "roomName": "Room 1",
+  "centerName": "Raffles City Convention Centre",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60414285e97dffb7ec8"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637625600000,
+  "roomID": {
+    "$oid": "6188c60414285e97dffb7e97"
+  },
+  "roomName": "Room 1",
+  "centerName": "Raffles City Convention Centre",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60414285e97dffb7ecb"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637712000000,
+  "roomID": {
+    "$oid": "6188c60414285e97dffb7e97"
+  },
+  "roomName": "Room 1",
+  "centerName": "Raffles City Convention Centre",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60414285e97dffb7ece"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637798400000,
+  "roomID": {
+    "$oid": "6188c60414285e97dffb7e97"
+  },
+  "roomName": "Room 1",
+  "centerName": "Raffles City Convention Centre",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60414285e97dffb7ed1"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637884800000,
+  "roomID": {
+    "$oid": "6188c60414285e97dffb7e97"
+  },
+  "roomName": "Room 1",
+  "centerName": "Raffles City Convention Centre",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60414285e97dffb7ed4"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637971200000,
+  "roomID": {
+    "$oid": "6188c60414285e97dffb7e97"
+  },
+  "roomName": "Room 1",
+  "centerName": "Raffles City Convention Centre",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60414285e97dffb7ed7"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638057600000,
+  "roomID": {
+    "$oid": "6188c60414285e97dffb7e97"
+  },
+  "roomName": "Room 1",
+  "centerName": "Raffles City Convention Centre",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60414285e97dffb7eda"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638144000000,
+  "roomID": {
+    "$oid": "6188c60414285e97dffb7e97"
+  },
+  "roomName": "Room 1",
+  "centerName": "Raffles City Convention Centre",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60414285e97dffb7edd"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638230400000,
+  "roomID": {
+    "$oid": "6188c60414285e97dffb7e97"
+  },
+  "roomName": "Room 1",
+  "centerName": "Raffles City Convention Centre",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60414285e97dffb7ee0"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638316800000,
+  "roomID": {
+    "$oid": "6188c60414285e97dffb7e97"
+  },
+  "roomName": "Room 1",
+  "centerName": "Raffles City Convention Centre",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60414285e97dffb7ee3"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638403200000,
+  "roomID": {
+    "$oid": "6188c60414285e97dffb7e97"
+  },
+  "roomName": "Room 1",
+  "centerName": "Raffles City Convention Centre",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60414285e97dffb7ee6"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638489600000,
+  "roomID": {
+    "$oid": "6188c60414285e97dffb7e97"
+  },
+  "roomName": "Room 1",
+  "centerName": "Raffles City Convention Centre",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60414285e97dffb7ee9"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638576000000,
+  "roomID": {
+    "$oid": "6188c60414285e97dffb7e97"
+  },
+  "roomName": "Room 1",
+  "centerName": "Raffles City Convention Centre",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60414285e97dffb7eec"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638662400000,
+  "roomID": {
+    "$oid": "6188c60414285e97dffb7e97"
+  },
+  "roomName": "Room 1",
+  "centerName": "Raffles City Convention Centre",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60414285e97dffb7eef"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638748800000,
+  "roomID": {
+    "$oid": "6188c60414285e97dffb7e97"
+  },
+  "roomName": "Room 1",
+  "centerName": "Raffles City Convention Centre",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60414285e97dffb7ef2"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638835200000,
+  "roomID": {
+    "$oid": "6188c60414285e97dffb7e97"
+  },
+  "roomName": "Room 1",
+  "centerName": "Raffles City Convention Centre",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60414285e97dffb7ef5"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638921600000,
+  "roomID": {
+    "$oid": "6188c60414285e97dffb7e97"
+  },
+  "roomName": "Room 1",
+  "centerName": "Raffles City Convention Centre",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60814285e97dffb7f01"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636329600000,
+  "roomID": {
+    "$oid": "6188c60814285e97dffb7efd"
+  },
+  "roomName": "Room 1",
+  "centerName": "Tanjong Pagar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60814285e97dffb7f04"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636416000000,
+  "roomID": {
+    "$oid": "6188c60814285e97dffb7efd"
+  },
+  "roomName": "Room 1",
+  "centerName": "Tanjong Pagar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60814285e97dffb7f07"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636502400000,
+  "roomID": {
+    "$oid": "6188c60814285e97dffb7efd"
+  },
+  "roomName": "Room 1",
+  "centerName": "Tanjong Pagar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60814285e97dffb7f0a"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636588800000,
+  "roomID": {
+    "$oid": "6188c60814285e97dffb7efd"
+  },
+  "roomName": "Room 1",
+  "centerName": "Tanjong Pagar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60814285e97dffb7f0d"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636675200000,
+  "roomID": {
+    "$oid": "6188c60814285e97dffb7efd"
+  },
+  "roomName": "Room 1",
+  "centerName": "Tanjong Pagar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60814285e97dffb7f10"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636761600000,
+  "roomID": {
+    "$oid": "6188c60814285e97dffb7efd"
+  },
+  "roomName": "Room 1",
+  "centerName": "Tanjong Pagar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60814285e97dffb7f13"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636848000000,
+  "roomID": {
+    "$oid": "6188c60814285e97dffb7efd"
+  },
+  "roomName": "Room 1",
+  "centerName": "Tanjong Pagar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60814285e97dffb7f16"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636934400000,
+  "roomID": {
+    "$oid": "6188c60814285e97dffb7efd"
+  },
+  "roomName": "Room 1",
+  "centerName": "Tanjong Pagar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60814285e97dffb7f19"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637020800000,
+  "roomID": {
+    "$oid": "6188c60814285e97dffb7efd"
+  },
+  "roomName": "Room 1",
+  "centerName": "Tanjong Pagar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60814285e97dffb7f1c"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637107200000,
+  "roomID": {
+    "$oid": "6188c60814285e97dffb7efd"
+  },
+  "roomName": "Room 1",
+  "centerName": "Tanjong Pagar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60814285e97dffb7f1f"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637193600000,
+  "roomID": {
+    "$oid": "6188c60814285e97dffb7efd"
+  },
+  "roomName": "Room 1",
+  "centerName": "Tanjong Pagar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60814285e97dffb7f22"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637280000000,
+  "roomID": {
+    "$oid": "6188c60814285e97dffb7efd"
+  },
+  "roomName": "Room 1",
+  "centerName": "Tanjong Pagar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60814285e97dffb7f25"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637366400000,
+  "roomID": {
+    "$oid": "6188c60814285e97dffb7efd"
+  },
+  "roomName": "Room 1",
+  "centerName": "Tanjong Pagar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60814285e97dffb7f28"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637452800000,
+  "roomID": {
+    "$oid": "6188c60814285e97dffb7efd"
+  },
+  "roomName": "Room 1",
+  "centerName": "Tanjong Pagar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60814285e97dffb7f2b"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637539200000,
+  "roomID": {
+    "$oid": "6188c60814285e97dffb7efd"
+  },
+  "roomName": "Room 1",
+  "centerName": "Tanjong Pagar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60814285e97dffb7f2e"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637625600000,
+  "roomID": {
+    "$oid": "6188c60814285e97dffb7efd"
+  },
+  "roomName": "Room 1",
+  "centerName": "Tanjong Pagar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60814285e97dffb7f31"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637712000000,
+  "roomID": {
+    "$oid": "6188c60814285e97dffb7efd"
+  },
+  "roomName": "Room 1",
+  "centerName": "Tanjong Pagar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60814285e97dffb7f34"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637798400000,
+  "roomID": {
+    "$oid": "6188c60814285e97dffb7efd"
+  },
+  "roomName": "Room 1",
+  "centerName": "Tanjong Pagar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60814285e97dffb7f37"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637884800000,
+  "roomID": {
+    "$oid": "6188c60814285e97dffb7efd"
+  },
+  "roomName": "Room 1",
+  "centerName": "Tanjong Pagar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60814285e97dffb7f3a"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637971200000,
+  "roomID": {
+    "$oid": "6188c60814285e97dffb7efd"
+  },
+  "roomName": "Room 1",
+  "centerName": "Tanjong Pagar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60814285e97dffb7f3d"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638057600000,
+  "roomID": {
+    "$oid": "6188c60814285e97dffb7efd"
+  },
+  "roomName": "Room 1",
+  "centerName": "Tanjong Pagar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60814285e97dffb7f40"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638144000000,
+  "roomID": {
+    "$oid": "6188c60814285e97dffb7efd"
+  },
+  "roomName": "Room 1",
+  "centerName": "Tanjong Pagar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60814285e97dffb7f43"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638230400000,
+  "roomID": {
+    "$oid": "6188c60814285e97dffb7efd"
+  },
+  "roomName": "Room 1",
+  "centerName": "Tanjong Pagar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60814285e97dffb7f46"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638316800000,
+  "roomID": {
+    "$oid": "6188c60814285e97dffb7efd"
+  },
+  "roomName": "Room 1",
+  "centerName": "Tanjong Pagar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60814285e97dffb7f49"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638403200000,
+  "roomID": {
+    "$oid": "6188c60814285e97dffb7efd"
+  },
+  "roomName": "Room 1",
+  "centerName": "Tanjong Pagar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60814285e97dffb7f4c"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638489600000,
+  "roomID": {
+    "$oid": "6188c60814285e97dffb7efd"
+  },
+  "roomName": "Room 1",
+  "centerName": "Tanjong Pagar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60814285e97dffb7f4f"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638576000000,
+  "roomID": {
+    "$oid": "6188c60814285e97dffb7efd"
+  },
+  "roomName": "Room 1",
+  "centerName": "Tanjong Pagar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60814285e97dffb7f52"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638662400000,
+  "roomID": {
+    "$oid": "6188c60814285e97dffb7efd"
+  },
+  "roomName": "Room 1",
+  "centerName": "Tanjong Pagar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60814285e97dffb7f55"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638748800000,
+  "roomID": {
+    "$oid": "6188c60814285e97dffb7efd"
+  },
+  "roomName": "Room 1",
+  "centerName": "Tanjong Pagar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60814285e97dffb7f58"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638835200000,
+  "roomID": {
+    "$oid": "6188c60814285e97dffb7efd"
+  },
+  "roomName": "Room 1",
+  "centerName": "Tanjong Pagar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60814285e97dffb7f5b"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638921600000,
+  "roomID": {
+    "$oid": "6188c60814285e97dffb7efd"
+  },
+  "roomName": "Room 1",
+  "centerName": "Tanjong Pagar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61114285e97dffb7f6b"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636329600000,
+  "roomID": {
+    "$oid": "6188c61114285e97dffb7f67"
+  },
+  "roomName": "Room 1",
+  "centerName": "Jalan Besar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61114285e97dffb7f6e"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636416000000,
+  "roomID": {
+    "$oid": "6188c61114285e97dffb7f67"
+  },
+  "roomName": "Room 1",
+  "centerName": "Jalan Besar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61114285e97dffb7f71"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636502400000,
+  "roomID": {
+    "$oid": "6188c61114285e97dffb7f67"
+  },
+  "roomName": "Room 1",
+  "centerName": "Jalan Besar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61114285e97dffb7f74"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636588800000,
+  "roomID": {
+    "$oid": "6188c61114285e97dffb7f67"
+  },
+  "roomName": "Room 1",
+  "centerName": "Jalan Besar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61114285e97dffb7f77"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636675200000,
+  "roomID": {
+    "$oid": "6188c61114285e97dffb7f67"
+  },
+  "roomName": "Room 1",
+  "centerName": "Jalan Besar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61114285e97dffb7f7a"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636761600000,
+  "roomID": {
+    "$oid": "6188c61114285e97dffb7f67"
+  },
+  "roomName": "Room 1",
+  "centerName": "Jalan Besar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61114285e97dffb7f7d"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636848000000,
+  "roomID": {
+    "$oid": "6188c61114285e97dffb7f67"
+  },
+  "roomName": "Room 1",
+  "centerName": "Jalan Besar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61114285e97dffb7f80"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636934400000,
+  "roomID": {
+    "$oid": "6188c61114285e97dffb7f67"
+  },
+  "roomName": "Room 1",
+  "centerName": "Jalan Besar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61114285e97dffb7f83"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637020800000,
+  "roomID": {
+    "$oid": "6188c61114285e97dffb7f67"
+  },
+  "roomName": "Room 1",
+  "centerName": "Jalan Besar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61114285e97dffb7f86"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637107200000,
+  "roomID": {
+    "$oid": "6188c61114285e97dffb7f67"
+  },
+  "roomName": "Room 1",
+  "centerName": "Jalan Besar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61114285e97dffb7f89"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637193600000,
+  "roomID": {
+    "$oid": "6188c61114285e97dffb7f67"
+  },
+  "roomName": "Room 1",
+  "centerName": "Jalan Besar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61114285e97dffb7f8c"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637280000000,
+  "roomID": {
+    "$oid": "6188c61114285e97dffb7f67"
+  },
+  "roomName": "Room 1",
+  "centerName": "Jalan Besar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61114285e97dffb7f8f"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637366400000,
+  "roomID": {
+    "$oid": "6188c61114285e97dffb7f67"
+  },
+  "roomName": "Room 1",
+  "centerName": "Jalan Besar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61114285e97dffb7f92"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637452800000,
+  "roomID": {
+    "$oid": "6188c61114285e97dffb7f67"
+  },
+  "roomName": "Room 1",
+  "centerName": "Jalan Besar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61114285e97dffb7f95"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637539200000,
+  "roomID": {
+    "$oid": "6188c61114285e97dffb7f67"
+  },
+  "roomName": "Room 1",
+  "centerName": "Jalan Besar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61114285e97dffb7f98"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637625600000,
+  "roomID": {
+    "$oid": "6188c61114285e97dffb7f67"
+  },
+  "roomName": "Room 1",
+  "centerName": "Jalan Besar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61114285e97dffb7f9b"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637712000000,
+  "roomID": {
+    "$oid": "6188c61114285e97dffb7f67"
+  },
+  "roomName": "Room 1",
+  "centerName": "Jalan Besar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61114285e97dffb7f9e"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637798400000,
+  "roomID": {
+    "$oid": "6188c61114285e97dffb7f67"
+  },
+  "roomName": "Room 1",
+  "centerName": "Jalan Besar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61114285e97dffb7fa1"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637884800000,
+  "roomID": {
+    "$oid": "6188c61114285e97dffb7f67"
+  },
+  "roomName": "Room 1",
+  "centerName": "Jalan Besar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61114285e97dffb7fa4"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637971200000,
+  "roomID": {
+    "$oid": "6188c61114285e97dffb7f67"
+  },
+  "roomName": "Room 1",
+  "centerName": "Jalan Besar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61114285e97dffb7fa7"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638057600000,
+  "roomID": {
+    "$oid": "6188c61114285e97dffb7f67"
+  },
+  "roomName": "Room 1",
+  "centerName": "Jalan Besar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61114285e97dffb7faa"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638144000000,
+  "roomID": {
+    "$oid": "6188c61114285e97dffb7f67"
+  },
+  "roomName": "Room 1",
+  "centerName": "Jalan Besar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61114285e97dffb7fad"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638230400000,
+  "roomID": {
+    "$oid": "6188c61114285e97dffb7f67"
+  },
+  "roomName": "Room 1",
+  "centerName": "Jalan Besar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61114285e97dffb7fb0"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638316800000,
+  "roomID": {
+    "$oid": "6188c61114285e97dffb7f67"
+  },
+  "roomName": "Room 1",
+  "centerName": "Jalan Besar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61114285e97dffb7fb3"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638403200000,
+  "roomID": {
+    "$oid": "6188c61114285e97dffb7f67"
+  },
+  "roomName": "Room 1",
+  "centerName": "Jalan Besar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61114285e97dffb7fb6"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638489600000,
+  "roomID": {
+    "$oid": "6188c61114285e97dffb7f67"
+  },
+  "roomName": "Room 1",
+  "centerName": "Jalan Besar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61114285e97dffb7fb9"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638576000000,
+  "roomID": {
+    "$oid": "6188c61114285e97dffb7f67"
+  },
+  "roomName": "Room 1",
+  "centerName": "Jalan Besar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61114285e97dffb7fbc"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638662400000,
+  "roomID": {
+    "$oid": "6188c61114285e97dffb7f67"
+  },
+  "roomName": "Room 1",
+  "centerName": "Jalan Besar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61114285e97dffb7fbf"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638748800000,
+  "roomID": {
+    "$oid": "6188c61114285e97dffb7f67"
+  },
+  "roomName": "Room 1",
+  "centerName": "Jalan Besar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61114285e97dffb7fc2"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638835200000,
+  "roomID": {
+    "$oid": "6188c61114285e97dffb7f67"
+  },
+  "roomName": "Room 1",
+  "centerName": "Jalan Besar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61114285e97dffb7fc5"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638921600000,
+  "roomID": {
+    "$oid": "6188c61114285e97dffb7f67"
+  },
+  "roomName": "Room 1",
+  "centerName": "Jalan Besar Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61b14285e97dffb7fd5"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636329600000,
+  "roomID": {
+    "$oid": "6188c61b14285e97dffb7fd1"
+  },
+  "roomName": "Room 1",
+  "centerName": "Bishan Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61b14285e97dffb7fd8"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636416000000,
+  "roomID": {
+    "$oid": "6188c61b14285e97dffb7fd1"
+  },
+  "roomName": "Room 1",
+  "centerName": "Bishan Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61b14285e97dffb7fdb"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636502400000,
+  "roomID": {
+    "$oid": "6188c61b14285e97dffb7fd1"
+  },
+  "roomName": "Room 1",
+  "centerName": "Bishan Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61b14285e97dffb7fde"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636588800000,
+  "roomID": {
+    "$oid": "6188c61b14285e97dffb7fd1"
+  },
+  "roomName": "Room 1",
+  "centerName": "Bishan Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61b14285e97dffb7fe1"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636675200000,
+  "roomID": {
+    "$oid": "6188c61b14285e97dffb7fd1"
+  },
+  "roomName": "Room 1",
+  "centerName": "Bishan Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61b14285e97dffb7fe4"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636761600000,
+  "roomID": {
+    "$oid": "6188c61b14285e97dffb7fd1"
+  },
+  "roomName": "Room 1",
+  "centerName": "Bishan Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61b14285e97dffb7fe7"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636848000000,
+  "roomID": {
+    "$oid": "6188c61b14285e97dffb7fd1"
+  },
+  "roomName": "Room 1",
+  "centerName": "Bishan Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61b14285e97dffb7fea"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636934400000,
+  "roomID": {
+    "$oid": "6188c61b14285e97dffb7fd1"
+  },
+  "roomName": "Room 1",
+  "centerName": "Bishan Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61b14285e97dffb7fed"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637020800000,
+  "roomID": {
+    "$oid": "6188c61b14285e97dffb7fd1"
+  },
+  "roomName": "Room 1",
+  "centerName": "Bishan Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61b14285e97dffb7ff0"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637107200000,
+  "roomID": {
+    "$oid": "6188c61b14285e97dffb7fd1"
+  },
+  "roomName": "Room 1",
+  "centerName": "Bishan Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61b14285e97dffb7ff3"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637193600000,
+  "roomID": {
+    "$oid": "6188c61b14285e97dffb7fd1"
+  },
+  "roomName": "Room 1",
+  "centerName": "Bishan Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61b14285e97dffb7ff6"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637280000000,
+  "roomID": {
+    "$oid": "6188c61b14285e97dffb7fd1"
+  },
+  "roomName": "Room 1",
+  "centerName": "Bishan Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61b14285e97dffb7ff9"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637366400000,
+  "roomID": {
+    "$oid": "6188c61b14285e97dffb7fd1"
+  },
+  "roomName": "Room 1",
+  "centerName": "Bishan Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61b14285e97dffb7ffc"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637452800000,
+  "roomID": {
+    "$oid": "6188c61b14285e97dffb7fd1"
+  },
+  "roomName": "Room 1",
+  "centerName": "Bishan Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61b14285e97dffb7fff"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637539200000,
+  "roomID": {
+    "$oid": "6188c61b14285e97dffb7fd1"
+  },
+  "roomName": "Room 1",
+  "centerName": "Bishan Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61b14285e97dffb8002"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637625600000,
+  "roomID": {
+    "$oid": "6188c61b14285e97dffb7fd1"
+  },
+  "roomName": "Room 1",
+  "centerName": "Bishan Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61b14285e97dffb8005"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637712000000,
+  "roomID": {
+    "$oid": "6188c61b14285e97dffb7fd1"
+  },
+  "roomName": "Room 1",
+  "centerName": "Bishan Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61b14285e97dffb8008"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637798400000,
+  "roomID": {
+    "$oid": "6188c61b14285e97dffb7fd1"
+  },
+  "roomName": "Room 1",
+  "centerName": "Bishan Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61b14285e97dffb800b"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637884800000,
+  "roomID": {
+    "$oid": "6188c61b14285e97dffb7fd1"
+  },
+  "roomName": "Room 1",
+  "centerName": "Bishan Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61b14285e97dffb800e"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637971200000,
+  "roomID": {
+    "$oid": "6188c61b14285e97dffb7fd1"
+  },
+  "roomName": "Room 1",
+  "centerName": "Bishan Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61b14285e97dffb8011"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638057600000,
+  "roomID": {
+    "$oid": "6188c61b14285e97dffb7fd1"
+  },
+  "roomName": "Room 1",
+  "centerName": "Bishan Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61b14285e97dffb8014"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638144000000,
+  "roomID": {
+    "$oid": "6188c61b14285e97dffb7fd1"
+  },
+  "roomName": "Room 1",
+  "centerName": "Bishan Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61b14285e97dffb8017"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638230400000,
+  "roomID": {
+    "$oid": "6188c61b14285e97dffb7fd1"
+  },
+  "roomName": "Room 1",
+  "centerName": "Bishan Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61b14285e97dffb801a"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638316800000,
+  "roomID": {
+    "$oid": "6188c61b14285e97dffb7fd1"
+  },
+  "roomName": "Room 1",
+  "centerName": "Bishan Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61b14285e97dffb801d"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638403200000,
+  "roomID": {
+    "$oid": "6188c61b14285e97dffb7fd1"
+  },
+  "roomName": "Room 1",
+  "centerName": "Bishan Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61b14285e97dffb8020"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638489600000,
+  "roomID": {
+    "$oid": "6188c61b14285e97dffb7fd1"
+  },
+  "roomName": "Room 1",
+  "centerName": "Bishan Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61b14285e97dffb8023"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638576000000,
+  "roomID": {
+    "$oid": "6188c61b14285e97dffb7fd1"
+  },
+  "roomName": "Room 1",
+  "centerName": "Bishan Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61b14285e97dffb8026"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638662400000,
+  "roomID": {
+    "$oid": "6188c61b14285e97dffb7fd1"
+  },
+  "roomName": "Room 1",
+  "centerName": "Bishan Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61b14285e97dffb8029"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638748800000,
+  "roomID": {
+    "$oid": "6188c61b14285e97dffb7fd1"
+  },
+  "roomName": "Room 1",
+  "centerName": "Bishan Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61b14285e97dffb802c"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638835200000,
+  "roomID": {
+    "$oid": "6188c61b14285e97dffb7fd1"
+  },
+  "roomName": "Room 1",
+  "centerName": "Bishan Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61b14285e97dffb802f"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638921600000,
+  "roomID": {
+    "$oid": "6188c61b14285e97dffb7fd1"
+  },
+  "roomName": "Room 1",
+  "centerName": "Bishan Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c62714285e97dffb8043"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636329600000,
+  "roomID": {
+    "$oid": "6188c62714285e97dffb803f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Toa Payoh West Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c62714285e97dffb8046"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636416000000,
+  "roomID": {
+    "$oid": "6188c62714285e97dffb803f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Toa Payoh West Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c62714285e97dffb8049"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636502400000,
+  "roomID": {
+    "$oid": "6188c62714285e97dffb803f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Toa Payoh West Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c62714285e97dffb804c"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636588800000,
+  "roomID": {
+    "$oid": "6188c62714285e97dffb803f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Toa Payoh West Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c62714285e97dffb804f"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636675200000,
+  "roomID": {
+    "$oid": "6188c62714285e97dffb803f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Toa Payoh West Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c62714285e97dffb8052"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636761600000,
+  "roomID": {
+    "$oid": "6188c62714285e97dffb803f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Toa Payoh West Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c62714285e97dffb8055"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636848000000,
+  "roomID": {
+    "$oid": "6188c62714285e97dffb803f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Toa Payoh West Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c62714285e97dffb8058"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636934400000,
+  "roomID": {
+    "$oid": "6188c62714285e97dffb803f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Toa Payoh West Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c62714285e97dffb805b"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637020800000,
+  "roomID": {
+    "$oid": "6188c62714285e97dffb803f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Toa Payoh West Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c62714285e97dffb805e"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637107200000,
+  "roomID": {
+    "$oid": "6188c62714285e97dffb803f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Toa Payoh West Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c62714285e97dffb8061"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637193600000,
+  "roomID": {
+    "$oid": "6188c62714285e97dffb803f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Toa Payoh West Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c62714285e97dffb8064"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637280000000,
+  "roomID": {
+    "$oid": "6188c62714285e97dffb803f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Toa Payoh West Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c62714285e97dffb8067"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637366400000,
+  "roomID": {
+    "$oid": "6188c62714285e97dffb803f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Toa Payoh West Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c62714285e97dffb806a"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637452800000,
+  "roomID": {
+    "$oid": "6188c62714285e97dffb803f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Toa Payoh West Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c62714285e97dffb806d"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637539200000,
+  "roomID": {
+    "$oid": "6188c62714285e97dffb803f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Toa Payoh West Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c62714285e97dffb8070"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637625600000,
+  "roomID": {
+    "$oid": "6188c62714285e97dffb803f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Toa Payoh West Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c62714285e97dffb8073"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637712000000,
+  "roomID": {
+    "$oid": "6188c62714285e97dffb803f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Toa Payoh West Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c62714285e97dffb8076"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637798400000,
+  "roomID": {
+    "$oid": "6188c62714285e97dffb803f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Toa Payoh West Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c62714285e97dffb8079"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637884800000,
+  "roomID": {
+    "$oid": "6188c62714285e97dffb803f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Toa Payoh West Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c62714285e97dffb807c"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637971200000,
+  "roomID": {
+    "$oid": "6188c62714285e97dffb803f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Toa Payoh West Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c62714285e97dffb807f"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638057600000,
+  "roomID": {
+    "$oid": "6188c62714285e97dffb803f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Toa Payoh West Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c62714285e97dffb8082"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638144000000,
+  "roomID": {
+    "$oid": "6188c62714285e97dffb803f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Toa Payoh West Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c62714285e97dffb8085"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638230400000,
+  "roomID": {
+    "$oid": "6188c62714285e97dffb803f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Toa Payoh West Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c62714285e97dffb8088"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638316800000,
+  "roomID": {
+    "$oid": "6188c62714285e97dffb803f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Toa Payoh West Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c62714285e97dffb808b"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638403200000,
+  "roomID": {
+    "$oid": "6188c62714285e97dffb803f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Toa Payoh West Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c62714285e97dffb808e"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638489600000,
+  "roomID": {
+    "$oid": "6188c62714285e97dffb803f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Toa Payoh West Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c62714285e97dffb8091"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638576000000,
+  "roomID": {
+    "$oid": "6188c62714285e97dffb803f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Toa Payoh West Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c62714285e97dffb8094"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638662400000,
+  "roomID": {
+    "$oid": "6188c62714285e97dffb803f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Toa Payoh West Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c62714285e97dffb8097"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638748800000,
+  "roomID": {
+    "$oid": "6188c62714285e97dffb803f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Toa Payoh West Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c62714285e97dffb809a"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638835200000,
+  "roomID": {
+    "$oid": "6188c62714285e97dffb803f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Toa Payoh West Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c62714285e97dffb809d"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638921600000,
+  "roomID": {
+    "$oid": "6188c62714285e97dffb803f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Toa Payoh West Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63114285e97dffb80ad"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636329600000,
+  "roomID": {
+    "$oid": "6188c63114285e97dffb80a9"
+  },
+  "roomName": "Room 1",
+  "centerName": "Marine Parade Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63114285e97dffb80b0"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636416000000,
+  "roomID": {
+    "$oid": "6188c63114285e97dffb80a9"
+  },
+  "roomName": "Room 1",
+  "centerName": "Marine Parade Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63114285e97dffb80b3"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636502400000,
+  "roomID": {
+    "$oid": "6188c63114285e97dffb80a9"
+  },
+  "roomName": "Room 1",
+  "centerName": "Marine Parade Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63114285e97dffb80b6"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636588800000,
+  "roomID": {
+    "$oid": "6188c63114285e97dffb80a9"
+  },
+  "roomName": "Room 1",
+  "centerName": "Marine Parade Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63114285e97dffb80b9"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636675200000,
+  "roomID": {
+    "$oid": "6188c63114285e97dffb80a9"
+  },
+  "roomName": "Room 1",
+  "centerName": "Marine Parade Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63114285e97dffb80bc"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636761600000,
+  "roomID": {
+    "$oid": "6188c63114285e97dffb80a9"
+  },
+  "roomName": "Room 1",
+  "centerName": "Marine Parade Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63114285e97dffb80bf"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636848000000,
+  "roomID": {
+    "$oid": "6188c63114285e97dffb80a9"
+  },
+  "roomName": "Room 1",
+  "centerName": "Marine Parade Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63114285e97dffb80c2"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636934400000,
+  "roomID": {
+    "$oid": "6188c63114285e97dffb80a9"
+  },
+  "roomName": "Room 1",
+  "centerName": "Marine Parade Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63114285e97dffb80c5"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637020800000,
+  "roomID": {
+    "$oid": "6188c63114285e97dffb80a9"
+  },
+  "roomName": "Room 1",
+  "centerName": "Marine Parade Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63114285e97dffb80c8"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637107200000,
+  "roomID": {
+    "$oid": "6188c63114285e97dffb80a9"
+  },
+  "roomName": "Room 1",
+  "centerName": "Marine Parade Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63114285e97dffb80cb"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637193600000,
+  "roomID": {
+    "$oid": "6188c63114285e97dffb80a9"
+  },
+  "roomName": "Room 1",
+  "centerName": "Marine Parade Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63114285e97dffb80ce"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637280000000,
+  "roomID": {
+    "$oid": "6188c63114285e97dffb80a9"
+  },
+  "roomName": "Room 1",
+  "centerName": "Marine Parade Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63114285e97dffb80d1"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637366400000,
+  "roomID": {
+    "$oid": "6188c63114285e97dffb80a9"
+  },
+  "roomName": "Room 1",
+  "centerName": "Marine Parade Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63114285e97dffb80d4"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637452800000,
+  "roomID": {
+    "$oid": "6188c63114285e97dffb80a9"
+  },
+  "roomName": "Room 1",
+  "centerName": "Marine Parade Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63114285e97dffb80d7"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637539200000,
+  "roomID": {
+    "$oid": "6188c63114285e97dffb80a9"
+  },
+  "roomName": "Room 1",
+  "centerName": "Marine Parade Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63114285e97dffb80da"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637625600000,
+  "roomID": {
+    "$oid": "6188c63114285e97dffb80a9"
+  },
+  "roomName": "Room 1",
+  "centerName": "Marine Parade Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63114285e97dffb80dd"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637712000000,
+  "roomID": {
+    "$oid": "6188c63114285e97dffb80a9"
+  },
+  "roomName": "Room 1",
+  "centerName": "Marine Parade Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63114285e97dffb80e0"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637798400000,
+  "roomID": {
+    "$oid": "6188c63114285e97dffb80a9"
+  },
+  "roomName": "Room 1",
+  "centerName": "Marine Parade Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63114285e97dffb80e3"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637884800000,
+  "roomID": {
+    "$oid": "6188c63114285e97dffb80a9"
+  },
+  "roomName": "Room 1",
+  "centerName": "Marine Parade Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63114285e97dffb80e6"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637971200000,
+  "roomID": {
+    "$oid": "6188c63114285e97dffb80a9"
+  },
+  "roomName": "Room 1",
+  "centerName": "Marine Parade Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63114285e97dffb80e9"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638057600000,
+  "roomID": {
+    "$oid": "6188c63114285e97dffb80a9"
+  },
+  "roomName": "Room 1",
+  "centerName": "Marine Parade Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63114285e97dffb80ec"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638144000000,
+  "roomID": {
+    "$oid": "6188c63114285e97dffb80a9"
+  },
+  "roomName": "Room 1",
+  "centerName": "Marine Parade Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63114285e97dffb80ef"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638230400000,
+  "roomID": {
+    "$oid": "6188c63114285e97dffb80a9"
+  },
+  "roomName": "Room 1",
+  "centerName": "Marine Parade Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63114285e97dffb80f2"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638316800000,
+  "roomID": {
+    "$oid": "6188c63114285e97dffb80a9"
+  },
+  "roomName": "Room 1",
+  "centerName": "Marine Parade Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63114285e97dffb80f5"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638403200000,
+  "roomID": {
+    "$oid": "6188c63114285e97dffb80a9"
+  },
+  "roomName": "Room 1",
+  "centerName": "Marine Parade Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63114285e97dffb80f8"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638489600000,
+  "roomID": {
+    "$oid": "6188c63114285e97dffb80a9"
+  },
+  "roomName": "Room 1",
+  "centerName": "Marine Parade Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63114285e97dffb80fb"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638576000000,
+  "roomID": {
+    "$oid": "6188c63114285e97dffb80a9"
+  },
+  "roomName": "Room 1",
+  "centerName": "Marine Parade Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63114285e97dffb80fe"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638662400000,
+  "roomID": {
+    "$oid": "6188c63114285e97dffb80a9"
+  },
+  "roomName": "Room 1",
+  "centerName": "Marine Parade Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63114285e97dffb8101"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638748800000,
+  "roomID": {
+    "$oid": "6188c63114285e97dffb80a9"
+  },
+  "roomName": "Room 1",
+  "centerName": "Marine Parade Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63114285e97dffb8104"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638835200000,
+  "roomID": {
+    "$oid": "6188c63114285e97dffb80a9"
+  },
+  "roomName": "Room 1",
+  "centerName": "Marine Parade Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63114285e97dffb8107"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638921600000,
+  "roomID": {
+    "$oid": "6188c63114285e97dffb80a9"
+  },
+  "roomName": "Room 1",
+  "centerName": "Marine Parade Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63514285e97dffb8113"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636329600000,
+  "roomID": {
+    "$oid": "6188c63514285e97dffb810f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Geylang Serai Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63514285e97dffb8116"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636416000000,
+  "roomID": {
+    "$oid": "6188c63514285e97dffb810f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Geylang Serai Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63514285e97dffb8119"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636502400000,
+  "roomID": {
+    "$oid": "6188c63514285e97dffb810f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Geylang Serai Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63514285e97dffb811c"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636588800000,
+  "roomID": {
+    "$oid": "6188c63514285e97dffb810f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Geylang Serai Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63514285e97dffb811f"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636675200000,
+  "roomID": {
+    "$oid": "6188c63514285e97dffb810f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Geylang Serai Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63514285e97dffb8122"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636761600000,
+  "roomID": {
+    "$oid": "6188c63514285e97dffb810f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Geylang Serai Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63514285e97dffb8125"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636848000000,
+  "roomID": {
+    "$oid": "6188c63514285e97dffb810f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Geylang Serai Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63514285e97dffb8128"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1636934400000,
+  "roomID": {
+    "$oid": "6188c63514285e97dffb810f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Geylang Serai Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63514285e97dffb812b"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637020800000,
+  "roomID": {
+    "$oid": "6188c63514285e97dffb810f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Geylang Serai Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63514285e97dffb812e"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637107200000,
+  "roomID": {
+    "$oid": "6188c63514285e97dffb810f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Geylang Serai Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63514285e97dffb8131"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637193600000,
+  "roomID": {
+    "$oid": "6188c63514285e97dffb810f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Geylang Serai Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63514285e97dffb8134"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637280000000,
+  "roomID": {
+    "$oid": "6188c63514285e97dffb810f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Geylang Serai Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63514285e97dffb8137"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637366400000,
+  "roomID": {
+    "$oid": "6188c63514285e97dffb810f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Geylang Serai Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63514285e97dffb813a"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637452800000,
+  "roomID": {
+    "$oid": "6188c63514285e97dffb810f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Geylang Serai Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63514285e97dffb813d"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637539200000,
+  "roomID": {
+    "$oid": "6188c63514285e97dffb810f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Geylang Serai Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63514285e97dffb8140"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637625600000,
+  "roomID": {
+    "$oid": "6188c63514285e97dffb810f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Geylang Serai Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63514285e97dffb8143"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637712000000,
+  "roomID": {
+    "$oid": "6188c63514285e97dffb810f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Geylang Serai Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63514285e97dffb8146"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637798400000,
+  "roomID": {
+    "$oid": "6188c63514285e97dffb810f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Geylang Serai Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63514285e97dffb8149"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637884800000,
+  "roomID": {
+    "$oid": "6188c63514285e97dffb810f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Geylang Serai Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63514285e97dffb814c"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1637971200000,
+  "roomID": {
+    "$oid": "6188c63514285e97dffb810f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Geylang Serai Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63514285e97dffb814f"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638057600000,
+  "roomID": {
+    "$oid": "6188c63514285e97dffb810f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Geylang Serai Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63514285e97dffb8152"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638144000000,
+  "roomID": {
+    "$oid": "6188c63514285e97dffb810f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Geylang Serai Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63514285e97dffb8155"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638230400000,
+  "roomID": {
+    "$oid": "6188c63514285e97dffb810f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Geylang Serai Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63514285e97dffb8158"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638316800000,
+  "roomID": {
+    "$oid": "6188c63514285e97dffb810f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Geylang Serai Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63514285e97dffb815b"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638403200000,
+  "roomID": {
+    "$oid": "6188c63514285e97dffb810f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Geylang Serai Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63514285e97dffb815e"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638489600000,
+  "roomID": {
+    "$oid": "6188c63514285e97dffb810f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Geylang Serai Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63514285e97dffb8161"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638576000000,
+  "roomID": {
+    "$oid": "6188c63514285e97dffb810f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Geylang Serai Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63514285e97dffb8164"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638662400000,
+  "roomID": {
+    "$oid": "6188c63514285e97dffb810f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Geylang Serai Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63514285e97dffb8167"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638748800000,
+  "roomID": {
+    "$oid": "6188c63514285e97dffb810f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Geylang Serai Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63514285e97dffb816a"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638835200000,
+  "roomID": {
+    "$oid": "6188c63514285e97dffb810f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Geylang Serai Community Club",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63514285e97dffb816d"
+  },
+  "doctorID": null,
+  "apptArray": [],
+  "date": 1638921600000,
+  "roomID": {
+    "$oid": "6188c63514285e97dffb810f"
+  },
+  "roomName": "Room 1",
+  "centerName": "Geylang Serai Community Club",
+  "__v": 0
+}]

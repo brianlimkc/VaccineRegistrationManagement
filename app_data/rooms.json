@@ -1,0 +1,1061 @@
+[{
+  "_id": {
+    "$oid": "6188c5f414285e97dffb7d65"
+  },
+  "name": "Room A",
+  "centerID": {
+    "$oid": "6188c4fe14285e97dffb7d3b"
+  },
+  "centerName": "Radin Mas Community Club",
+  "rosterArray": [
+    {
+      "$oid": "6188c5f414285e97dffb7d69"
+    },
+    {
+      "$oid": "6188c5f414285e97dffb7d6c"
+    },
+    {
+      "$oid": "6188c5f414285e97dffb7d6f"
+    },
+    {
+      "$oid": "6188c5f414285e97dffb7d72"
+    },
+    {
+      "$oid": "6188c5f414285e97dffb7d75"
+    },
+    {
+      "$oid": "6188c5f414285e97dffb7d78"
+    },
+    {
+      "$oid": "6188c5f414285e97dffb7d7b"
+    },
+    {
+      "$oid": "6188c5f414285e97dffb7d7e"
+    },
+    {
+      "$oid": "6188c5f414285e97dffb7d81"
+    },
+    {
+      "$oid": "6188c5f414285e97dffb7d84"
+    },
+    {
+      "$oid": "6188c5f414285e97dffb7d87"
+    },
+    {
+      "$oid": "6188c5f414285e97dffb7d8a"
+    },
+    {
+      "$oid": "6188c5f414285e97dffb7d8d"
+    },
+    {
+      "$oid": "6188c5f414285e97dffb7d90"
+    },
+    {
+      "$oid": "6188c5f414285e97dffb7d93"
+    },
+    {
+      "$oid": "6188c5f414285e97dffb7d96"
+    },
+    {
+      "$oid": "6188c5f414285e97dffb7d99"
+    },
+    {
+      "$oid": "6188c5f414285e97dffb7d9c"
+    },
+    {
+      "$oid": "6188c5f414285e97dffb7d9f"
+    },
+    {
+      "$oid": "6188c5f414285e97dffb7da2"
+    },
+    {
+      "$oid": "6188c5f414285e97dffb7da5"
+    },
+    {
+      "$oid": "6188c5f414285e97dffb7da8"
+    },
+    {
+      "$oid": "6188c5f414285e97dffb7dab"
+    },
+    {
+      "$oid": "6188c5f414285e97dffb7dae"
+    },
+    {
+      "$oid": "6188c5f414285e97dffb7db1"
+    },
+    {
+      "$oid": "6188c5f414285e97dffb7db4"
+    },
+    {
+      "$oid": "6188c5f414285e97dffb7db7"
+    },
+    {
+      "$oid": "6188c5f414285e97dffb7dba"
+    },
+    {
+      "$oid": "6188c5f414285e97dffb7dbd"
+    },
+    {
+      "$oid": "6188c5f414285e97dffb7dc0"
+    },
+    {
+      "$oid": "6188c5f414285e97dffb7dc3"
+    }
+  ],
+  "id": "R-ZESYEW11",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5f914285e97dffb7dcb"
+  },
+  "name": "Room 1",
+  "centerID": {
+    "$oid": "6188c50d14285e97dffb7d3e"
+  },
+  "centerName": "Buona Vista Community Club",
+  "rosterArray": [
+    {
+      "$oid": "6188c5f914285e97dffb7dcf"
+    },
+    {
+      "$oid": "6188c5f914285e97dffb7dd2"
+    },
+    {
+      "$oid": "6188c5f914285e97dffb7dd5"
+    },
+    {
+      "$oid": "6188c5f914285e97dffb7dd8"
+    },
+    {
+      "$oid": "6188c5f914285e97dffb7ddb"
+    },
+    {
+      "$oid": "6188c5f914285e97dffb7dde"
+    },
+    {
+      "$oid": "6188c5f914285e97dffb7de1"
+    },
+    {
+      "$oid": "6188c5f914285e97dffb7de4"
+    },
+    {
+      "$oid": "6188c5f914285e97dffb7de7"
+    },
+    {
+      "$oid": "6188c5f914285e97dffb7dea"
+    },
+    {
+      "$oid": "6188c5f914285e97dffb7ded"
+    },
+    {
+      "$oid": "6188c5f914285e97dffb7df0"
+    },
+    {
+      "$oid": "6188c5f914285e97dffb7df3"
+    },
+    {
+      "$oid": "6188c5f914285e97dffb7df6"
+    },
+    {
+      "$oid": "6188c5f914285e97dffb7df9"
+    },
+    {
+      "$oid": "6188c5f914285e97dffb7dfc"
+    },
+    {
+      "$oid": "6188c5f914285e97dffb7dff"
+    },
+    {
+      "$oid": "6188c5f914285e97dffb7e02"
+    },
+    {
+      "$oid": "6188c5f914285e97dffb7e05"
+    },
+    {
+      "$oid": "6188c5f914285e97dffb7e08"
+    },
+    {
+      "$oid": "6188c5f914285e97dffb7e0b"
+    },
+    {
+      "$oid": "6188c5f914285e97dffb7e0e"
+    },
+    {
+      "$oid": "6188c5f914285e97dffb7e11"
+    },
+    {
+      "$oid": "6188c5f914285e97dffb7e14"
+    },
+    {
+      "$oid": "6188c5f914285e97dffb7e17"
+    },
+    {
+      "$oid": "6188c5f914285e97dffb7e1a"
+    },
+    {
+      "$oid": "6188c5f914285e97dffb7e1d"
+    },
+    {
+      "$oid": "6188c5f914285e97dffb7e20"
+    },
+    {
+      "$oid": "6188c5f914285e97dffb7e23"
+    },
+    {
+      "$oid": "6188c5f914285e97dffb7e26"
+    },
+    {
+      "$oid": "6188c5f914285e97dffb7e29"
+    }
+  ],
+  "id": "R-TU8APQ1Q",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5fe14285e97dffb7e31"
+  },
+  "name": "Room 1",
+  "centerID": {
+    "$oid": "6188c51c14285e97dffb7d41"
+  },
+  "centerName": "Potong Pasir Community Club",
+  "rosterArray": [
+    {
+      "$oid": "6188c5fe14285e97dffb7e35"
+    },
+    {
+      "$oid": "6188c5fe14285e97dffb7e38"
+    },
+    {
+      "$oid": "6188c5fe14285e97dffb7e3b"
+    },
+    {
+      "$oid": "6188c5fe14285e97dffb7e3e"
+    },
+    {
+      "$oid": "6188c5fe14285e97dffb7e41"
+    },
+    {
+      "$oid": "6188c5fe14285e97dffb7e44"
+    },
+    {
+      "$oid": "6188c5fe14285e97dffb7e47"
+    },
+    {
+      "$oid": "6188c5fe14285e97dffb7e4a"
+    },
+    {
+      "$oid": "6188c5fe14285e97dffb7e4d"
+    },
+    {
+      "$oid": "6188c5fe14285e97dffb7e50"
+    },
+    {
+      "$oid": "6188c5fe14285e97dffb7e53"
+    },
+    {
+      "$oid": "6188c5fe14285e97dffb7e56"
+    },
+    {
+      "$oid": "6188c5fe14285e97dffb7e59"
+    },
+    {
+      "$oid": "6188c5fe14285e97dffb7e5c"
+    },
+    {
+      "$oid": "6188c5fe14285e97dffb7e5f"
+    },
+    {
+      "$oid": "6188c5fe14285e97dffb7e62"
+    },
+    {
+      "$oid": "6188c5fe14285e97dffb7e65"
+    },
+    {
+      "$oid": "6188c5fe14285e97dffb7e68"
+    },
+    {
+      "$oid": "6188c5fe14285e97dffb7e6b"
+    },
+    {
+      "$oid": "6188c5fe14285e97dffb7e6e"
+    },
+    {
+      "$oid": "6188c5fe14285e97dffb7e71"
+    },
+    {
+      "$oid": "6188c5fe14285e97dffb7e74"
+    },
+    {
+      "$oid": "6188c5fe14285e97dffb7e77"
+    },
+    {
+      "$oid": "6188c5fe14285e97dffb7e7a"
+    },
+    {
+      "$oid": "6188c5fe14285e97dffb7e7d"
+    },
+    {
+      "$oid": "6188c5fe14285e97dffb7e80"
+    },
+    {
+      "$oid": "6188c5fe14285e97dffb7e83"
+    },
+    {
+      "$oid": "6188c5fe14285e97dffb7e86"
+    },
+    {
+      "$oid": "6188c5fe14285e97dffb7e89"
+    },
+    {
+      "$oid": "6188c5fe14285e97dffb7e8c"
+    },
+    {
+      "$oid": "6188c5fe14285e97dffb7e8f"
+    }
+  ],
+  "id": "R-TKNFCBFA",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60414285e97dffb7e97"
+  },
+  "name": "Room 1",
+  "centerID": {
+    "$oid": "6188c52a14285e97dffb7d44"
+  },
+  "centerName": "Raffles City Convention Centre",
+  "rosterArray": [
+    {
+      "$oid": "6188c60414285e97dffb7e9b"
+    },
+    {
+      "$oid": "6188c60414285e97dffb7e9e"
+    },
+    {
+      "$oid": "6188c60414285e97dffb7ea1"
+    },
+    {
+      "$oid": "6188c60414285e97dffb7ea4"
+    },
+    {
+      "$oid": "6188c60414285e97dffb7ea7"
+    },
+    {
+      "$oid": "6188c60414285e97dffb7eaa"
+    },
+    {
+      "$oid": "6188c60414285e97dffb7ead"
+    },
+    {
+      "$oid": "6188c60414285e97dffb7eb0"
+    },
+    {
+      "$oid": "6188c60414285e97dffb7eb3"
+    },
+    {
+      "$oid": "6188c60414285e97dffb7eb6"
+    },
+    {
+      "$oid": "6188c60414285e97dffb7eb9"
+    },
+    {
+      "$oid": "6188c60414285e97dffb7ebc"
+    },
+    {
+      "$oid": "6188c60414285e97dffb7ebf"
+    },
+    {
+      "$oid": "6188c60414285e97dffb7ec2"
+    },
+    {
+      "$oid": "6188c60414285e97dffb7ec5"
+    },
+    {
+      "$oid": "6188c60414285e97dffb7ec8"
+    },
+    {
+      "$oid": "6188c60414285e97dffb7ecb"
+    },
+    {
+      "$oid": "6188c60414285e97dffb7ece"
+    },
+    {
+      "$oid": "6188c60414285e97dffb7ed1"
+    },
+    {
+      "$oid": "6188c60414285e97dffb7ed4"
+    },
+    {
+      "$oid": "6188c60414285e97dffb7ed7"
+    },
+    {
+      "$oid": "6188c60414285e97dffb7eda"
+    },
+    {
+      "$oid": "6188c60414285e97dffb7edd"
+    },
+    {
+      "$oid": "6188c60414285e97dffb7ee0"
+    },
+    {
+      "$oid": "6188c60414285e97dffb7ee3"
+    },
+    {
+      "$oid": "6188c60414285e97dffb7ee6"
+    },
+    {
+      "$oid": "6188c60414285e97dffb7ee9"
+    },
+    {
+      "$oid": "6188c60414285e97dffb7eec"
+    },
+    {
+      "$oid": "6188c60414285e97dffb7eef"
+    },
+    {
+      "$oid": "6188c60414285e97dffb7ef2"
+    },
+    {
+      "$oid": "6188c60414285e97dffb7ef5"
+    }
+  ],
+  "id": "R-K_PPCPEZ",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c60814285e97dffb7efd"
+  },
+  "name": "Room 1",
+  "centerID": {
+    "$oid": "6188c54314285e97dffb7d47"
+  },
+  "centerName": "Tanjong Pagar Community Club",
+  "rosterArray": [
+    {
+      "$oid": "6188c60814285e97dffb7f01"
+    },
+    {
+      "$oid": "6188c60814285e97dffb7f04"
+    },
+    {
+      "$oid": "6188c60814285e97dffb7f07"
+    },
+    {
+      "$oid": "6188c60814285e97dffb7f0a"
+    },
+    {
+      "$oid": "6188c60814285e97dffb7f0d"
+    },
+    {
+      "$oid": "6188c60814285e97dffb7f10"
+    },
+    {
+      "$oid": "6188c60814285e97dffb7f13"
+    },
+    {
+      "$oid": "6188c60814285e97dffb7f16"
+    },
+    {
+      "$oid": "6188c60814285e97dffb7f19"
+    },
+    {
+      "$oid": "6188c60814285e97dffb7f1c"
+    },
+    {
+      "$oid": "6188c60814285e97dffb7f1f"
+    },
+    {
+      "$oid": "6188c60814285e97dffb7f22"
+    },
+    {
+      "$oid": "6188c60814285e97dffb7f25"
+    },
+    {
+      "$oid": "6188c60814285e97dffb7f28"
+    },
+    {
+      "$oid": "6188c60814285e97dffb7f2b"
+    },
+    {
+      "$oid": "6188c60814285e97dffb7f2e"
+    },
+    {
+      "$oid": "6188c60814285e97dffb7f31"
+    },
+    {
+      "$oid": "6188c60814285e97dffb7f34"
+    },
+    {
+      "$oid": "6188c60814285e97dffb7f37"
+    },
+    {
+      "$oid": "6188c60814285e97dffb7f3a"
+    },
+    {
+      "$oid": "6188c60814285e97dffb7f3d"
+    },
+    {
+      "$oid": "6188c60814285e97dffb7f40"
+    },
+    {
+      "$oid": "6188c60814285e97dffb7f43"
+    },
+    {
+      "$oid": "6188c60814285e97dffb7f46"
+    },
+    {
+      "$oid": "6188c60814285e97dffb7f49"
+    },
+    {
+      "$oid": "6188c60814285e97dffb7f4c"
+    },
+    {
+      "$oid": "6188c60814285e97dffb7f4f"
+    },
+    {
+      "$oid": "6188c60814285e97dffb7f52"
+    },
+    {
+      "$oid": "6188c60814285e97dffb7f55"
+    },
+    {
+      "$oid": "6188c60814285e97dffb7f58"
+    },
+    {
+      "$oid": "6188c60814285e97dffb7f5b"
+    }
+  ],
+  "id": "R-IZ1Q1NIO",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61114285e97dffb7f67"
+  },
+  "name": "Room 1",
+  "centerID": {
+    "$oid": "6188c55114285e97dffb7d4a"
+  },
+  "centerName": "Jalan Besar Community Club",
+  "rosterArray": [
+    {
+      "$oid": "6188c61114285e97dffb7f6b"
+    },
+    {
+      "$oid": "6188c61114285e97dffb7f6e"
+    },
+    {
+      "$oid": "6188c61114285e97dffb7f71"
+    },
+    {
+      "$oid": "6188c61114285e97dffb7f74"
+    },
+    {
+      "$oid": "6188c61114285e97dffb7f77"
+    },
+    {
+      "$oid": "6188c61114285e97dffb7f7a"
+    },
+    {
+      "$oid": "6188c61114285e97dffb7f7d"
+    },
+    {
+      "$oid": "6188c61114285e97dffb7f80"
+    },
+    {
+      "$oid": "6188c61114285e97dffb7f83"
+    },
+    {
+      "$oid": "6188c61114285e97dffb7f86"
+    },
+    {
+      "$oid": "6188c61114285e97dffb7f89"
+    },
+    {
+      "$oid": "6188c61114285e97dffb7f8c"
+    },
+    {
+      "$oid": "6188c61114285e97dffb7f8f"
+    },
+    {
+      "$oid": "6188c61114285e97dffb7f92"
+    },
+    {
+      "$oid": "6188c61114285e97dffb7f95"
+    },
+    {
+      "$oid": "6188c61114285e97dffb7f98"
+    },
+    {
+      "$oid": "6188c61114285e97dffb7f9b"
+    },
+    {
+      "$oid": "6188c61114285e97dffb7f9e"
+    },
+    {
+      "$oid": "6188c61114285e97dffb7fa1"
+    },
+    {
+      "$oid": "6188c61114285e97dffb7fa4"
+    },
+    {
+      "$oid": "6188c61114285e97dffb7fa7"
+    },
+    {
+      "$oid": "6188c61114285e97dffb7faa"
+    },
+    {
+      "$oid": "6188c61114285e97dffb7fad"
+    },
+    {
+      "$oid": "6188c61114285e97dffb7fb0"
+    },
+    {
+      "$oid": "6188c61114285e97dffb7fb3"
+    },
+    {
+      "$oid": "6188c61114285e97dffb7fb6"
+    },
+    {
+      "$oid": "6188c61114285e97dffb7fb9"
+    },
+    {
+      "$oid": "6188c61114285e97dffb7fbc"
+    },
+    {
+      "$oid": "6188c61114285e97dffb7fbf"
+    },
+    {
+      "$oid": "6188c61114285e97dffb7fc2"
+    },
+    {
+      "$oid": "6188c61114285e97dffb7fc5"
+    }
+  ],
+  "id": "R-I2XAERSK",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c61b14285e97dffb7fd1"
+  },
+  "name": "Room 1",
+  "centerID": {
+    "$oid": "6188c56014285e97dffb7d4d"
+  },
+  "centerName": "Bishan Community Club",
+  "rosterArray": [
+    {
+      "$oid": "6188c61b14285e97dffb7fd5"
+    },
+    {
+      "$oid": "6188c61b14285e97dffb7fd8"
+    },
+    {
+      "$oid": "6188c61b14285e97dffb7fdb"
+    },
+    {
+      "$oid": "6188c61b14285e97dffb7fde"
+    },
+    {
+      "$oid": "6188c61b14285e97dffb7fe1"
+    },
+    {
+      "$oid": "6188c61b14285e97dffb7fe4"
+    },
+    {
+      "$oid": "6188c61b14285e97dffb7fe7"
+    },
+    {
+      "$oid": "6188c61b14285e97dffb7fea"
+    },
+    {
+      "$oid": "6188c61b14285e97dffb7fed"
+    },
+    {
+      "$oid": "6188c61b14285e97dffb7ff0"
+    },
+    {
+      "$oid": "6188c61b14285e97dffb7ff3"
+    },
+    {
+      "$oid": "6188c61b14285e97dffb7ff6"
+    },
+    {
+      "$oid": "6188c61b14285e97dffb7ff9"
+    },
+    {
+      "$oid": "6188c61b14285e97dffb7ffc"
+    },
+    {
+      "$oid": "6188c61b14285e97dffb7fff"
+    },
+    {
+      "$oid": "6188c61b14285e97dffb8002"
+    },
+    {
+      "$oid": "6188c61b14285e97dffb8005"
+    },
+    {
+      "$oid": "6188c61b14285e97dffb8008"
+    },
+    {
+      "$oid": "6188c61b14285e97dffb800b"
+    },
+    {
+      "$oid": "6188c61b14285e97dffb800e"
+    },
+    {
+      "$oid": "6188c61b14285e97dffb8011"
+    },
+    {
+      "$oid": "6188c61b14285e97dffb8014"
+    },
+    {
+      "$oid": "6188c61b14285e97dffb8017"
+    },
+    {
+      "$oid": "6188c61b14285e97dffb801a"
+    },
+    {
+      "$oid": "6188c61b14285e97dffb801d"
+    },
+    {
+      "$oid": "6188c61b14285e97dffb8020"
+    },
+    {
+      "$oid": "6188c61b14285e97dffb8023"
+    },
+    {
+      "$oid": "6188c61b14285e97dffb8026"
+    },
+    {
+      "$oid": "6188c61b14285e97dffb8029"
+    },
+    {
+      "$oid": "6188c61b14285e97dffb802c"
+    },
+    {
+      "$oid": "6188c61b14285e97dffb802f"
+    }
+  ],
+  "id": "R-0HZ1YFLV",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c62714285e97dffb803f"
+  },
+  "name": "Room 1",
+  "centerID": {
+    "$oid": "6188c57e14285e97dffb7d50"
+  },
+  "centerName": "Toa Payoh West Community Club",
+  "rosterArray": [
+    {
+      "$oid": "6188c62714285e97dffb8043"
+    },
+    {
+      "$oid": "6188c62714285e97dffb8046"
+    },
+    {
+      "$oid": "6188c62714285e97dffb8049"
+    },
+    {
+      "$oid": "6188c62714285e97dffb804c"
+    },
+    {
+      "$oid": "6188c62714285e97dffb804f"
+    },
+    {
+      "$oid": "6188c62714285e97dffb8052"
+    },
+    {
+      "$oid": "6188c62714285e97dffb8055"
+    },
+    {
+      "$oid": "6188c62714285e97dffb8058"
+    },
+    {
+      "$oid": "6188c62714285e97dffb805b"
+    },
+    {
+      "$oid": "6188c62714285e97dffb805e"
+    },
+    {
+      "$oid": "6188c62714285e97dffb8061"
+    },
+    {
+      "$oid": "6188c62714285e97dffb8064"
+    },
+    {
+      "$oid": "6188c62714285e97dffb8067"
+    },
+    {
+      "$oid": "6188c62714285e97dffb806a"
+    },
+    {
+      "$oid": "6188c62714285e97dffb806d"
+    },
+    {
+      "$oid": "6188c62714285e97dffb8070"
+    },
+    {
+      "$oid": "6188c62714285e97dffb8073"
+    },
+    {
+      "$oid": "6188c62714285e97dffb8076"
+    },
+    {
+      "$oid": "6188c62714285e97dffb8079"
+    },
+    {
+      "$oid": "6188c62714285e97dffb807c"
+    },
+    {
+      "$oid": "6188c62714285e97dffb807f"
+    },
+    {
+      "$oid": "6188c62714285e97dffb8082"
+    },
+    {
+      "$oid": "6188c62714285e97dffb8085"
+    },
+    {
+      "$oid": "6188c62714285e97dffb8088"
+    },
+    {
+      "$oid": "6188c62714285e97dffb808b"
+    },
+    {
+      "$oid": "6188c62714285e97dffb808e"
+    },
+    {
+      "$oid": "6188c62714285e97dffb8091"
+    },
+    {
+      "$oid": "6188c62714285e97dffb8094"
+    },
+    {
+      "$oid": "6188c62714285e97dffb8097"
+    },
+    {
+      "$oid": "6188c62714285e97dffb809a"
+    },
+    {
+      "$oid": "6188c62714285e97dffb809d"
+    }
+  ],
+  "id": "R-EETDJOJE",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63114285e97dffb80a9"
+  },
+  "name": "Room 1",
+  "centerID": {
+    "$oid": "6188c58c14285e97dffb7d53"
+  },
+  "centerName": "Marine Parade Community Club",
+  "rosterArray": [
+    {
+      "$oid": "6188c63114285e97dffb80ad"
+    },
+    {
+      "$oid": "6188c63114285e97dffb80b0"
+    },
+    {
+      "$oid": "6188c63114285e97dffb80b3"
+    },
+    {
+      "$oid": "6188c63114285e97dffb80b6"
+    },
+    {
+      "$oid": "6188c63114285e97dffb80b9"
+    },
+    {
+      "$oid": "6188c63114285e97dffb80bc"
+    },
+    {
+      "$oid": "6188c63114285e97dffb80bf"
+    },
+    {
+      "$oid": "6188c63114285e97dffb80c2"
+    },
+    {
+      "$oid": "6188c63114285e97dffb80c5"
+    },
+    {
+      "$oid": "6188c63114285e97dffb80c8"
+    },
+    {
+      "$oid": "6188c63114285e97dffb80cb"
+    },
+    {
+      "$oid": "6188c63114285e97dffb80ce"
+    },
+    {
+      "$oid": "6188c63114285e97dffb80d1"
+    },
+    {
+      "$oid": "6188c63114285e97dffb80d4"
+    },
+    {
+      "$oid": "6188c63114285e97dffb80d7"
+    },
+    {
+      "$oid": "6188c63114285e97dffb80da"
+    },
+    {
+      "$oid": "6188c63114285e97dffb80dd"
+    },
+    {
+      "$oid": "6188c63114285e97dffb80e0"
+    },
+    {
+      "$oid": "6188c63114285e97dffb80e3"
+    },
+    {
+      "$oid": "6188c63114285e97dffb80e6"
+    },
+    {
+      "$oid": "6188c63114285e97dffb80e9"
+    },
+    {
+      "$oid": "6188c63114285e97dffb80ec"
+    },
+    {
+      "$oid": "6188c63114285e97dffb80ef"
+    },
+    {
+      "$oid": "6188c63114285e97dffb80f2"
+    },
+    {
+      "$oid": "6188c63114285e97dffb80f5"
+    },
+    {
+      "$oid": "6188c63114285e97dffb80f8"
+    },
+    {
+      "$oid": "6188c63114285e97dffb80fb"
+    },
+    {
+      "$oid": "6188c63114285e97dffb80fe"
+    },
+    {
+      "$oid": "6188c63114285e97dffb8101"
+    },
+    {
+      "$oid": "6188c63114285e97dffb8104"
+    },
+    {
+      "$oid": "6188c63114285e97dffb8107"
+    }
+  ],
+  "id": "R-OE3UEWOO",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c63514285e97dffb810f"
+  },
+  "name": "Room 1",
+  "centerID": {
+    "$oid": "6188c5aa14285e97dffb7d56"
+  },
+  "centerName": "Geylang Serai Community Club",
+  "rosterArray": [
+    {
+      "$oid": "6188c63514285e97dffb8113"
+    },
+    {
+      "$oid": "6188c63514285e97dffb8116"
+    },
+    {
+      "$oid": "6188c63514285e97dffb8119"
+    },
+    {
+      "$oid": "6188c63514285e97dffb811c"
+    },
+    {
+      "$oid": "6188c63514285e97dffb811f"
+    },
+    {
+      "$oid": "6188c63514285e97dffb8122"
+    },
+    {
+      "$oid": "6188c63514285e97dffb8125"
+    },
+    {
+      "$oid": "6188c63514285e97dffb8128"
+    },
+    {
+      "$oid": "6188c63514285e97dffb812b"
+    },
+    {
+      "$oid": "6188c63514285e97dffb812e"
+    },
+    {
+      "$oid": "6188c63514285e97dffb8131"
+    },
+    {
+      "$oid": "6188c63514285e97dffb8134"
+    },
+    {
+      "$oid": "6188c63514285e97dffb8137"
+    },
+    {
+      "$oid": "6188c63514285e97dffb813a"
+    },
+    {
+      "$oid": "6188c63514285e97dffb813d"
+    },
+    {
+      "$oid": "6188c63514285e97dffb8140"
+    },
+    {
+      "$oid": "6188c63514285e97dffb8143"
+    },
+    {
+      "$oid": "6188c63514285e97dffb8146"
+    },
+    {
+      "$oid": "6188c63514285e97dffb8149"
+    },
+    {
+      "$oid": "6188c63514285e97dffb814c"
+    },
+    {
+      "$oid": "6188c63514285e97dffb814f"
+    },
+    {
+      "$oid": "6188c63514285e97dffb8152"
+    },
+    {
+      "$oid": "6188c63514285e97dffb8155"
+    },
+    {
+      "$oid": "6188c63514285e97dffb8158"
+    },
+    {
+      "$oid": "6188c63514285e97dffb815b"
+    },
+    {
+      "$oid": "6188c63514285e97dffb815e"
+    },
+    {
+      "$oid": "6188c63514285e97dffb8161"
+    },
+    {
+      "$oid": "6188c63514285e97dffb8164"
+    },
+    {
+      "$oid": "6188c63514285e97dffb8167"
+    },
+    {
+      "$oid": "6188c63514285e97dffb816a"
+    },
+    {
+      "$oid": "6188c63514285e97dffb816d"
+    }
+  ],
+  "id": "R-8CE8NJWX",
+  "__v": 0
+}]

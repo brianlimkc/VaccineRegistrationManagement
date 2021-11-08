@@ -1,0 +1,161 @@
+[{
+  "_id": {
+    "$oid": "6188c4fe14285e97dffb7d3b"
+  },
+  "name": "Radin Mas Community Club",
+  "shotType": "Moderna",
+  "roomArray": [
+    {
+      "$oid": "6188c5f414285e97dffb7d65"
+    }
+  ],
+  "streetAddress": "1 Telok Blangah Crescent",
+  "postalCode": "098915",
+  "contactNumber": "88888888",
+  "id": "C-0N4_M6G3",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c50d14285e97dffb7d3e"
+  },
+  "name": "Buona Vista Community Club",
+  "shotType": "Moderna",
+  "roomArray": [
+    {
+      "$oid": "6188c5f914285e97dffb7dcb"
+    }
+  ],
+  "streetAddress": "36 Holland Drive",
+  "postalCode": "270036",
+  "contactNumber": "88888888",
+  "id": "C-RGTKJH0I",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c51c14285e97dffb7d41"
+  },
+  "name": "Potong Pasir Community Club",
+  "shotType": "Moderna",
+  "roomArray": [
+    {
+      "$oid": "6188c5fe14285e97dffb7e31"
+    }
+  ],
+  "streetAddress": "6 Potong Pasir Avenue 2",
+  "postalCode": "358361",
+  "contactNumber": "88888888",
+  "id": "C-UGHRM5G0",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c52a14285e97dffb7d44"
+  },
+  "name": "Raffles City Convention Centre",
+  "shotType": "Pfizer",
+  "roomArray": [
+    {
+      "$oid": "6188c60414285e97dffb7e97"
+    }
+  ],
+  "streetAddress": "252 North Bridge Road",
+  "postalCode": "179103",
+  "contactNumber": "88888888",
+  "id": "C-OD3B-FZM",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c54314285e97dffb7d47"
+  },
+  "name": "Tanjong Pagar Community Club",
+  "shotType": "Pfizer",
+  "roomArray": [
+    {
+      "$oid": "6188c60814285e97dffb7efd"
+    }
+  ],
+  "streetAddress": "101 Cantonment Road",
+  "postalCode": "089774",
+  "contactNumber": "88888888",
+  "id": "C-ZCSVHCTL",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c55114285e97dffb7d4a"
+  },
+  "name": "Jalan Besar Community Club",
+  "shotType": "Pfizer",
+  "roomArray": [
+    {
+      "$oid": "6188c61114285e97dffb7f67"
+    }
+  ],
+  "streetAddress": "69 Jellicoe Road",
+  "postalCode": "208737",
+  "contactNumber": "88888888",
+  "id": "C-QBZMZXRW",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c56014285e97dffb7d4d"
+  },
+  "name": "Bishan Community Club",
+  "shotType": "Pfizer",
+  "roomArray": [
+    {
+      "$oid": "6188c61b14285e97dffb7fd1"
+    }
+  ],
+  "streetAddress": "51 Bishan Street 13",
+  "postalCode": "579799",
+  "contactNumber": "88888888",
+  "id": "C-381T_PZ5",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c57e14285e97dffb7d50"
+  },
+  "name": "Toa Payoh West Community Club",
+  "shotType": "Pfizer",
+  "roomArray": [
+    {
+      "$oid": "6188c62714285e97dffb803f"
+    }
+  ],
+  "streetAddress": "200 Lorong 2 Toa Payoh",
+  "postalCode": "319642",
+  "contactNumber": "88888888",
+  "id": "C-B_NZXPHE",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c58c14285e97dffb7d53"
+  },
+  "name": "Marine Parade Community Club",
+  "shotType": "Pfizer",
+  "roomArray": [
+    {
+      "$oid": "6188c63114285e97dffb80a9"
+    }
+  ],
+  "streetAddress": "278 Marine Parade Road",
+  "postalCode": "449282",
+  "contactNumber": "88888888",
+  "id": "C-PG4JBA8H",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c5aa14285e97dffb7d56"
+  },
+  "name": "Geylang Serai Community Club",
+  "shotType": "Pfizer",
+  "roomArray": [
+    {
+      "$oid": "6188c63514285e97dffb810f"
+    }
+  ],
+  "streetAddress": "1 Engku Aman Turn, #01-01, Wisma Geylang Serai",
+  "postalCode": "408528",
+  "contactNumber": "88888888",
+  "id": "C-QMCQBGVY",
+  "__v": 0
+}]

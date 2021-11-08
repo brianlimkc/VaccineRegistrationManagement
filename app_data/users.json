@@ -1,0 +1,226 @@
+[{
+  "_id": {
+    "$oid": "6188c2e414285e97dffb7d13"
+  },
+  "name": "Admin",
+  "email": "admin@admin.com",
+  "password": "$2b$10$MsG/BgzH636c8L7wff5.BOcW.JJEPFIGF4SCmm.hod94kvBXG7vu.",
+  "contactNum": "88888888",
+  "dateOfBirth": {
+    "$date": "1990-01-01T00:00:00Z"
+  },
+  "nric": "S6433514F",
+  "isStaff": false,
+  "isAdmin": true,
+  "VaccinationStatus": "Unvaccinated",
+  "staffType": "null",
+  "approved": false,
+  "rosterArray": [],
+  "id": "U-U48ZJWJI",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c37114285e97dffb7d1c"
+  },
+  "name": "James J Evans",
+  "email": "christophe3@yahoo.com",
+  "password": "$2b$10$Pet5QSd1n61eZTrw3TqrruKNtgwfNvdcfHkre.iTjxEDpY04Qlhsi",
+  "contactNum": "88888888",
+  "dateOfBirth": {
+    "$date": "1990-01-01T00:00:00Z"
+  },
+  "nric": "S2252149G",
+  "isStaff": false,
+  "isAdmin": false,
+  "VaccinationStatus": "Unvaccinated",
+  "staffType": "null",
+  "approved": false,
+  "rosterArray": [],
+  "id": "U-MCAF9WUO",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c3a014285e97dffb7d1f"
+  },
+  "name": "John P Ellis",
+  "email": "kayden.wintheis@yahoo.com",
+  "password": "$2b$10$28hvGEUeYXVePeZbfaB4ouA1aN13O3XfiAtJLeHEnotowmFSHgkAO",
+  "contactNum": "88888888",
+  "dateOfBirth": {
+    "$date": "1990-01-01T00:00:00Z"
+  },
+  "nric": "S6715278F",
+  "isStaff": false,
+  "isAdmin": false,
+  "VaccinationStatus": "Unvaccinated",
+  "staffType": "null",
+  "approved": false,
+  "rosterArray": [],
+  "id": "U-4VFHHKHU",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c3bf14285e97dffb7d22"
+  },
+  "name": "Richard D Eckstein",
+  "email": "colby.kieh8@hotmail.com",
+  "password": "$2b$10$itJEvnxZXB0N4POmd1n6S.iqBEHDKzHyW1yLx2FX/b9LAcZ1c3Sfy",
+  "contactNum": "11111111",
+  "dateOfBirth": {
+    "$date": "1990-01-01T00:00:00Z"
+  },
+  "nric": "S0433248B",
+  "isStaff": false,
+  "isAdmin": false,
+  "VaccinationStatus": "Unvaccinated",
+  "staffType": "null",
+  "approved": false,
+  "rosterArray": [],
+  "id": "U-197A1JPJ",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c3e314285e97dffb7d25"
+  },
+  "name": "David L Workman",
+  "email": "garfield2011@gmail.com",
+  "password": "$2b$10$W5hWgkNAhCXMOaRQDQlrjuta.dlew/p0vgIxNgsJvOdIJUmnZqTxS",
+  "contactNum": "88888888",
+  "dateOfBirth": {
+    "$date": "1990-01-01T00:00:00Z"
+  },
+  "nric": "S0611836D",
+  "isStaff": false,
+  "isAdmin": false,
+  "VaccinationStatus": "Unvaccinated",
+  "staffType": "null",
+  "approved": false,
+  "rosterArray": [],
+  "id": "U-EP6ENMK2",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c40b14285e97dffb7d28"
+  },
+  "name": "Megan K Widman",
+  "email": "alysha_moe8@yahoo.com",
+  "password": "$2b$10$jyHOJ1THS.yUwWUKe4I9aupQpSSNMXc3UahzVAowxm2bamXN9Y1CK",
+  "contactNum": "88888888",
+  "dateOfBirth": {
+    "$date": "1990-01-01T00:00:00Z"
+  },
+  "nric": "S2822633J",
+  "isStaff": false,
+  "isAdmin": false,
+  "VaccinationStatus": "Unvaccinated",
+  "staffType": "null",
+  "approved": false,
+  "rosterArray": [],
+  "id": "U-SST7TUP2",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c43414285e97dffb7d2b"
+  },
+  "name": "Dr Phyllis P Dow",
+  "email": "marquise1998@gmail.com",
+  "password": "$2b$10$uwLy8L6C9WwVvB7bkoe7geDpc6Vj7UHEH1JdDhjdxC809ZMyYqhF.",
+  "contactNum": "88888888",
+  "dateOfBirth": {
+    "$date": "1990-01-01T00:00:00Z"
+  },
+  "nric": "S0958897C",
+  "isStaff": true,
+  "isAdmin": false,
+  "VaccinationStatus": "Unvaccinated",
+  "staffType": "Doctor",
+  "qualificationType": "MD",
+  "approved": true,
+  "rosterArray": [],
+  "id": "S-SADSYRFU",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c46114285e97dffb7d2e"
+  },
+  "name": "Dr Rosetta R Arrington",
+  "email": "kade1984@gmail.com",
+  "password": "$2b$10$jKLKxGOuycarXImbUBCsRufkHvtryxu1iRIFLgGMzdw9BlJP7IKWK",
+  "contactNum": "88888888",
+  "dateOfBirth": {
+    "$date": "1990-01-01T00:00:00Z"
+  },
+  "nric": "S5874321F",
+  "isStaff": true,
+  "isAdmin": false,
+  "VaccinationStatus": "Unvaccinated",
+  "staffType": "Doctor",
+  "qualificationType": "MD",
+  "approved": true,
+  "rosterArray": [],
+  "id": "S-RFGBXSJV",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c48e14285e97dffb7d31"
+  },
+  "name": "Dr Shellie F Stallworth",
+  "email": "ru_bartolet@gmail.com",
+  "password": "$2b$10$PE22RsmO1cqXaksL85aL8e9diFU0BW.AVwSF4d0E.XirExE7OM.4.",
+  "contactNum": "88888888",
+  "dateOfBirth": {
+    "$date": "1990-01-01T00:00:00Z"
+  },
+  "nric": "S2792309G",
+  "isStaff": true,
+  "isAdmin": false,
+  "VaccinationStatus": "Unvaccinated",
+  "staffType": "Doctor",
+  "qualificationType": "MD",
+  "approved": true,
+  "rosterArray": [],
+  "id": "S-UW29CXN5",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c7c714285e97dffb8194"
+  },
+  "name": "Dr Eric V Colegrove",
+  "email": "gina_fram4@yahoo.com",
+  "password": "$2b$10$BlH49OfrZLFhdoQ2jqRu0OOxxsgHlSvoNjYKl.s0MfI2WHL5xy1by",
+  "contactNum": "88888888",
+  "dateOfBirth": {
+    "$date": "1990-01-01T00:00:00Z"
+  },
+  "nric": "S7670460J",
+  "isStaff": true,
+  "isAdmin": false,
+  "VaccinationStatus": "Unvaccinated",
+  "staffType": "Doctor",
+  "qualificationType": "MD",
+  "approved": true,
+  "rosterArray": [],
+  "id": "S-WMI_QLMM",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6188c7fb14285e97dffb819a"
+  },
+  "name": "Dr Charles H Sharpe",
+  "email": "elwyn2011@hotmail.com",
+  "password": "$2b$10$L8DTPSpRVwBzWDj65/4yQOsWI57UIvuvP1FiAq53SsULTuMchOIou",
+  "contactNum": "88888888",
+  "dateOfBirth": {
+    "$date": "1990-01-01T00:00:00Z"
+  },
+  "nric": "S8774594E",
+  "isStaff": true,
+  "isAdmin": false,
+  "VaccinationStatus": "Unvaccinated",
+  "staffType": "Doctor",
+  "qualificationType": "MD",
+  "approved": true,
+  "rosterArray": [],
+  "id": "S-MMTAZYWC",
+  "__v": 0
+}]
