@@ -40,5 +40,5 @@ Navigate to http://localhost:3000/ to view the home page of the application
 - Download and install Eclipse & Selenium
 - Import the test files in /app_data into mongodb://localhost:27017/VaccineManagement
 - Run the test file Testing.java in /tests/testfiles
-
+- Sample test run results can be found at /test/TestingResults.txt
 
