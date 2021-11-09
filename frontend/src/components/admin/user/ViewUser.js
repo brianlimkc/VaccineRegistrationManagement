@@ -61,7 +61,7 @@ function ViewUser() {
   const [schedule, setSchedule] = useState({});
   const [availRoster, setAvailRoster] = useState([]);
   const [rosterUpdate, setRosterUpdate] = useState({
-    oldDoc: null,
+    oldDoc: userID,
     newDoc: userID,
     oldRoster: null,
     newRoster: "",
@@ -81,22 +81,6 @@ function ViewUser() {
     getUser(userID);
   }, [userID]);
 
-
-  async function getUser(id) {
-    try {
-      let {
-        data: { user },
-      } = await axios.get(`/api/auth/getUser/${id}`, {
-        headers: {
-          authorization: `Bearer ${localStorage.token}`,
-        },
-      });
-      await setUser(user);
-    } catch (e) {
-      console.log(e);
-    }
-  }
-
   useEffect(() => {
     async function submit() {
       try {
@@ -112,6 +96,22 @@ function ViewUser() {
 
     submit();
   }, [update]);
+
+  async function getUser(id) {
+    try {
+      let {
+        data: { user },
+      } = await axios.get(`/api/auth/getUser/${id}`, {
+        headers: {
+          authorization: `Bearer ${localStorage.token}`,
+        },
+      });
+      await setUser(user);
+    } catch (e) {
+      console.log(e);
+    }
+  }
+ 
 
   useEffect(() => {
     function generateSchedule() {
@@ -184,6 +184,7 @@ function ViewUser() {
     setRosterUpdate((prevState) => ({
       ...prevState,
       oldDoc: userID,
+      newDoc: userID,
       oldRoster: oldRosterID,
       newRoster: null,
     }));

@@ -78,14 +78,6 @@ function RoomRoster({ room, setAlertState, resetAlert }) {
     populateRoster();
   }, [room]);
 
-  async function populateRoster() {
-    try {
-      await axios.get(`/api/room/rosterPopulate/${room._id}`);
-    } catch (e) {
-      console.log(e);
-    }
-    getRoster(room._id);
-  }
 
   async function getRoster(id) {
     try {
@@ -217,20 +209,14 @@ function RoomRoster({ room, setAlertState, resetAlert }) {
                   </TableBody>
                 </Table>
               </TableContainer>
-              <Button
-                sx={{ marginTop: 2 }}
-                variant="contained"
-                onClick={() => populateRoster()}
-              >
-                Populate
-              </Button>
+              
             </Grid>
 
             <StyledModal
               aria-labelledby="unstyled-modal-title"
               aria-describedby="unstyled-modal-description"
               open={open}
-              onClose={handleClose}
+              onClose={handleClose}              
               BackdropComponent={Backdrop}
             >
               <Box sx={style}>

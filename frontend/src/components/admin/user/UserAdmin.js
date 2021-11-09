@@ -204,7 +204,7 @@ function UserAdmin() {
       setErrorState((prevState) => ({
         ...prevState,
         dobValid: true,
-        dobMsg: "Please enter a valid date of birth (at least 12 years of age",
+        dobMsg: "Please enter a valid date of birth (at least 18 years of age",
       }));
       validForm = false;
     } else {
@@ -323,7 +323,7 @@ function UserAdmin() {
 
   function dateCheck(date) {
     let dateTimeNow = Date.now();
-    let ageGap = 86400000 * 365 * 12;
+    let ageGap = 86400000 * 365 * 18;
 
     if (Date.parse(date) > dateTimeNow - ageGap) {
       return false;

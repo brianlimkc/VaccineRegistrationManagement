@@ -62,10 +62,7 @@ router.delete("/delete/:roomID", async (req, res) => {
   try {
     let roomObj = await RoomModel.findById(roomID);
 
-    for (let i = 0; i < roomObj.rosterArray.length; i++) {
-      await RosterModel.findByIdAndDelete(roomObj.rosterArray[i]);
-    }
-
+    await RosterModel.deleteMany({ roomID: roomID });   
     await RoomModel.findByIdAndDelete(roomID);
     await CenterModel.findByIdAndUpdate(roomObj.centerID, {
       $pull: { roomArray: roomID },
@@ -93,8 +90,6 @@ router.get("/rosterGet/:roomID", async (req, res) => {
 
 router.get("/rosterPopulate/:roomID", async (req, res) => {
   let roomID = req.params.roomID;
-  // let dateNow = new Date(new Date().toDateString());
-
   let dateTimeNow = Date.now();
   var timePortion = dateTimeNow % (3600 * 1000 * 24);
   var dateNow = dateTimeNow - timePortion;

@@ -72,9 +72,7 @@ function UserRoster({ user, setUser }) {
   });
 
 
-  useEffect(() => {
-    generateSchedule();
-  }, [user]);
+  useEffect(() => {generateSchedule()}, [user])
 
   function generateSchedule() {
     let dateTimeNow = Date.now();
@@ -126,7 +124,7 @@ function UserRoster({ user, setUser }) {
 
     try {
       let {
-        data: { rosterArray },
+        data: { rosterArray }
       } = await axios.get(`/api/schedule/availRoster/${date}`);
       setAvailRoster(rosterArray);
     } catch (e) {
@@ -144,9 +142,7 @@ function UserRoster({ user, setUser }) {
         type: "success",
         status: true,
         message: "Doctor has been assigned",
-      });
-
-      getUser(user._id);
+      });      
     } catch (e) {
       console.log(e);
       setAlertState({
@@ -155,7 +151,8 @@ function UserRoster({ user, setUser }) {
         message: "Error in assigning room",
       });
     }
-    generateSchedule();
+    getUser(user._id);
+       
     resetAlert();
     handleClose();
   }
@@ -169,7 +166,7 @@ function UserRoster({ user, setUser }) {
           authorization: `Bearer ${localStorage.token}`,
         },
       });
-      await setUser(user);
+      setUser(user);
     } catch (e) {
       console.log(e);
     }

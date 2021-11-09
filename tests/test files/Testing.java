@@ -22,9 +22,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class Testing 
 {
 	
-	static int shortDelay = 50;
-	static int longDelay = 50;
-	static int interCatDelay = 100;	
+	static int shortDelay = 100;
+	static int longDelay = 500; // max 750
+	static int interCatDelay = 1000;	
 	
 	static String adminEmail = "admin@admin.com";
 	static String adminPW = "AAAaaa123";
@@ -41,14 +41,16 @@ public class Testing
 		//Common variables
 		ArrayList <String> testCollection = new ArrayList<String>();
 		String negativeTestcase = "NEGATIVE TESTCASE";
-		String postiveTestcase = "POSTIVE TESTCASE";
+		String positiveTestcase = "POSITIVE TESTCASE";
 		String empty = "";
 		String result = "";			
+		
+		Thread.sleep(3000);
 		
 		// Register Test
 		String RegisterTest = "";
 		
-		String rightName = "John Doe";
+		String rightName = "Dr John Doe";
 		String rightNRIC = "S1627678B";
 		String rightEmail = "johndoe@cmail.com";
 		String rightPassword = "AAAaaa123";
@@ -71,18 +73,43 @@ public class Testing
 		testCollection.add(RegisterTest);
 		System.out.println(RegisterTest);
 		
-		result = registerTest(driver,wrongName,wrongNRIC,wrongEmail,wrongPassword,wrongPassword2,wrongContactNum,wrongDOB,true,empty,empty,negativeTestcase);
-		RegisterTest = "Register Test 2 (WRONG ALL FIELDS)  " + result;
+		result = registerTest(driver,rightName,wrongNRIC,rightEmail,rightPassword,rightPassword2,rightContactNum,rightDOB,true,rightStaffType,rightQualType,negativeTestcase);
+		RegisterTest = "Register Test 2 (INVALID NRIC)  " + result;
 		testCollection.add(RegisterTest);
 		System.out.println(RegisterTest);
 		
-		result = registerTest(driver,rightName,rightNRIC,rightEmail,rightPassword,rightPassword2,rightContactNum,rightDOB,true,rightStaffType,rightQualType,postiveTestcase);
-		RegisterTest = "Register Test 3 (POSITIVE TEST CASE)  " + result;
+		result = registerTest(driver,rightName,rightNRIC,wrongEmail,rightPassword,rightPassword2,rightContactNum,rightDOB,true,rightStaffType,rightQualType,negativeTestcase);
+		RegisterTest = "Register Test 3 (INVALID EMAIL)  " + result;
+		testCollection.add(RegisterTest);
+		System.out.println(RegisterTest);
+		
+		result = registerTest(driver,rightName,rightNRIC,rightEmail,wrongPassword,rightPassword2,rightContactNum,rightDOB,true,rightStaffType,rightQualType,negativeTestcase);
+		RegisterTest = "Register Test 4 (INVALID PASSWORD)  " + result;
+		testCollection.add(RegisterTest);
+		System.out.println(RegisterTest);
+		
+		result = registerTest(driver,rightName,rightNRIC,rightEmail,rightPassword,wrongPassword2,rightContactNum,rightDOB,true,rightStaffType,rightQualType,negativeTestcase);
+		RegisterTest = "Register Test 5 (NON MATCHING PASSWORD)  " + result;
+		testCollection.add(RegisterTest);
+		System.out.println(RegisterTest);
+		
+		result = registerTest(driver,rightName,rightNRIC,rightEmail,rightPassword,rightPassword2,wrongContactNum,rightDOB,true,rightStaffType,rightQualType,negativeTestcase);
+		RegisterTest = "Register Test 6 (INVALID CONTACT NUM)  " + result;
+		testCollection.add(RegisterTest);
+		System.out.println(RegisterTest);
+		
+		result = registerTest(driver,rightName,rightNRIC,rightEmail,rightPassword,rightPassword2,rightContactNum,wrongDOB,true,rightStaffType,rightQualType,negativeTestcase);
+		RegisterTest = "Register Test 7 (INVALID DOB)  " + result;
+		testCollection.add(RegisterTest);
+		System.out.println(RegisterTest);
+		
+		result = registerTest(driver,rightName,rightNRIC,rightEmail,rightPassword,rightPassword2,rightContactNum,rightDOB,true,rightStaffType,rightQualType,positiveTestcase);
+		RegisterTest = "Register Test 8 (POSITIVE TEST CASE)  " + result;
 		testCollection.add(RegisterTest);
 		System.out.println(RegisterTest);
 	
 		result = registerTest(driver,rightName,rightNRIC,rightEmail,rightPassword,rightPassword2,rightContactNum,rightDOB,true,rightStaffType,rightQualType,negativeTestcase);
-		RegisterTest = "Register Test 4 (DUPLICATE REGISTRATION)  " + result;
+		RegisterTest = "Register Test 9 (DUPLICATE REGISTRATION)  " + result;
 		testCollection.add(RegisterTest);
 		System.out.println(RegisterTest);
 	
@@ -96,18 +123,18 @@ public class Testing
 		LoginTest = "Login Test 1 (Empty ALL FIELDS)  " + result;
 		testCollection.add(LoginTest);
 		System.out.println(LoginTest);
-			
-		result = loginTest(driver,rightEmail,wrongPassword,negativeTestcase);
-		LoginTest = "Login Test 2 (WRONG PASSWORD)  " + result;
-		testCollection.add(LoginTest);
-		System.out.println(LoginTest);
-		
+
 		result = loginTest(driver,wrongEmail,rightPassword,negativeTestcase);
-		LoginTest = "Login Test 3 (WRONG EMAIL)  " + result;
+		LoginTest = "Login Test 2 (INVALID EMAIL)  " + result;
 		testCollection.add(LoginTest);
 		System.out.println(LoginTest);
 		
-		result = loginTest(driver,rightEmail,rightPassword,postiveTestcase);
+		result = loginTest(driver,rightEmail,wrongPassword,negativeTestcase);
+		LoginTest = "Login Test 3 (INVALID PASSWORD)  " + result;
+		testCollection.add(LoginTest);
+		System.out.println(LoginTest);
+		
+		result = loginTest(driver,rightEmail,rightPassword,positiveTestcase);
 		LoginTest = "Login Test 4 (POSITIVE TEST CASE)  " + result;
 		testCollection.add(LoginTest);
 		System.out.println(LoginTest);
@@ -123,13 +150,28 @@ public class Testing
 		testCollection.add(editProfileTest);
 		System.out.println(editProfileTest);
 		
-		result = editProfileTest(driver,wrongName,wrongEmail,wrongPassword,wrongPassword,wrongContactNum,negativeTestcase);
-		editProfileTest = "Edit Profile Test 2 (WRONG ALL FIELDS)  " + result;
+		result = editProfileTest(driver,rightName,wrongEmail,rightPassword,rightPassword,rightContactNum,negativeTestcase);
+		editProfileTest = "Edit Profile Test 2 (INVALID EMAIL)  " + result;
+		testCollection.add(editProfileTest);
+		System.out.println(editProfileTest);
+		
+		result = editProfileTest(driver,rightName,rightEmail,wrongPassword,rightPassword,rightContactNum,negativeTestcase);
+		editProfileTest = "Edit Profile Test 3 (INVALID PASSWORD)  " + result;
+		testCollection.add(editProfileTest);
+		System.out.println(editProfileTest);
+		
+		result = editProfileTest(driver,rightName,rightEmail,rightPassword,wrongPassword,rightContactNum,negativeTestcase);
+		editProfileTest = "Edit Profile Test 4 (NON MATCHING PASSWORD )  " + result;
+		testCollection.add(editProfileTest);
+		System.out.println(editProfileTest);
+		
+		result = editProfileTest(driver,rightName,rightEmail,rightPassword,rightPassword,wrongContactNum,negativeTestcase);
+		editProfileTest = "Edit Profile Test 5 (INVALID CONTACT NUMBER)  " + result;
 		testCollection.add(editProfileTest);
 		System.out.println(editProfileTest);
 				
-		result = editProfileTest(driver,rightName,rightEmail,rightPassword,rightPassword,rightContactNum,postiveTestcase);
-		editProfileTest = "Edit Profile Test 3 (POSITIVE TEST CASE)  " + result;
+		result = editProfileTest(driver,rightName,rightEmail,rightPassword,rightPassword,rightContactNum,positiveTestcase);
+		editProfileTest = "Edit Profile Test 6 (POSITIVE TEST CASE)  " + result;
 		testCollection.add(editProfileTest);
 		System.out.println(editProfileTest);
 		
@@ -137,7 +179,7 @@ public class Testing
 		
 		// Logout Test
 		
-		result = logoutTest(driver, postiveTestcase);
+		result = logoutTest(driver, positiveTestcase);
 		String LogoutTest = ""; 		
 		LogoutTest = "Logout Test 1 (REGULAR LOGOUT)  " + result;
 		System.out.println(LogoutTest);
@@ -147,7 +189,7 @@ public class Testing
 		// Add New Doctor Test		
 			
 		// Login as Admin account
-		loginTest(driver,adminEmail,adminPW,postiveTestcase);		
+		loginTest(driver,adminEmail,adminPW,positiveTestcase);		
 		
 		String DocName = "Joyce H Brewton";
 		String DocNRIC = "S1330866G";
@@ -166,8 +208,7 @@ public class Testing
 		String DocDOB2 = "01091975";
 		String DocStaffType2 = "Doctor";
 		String DocQualType2 = "MD";
-		
-		
+				
 		String AddDocTest = "";		
 		
 		result = addDoctor(driver,empty,empty,empty,empty,empty,empty,empty,empty,empty,negativeTestcase);
@@ -175,19 +216,43 @@ public class Testing
 		testCollection.add(AddDocTest);
 		System.out.println(AddDocTest);
 		
-		result = addDoctor(driver,wrongName,wrongNRIC,wrongEmail,wrongPassword,wrongPassword2,wrongContactNum,wrongDOB,empty,empty,negativeTestcase);
-		AddDocTest = "Add Doc Test 2 (POSITIVE TEST CASE)  " + result;
-		testCollection.add(AddDocTest);
-		System.out.println(AddDocTest);
-
-		
-		result = addDoctor(driver,DocName,DocNRIC,DocEmail,DocPassword,DocPassword2,DocContactNum,DocDOB,DocStaffType,DocQualType,postiveTestcase);
-		AddDocTest = "Add Doc Test 3 (POSITIVE TEST CASE)  " + result;
+		result = addDoctor(driver,DocName,wrongNRIC,DocEmail,DocPassword,DocPassword2,DocContactNum,DocDOB,DocStaffType,DocQualType,negativeTestcase);
+		AddDocTest = "Add Doc Test 3 (INVALID NRIC)  " + result;
 		testCollection.add(AddDocTest);
 		System.out.println(AddDocTest);
 		
-		result = addDoctor(driver,DocName2,DocNRIC2,DocEmail2,DocPassword,DocPassword2,DocContactNum2,DocDOB2,DocStaffType2,DocQualType2,postiveTestcase);
-		AddDocTest = "Add Doc Test 4 (POSITIVE TEST CASE 2)  " + result;
+		result = addDoctor(driver,DocName,DocNRIC,wrongEmail,DocPassword,DocPassword2,DocContactNum,DocDOB,DocStaffType,DocQualType,negativeTestcase);
+		AddDocTest = "Add Doc Test 3 (INVALID EMAIL)  " + result;
+		testCollection.add(AddDocTest);
+		System.out.println(AddDocTest);
+		
+		result = addDoctor(driver,DocName,DocNRIC,DocEmail,wrongPassword,DocPassword2,DocContactNum,DocDOB,DocStaffType,DocQualType,negativeTestcase);
+		AddDocTest = "Add Doc Test 3 (INVALID PASSWORD)  " + result;
+		testCollection.add(AddDocTest);
+		System.out.println(AddDocTest);
+		
+		result = addDoctor(driver,DocName,DocNRIC,DocEmail,DocPassword,wrongPassword2,DocContactNum,DocDOB,DocStaffType,DocQualType,negativeTestcase);
+		AddDocTest = "Add Doc Test 3 (NON MATCHING PASSWORD)  " + result;
+		testCollection.add(AddDocTest);
+		System.out.println(AddDocTest);
+		
+		result = addDoctor(driver,DocName,DocNRIC,DocEmail,DocPassword,DocPassword2,wrongContactNum,DocDOB,DocStaffType,DocQualType,negativeTestcase);
+		AddDocTest = "Add Doc Test 3 (INVALID CONTACT)  " + result;
+		testCollection.add(AddDocTest);
+		System.out.println(AddDocTest);
+		
+		result = addDoctor(driver,DocName,DocNRIC,DocEmail,DocPassword,DocPassword2,DocContactNum,wrongDOB,DocStaffType,DocQualType,negativeTestcase);
+		AddDocTest = "Add Doc Test 3 (INVALID DOB)  " + result;
+		testCollection.add(AddDocTest);
+		System.out.println(AddDocTest);
+		
+		result = addDoctor(driver,DocName,DocNRIC,DocEmail,DocPassword,DocPassword2,DocContactNum,DocDOB,DocStaffType,DocQualType,positiveTestcase);
+		AddDocTest = "Add Doc Test 3 (POSITIVE TEST CASE - ADD DOC 1)  " + result;
+		testCollection.add(AddDocTest);
+		System.out.println(AddDocTest);
+		
+		result = addDoctor(driver,DocName2,DocNRIC2,DocEmail2,DocPassword,DocPassword2,DocContactNum2,DocDOB2,DocStaffType2,DocQualType2,positiveTestcase);
+		AddDocTest = "Add Doc Test 4 (POSITIVE TEST CASE 2 - ADD DOC 2)  " + result;
 		testCollection.add(AddDocTest);
 		System.out.println(AddDocTest);
 			
@@ -197,27 +262,27 @@ public class Testing
 		
 		String ApproveDocTest = "";
 		
-		result = toggleDocApprovalTest(driver,DocName,true,postiveTestcase);
+		result = toggleDocApprovalTest(driver,DocName,true,positiveTestcase);
 		ApproveDocTest = "Toggle Doc Approval 1 (TOGGLE APPROVE TEST)  " + result;
 		testCollection.add(ApproveDocTest);
 		System.out.println(ApproveDocTest);
 		
-		result = toggleDocApprovalTest(driver,DocName,false,postiveTestcase);
+		result = toggleDocApprovalTest(driver,DocName,false,positiveTestcase);
 		ApproveDocTest = "Toggle Doc Approval 2 (TOGGLE NEGATIVE TEST)  " + result;
 		testCollection.add(ApproveDocTest);
 		System.out.println(ApproveDocTest);
 		
-		result = toggleDocApprovalTest(driver,DocName,true,postiveTestcase);
+		result = toggleDocApprovalTest(driver,DocName,true,positiveTestcase);
 		ApproveDocTest = "Toggle Doc Approval 3 (TOGGLE APPROVE TEST)  " + result;
 		testCollection.add(ApproveDocTest);
 		System.out.println(ApproveDocTest);
 		
-		result = toggleDocApprovalTest(driver,DocName2,true,postiveTestcase);
+		result = toggleDocApprovalTest(driver,DocName2,true,positiveTestcase);
 		ApproveDocTest = "Toggle Doc Approval 4 (TOGGLE APPROVE TEST)  " + result;
 		testCollection.add(ApproveDocTest);
 		System.out.println(ApproveDocTest);
 		
-		result = toggleDocApprovalTest(driver,rightName,true,postiveTestcase);
+		result = toggleDocApprovalTest(driver,rightName,true,positiveTestcase);
 		ApproveDocTest = "Toggle Doc Approval 5 (TOGGLE APPROVE TEST)  " + result;
 		testCollection.add(ApproveDocTest);
 		System.out.println(ApproveDocTest);
@@ -226,35 +291,73 @@ public class Testing
 			
 		// Add New Center Test		
 		
+		String AddCenterTest = "";
+		
 		String centerName = "Test Medical Center";
 		String centerShotType = "Pfizer";
 		String centerAddress = "ABC Central Blk 123";
 		String centerPostal = "666666";
 		String centerContactNum = "88888888";
-				
-		String AddCenterTest = "";		
+		
+		String wrongShotType = "";
+		String wrongPostal = "abcdef";
 		
 		result = addCenter(driver,empty,empty,empty,empty,empty,negativeTestcase);
 		AddCenterTest = "Add Center Test 1 (Empty ALL FIELDS)  " + result;
 		testCollection.add(AddCenterTest);
 		System.out.println(AddCenterTest);			
 		
-		result = addCenter(driver,centerName,centerShotType,centerAddress,centerPostal,centerContactNum,postiveTestcase);
+		result = addCenter(driver,centerName,wrongShotType,centerAddress,centerPostal,centerContactNum,negativeTestcase);
+		AddCenterTest = "Add Center Test 2 (INVALID SHOTTYPE)  " + result;
+		testCollection.add(AddCenterTest);
+		System.out.println(AddCenterTest);
+		
+		result = addCenter(driver,centerName,centerShotType,centerAddress,wrongPostal,centerContactNum,negativeTestcase);
+		AddCenterTest = "Add Center Test 2 (INVALID POSTAL CODE)  " + result;
+		testCollection.add(AddCenterTest);
+		System.out.println(AddCenterTest);
+		
+		result = addCenter(driver,centerName,centerShotType,centerAddress,centerPostal,wrongContactNum,negativeTestcase);
+		AddCenterTest = "Add Center Test 2 (INVALID CONTACT NUMBER)  " + result;
+		testCollection.add(AddCenterTest);
+		System.out.println(AddCenterTest);
+		
+		result = addCenter(driver,centerName,centerShotType,centerAddress,centerPostal,centerContactNum,positiveTestcase);
 		AddCenterTest = "Add Center Test 2 (POSITIVE TEST CASE)  " + result;
 		testCollection.add(AddCenterTest);
 		System.out.println(AddCenterTest);
 		
 		// Edit Center Test 	
 	
-		String EditCenterTest = "";
-		
-		result = editCenter(driver,empty,empty,empty,empty,empty,negativeTestcase);
+		String EditCenterTest = "";	
+				
+		result = editCenter(driver,centerName,empty,empty,empty,empty,empty,negativeTestcase);
 		EditCenterTest = "Edit Center Test 1 (Empty ALL FIELDS)  " + result;
 		testCollection.add(EditCenterTest);
 		System.out.println(EditCenterTest);
+		
+		result = editCenter(driver,centerName,centerName,wrongShotType,centerAddress,centerPostal,centerContactNum,negativeTestcase);
+		EditCenterTest = "Edit Center Test 2 (INVALID SHOTTYPE)  " + result;
+		testCollection.add(EditCenterTest);
+		System.out.println(EditCenterTest);
+		
+		result = editCenter(driver,centerName,centerName,centerShotType,centerAddress,wrongPostal,centerContactNum,negativeTestcase);
+		EditCenterTest = "Edit Center Test 3 (INVALID POSTAL CODE)  " + result;
+		testCollection.add(EditCenterTest);
+		System.out.println(EditCenterTest);
+		
+		result = editCenter(driver,centerName,centerName,centerShotType,centerAddress,centerPostal,wrongContactNum,negativeTestcase);
+		EditCenterTest = "Edit Center Test 4 (INVALID CONTACT NUMBER)  " + result;
+		testCollection.add(EditCenterTest);
+		System.out.println(EditCenterTest);
+		
+		result = editCenter(driver,centerName,centerName,centerShotType,centerAddress,centerPostal,centerContactNum,positiveTestcase);
+		EditCenterTest = "Edit Center Test 5 (POSITIVE TESTCASE)  " + result;
+		testCollection.add(EditCenterTest);
+		System.out.println(EditCenterTest);
 
-		result = editCenter(driver,centerName,centerShotType,centerAddress,centerPostal,centerContactNum,postiveTestcase);
-		EditCenterTest = "Edit Center Test 2 (POSITIVE TESTCASE )  " + result;
+		result = editCenter(driver,centerName,centerName,centerShotType,centerAddress,centerPostal,centerContactNum,positiveTestcase);
+		EditCenterTest = "Edit Center Test 6 (POSITIVE TESTCASE )  " + result;
 		testCollection.add(EditCenterTest);
 		System.out.println(EditCenterTest);
 		
@@ -262,22 +365,22 @@ public class Testing
 						
 		// Add Room Test
 				
-		String RoomName = "Room 1";
-		String RoomName2 = "Room 2";
+		String roomName = "Room 1";
+		String roomName2 = "Room 2";
 		
 		String AddRoomTest = "";
 		
-		result = addRoom(driver,empty,negativeTestcase);
+		result = addRoom(driver,centerName,empty,negativeTestcase);
 		AddRoomTest = "Add Room Test 1 (Empty ALL FIELDS)  " + result;
 		testCollection.add(AddRoomTest);
 		System.out.println(AddRoomTest);
 		
-		result = addRoom(driver,RoomName,postiveTestcase);
+		result = addRoom(driver,centerName,roomName,positiveTestcase);
 		AddRoomTest = "Add Room Test 2 (POSITIVE TEST CASE)  " + result;
 		testCollection.add(AddRoomTest);
 		System.out.println(AddRoomTest);
 		
-		result = addRoom(driver,RoomName2,postiveTestcase);
+		result = addRoom(driver,centerName,roomName2,positiveTestcase);
 		AddRoomTest = "Add Room Test 3 (POSITIVE TEST CASE)  " + result;
 		testCollection.add(AddRoomTest);
 		System.out.println(AddRoomTest);	
@@ -287,15 +390,15 @@ public class Testing
 		// Edit Room Test
 	
 		String RoomNameEdit = "Room 1";
-		
+
 		String EditRoomTest = "";
 		
-		result = editRoom(driver,empty,negativeTestcase);
+		result = editRoom(driver,centerName,roomName,empty,negativeTestcase);
 		EditRoomTest = "Edit Room Test 1 (Empty ALL FIELDS)  " + result;
 		testCollection.add(EditRoomTest);
 		System.out.println(EditRoomTest);
 		
-		result = editRoom(driver,RoomNameEdit,postiveTestcase);
+		result = editRoom(driver,centerName,roomName,RoomNameEdit,positiveTestcase);
 		EditRoomTest = "Edit Room Test 2 (POSITIVE TEST CASE)  " + result;
 		testCollection.add(EditRoomTest);
 		System.out.println(EditRoomTest);			
@@ -307,17 +410,17 @@ public class Testing
 		String AssignDocRosterTest = "";
 		String setEmpty = "Set to Empty";
 				
-		result = adminAsignDocTest(driver,DocName,centerName,RoomName,postiveTestcase);
+		result = adminAsignDocTest(driver,DocName,centerName,roomName,positiveTestcase);
 		AssignDocRosterTest = "Admin Assign Doc to Room Test 1 (SET ROOM 1)  " + result;
 		testCollection.add(AssignDocRosterTest);
 		System.out.println(AssignDocRosterTest);
 				
-		result = adminAsignDocTest(driver,DocName,centerName,RoomName2,postiveTestcase);
+		result = adminAsignDocTest(driver,DocName,centerName,roomName2,positiveTestcase);
 		AssignDocRosterTest = "Admin Assign Doc to Room Test 2 (SET ROOM 2)  " + result;
 		testCollection.add(AssignDocRosterTest);
 		System.out.println(AssignDocRosterTest);
 		
-		result = adminAsignDocTest(driver,DocName,setEmpty,setEmpty,postiveTestcase);
+		result = adminAsignDocTest(driver,DocName,setEmpty,setEmpty,positiveTestcase);
 		AssignDocRosterTest = "Admin Assign Doc to Room Test 2 (SET TO EMPTY)  " + result;
 		testCollection.add(AssignDocRosterTest);
 		System.out.println(AssignDocRosterTest);
@@ -328,17 +431,17 @@ public class Testing
 		
 		String AssignRoomRosterTest = "";
 		
-		result = adminAssignRoomTest(driver,DocName,centerName,RoomName,postiveTestcase);
+		result = adminAssignRoomTest(driver,DocName,centerName,roomName,positiveTestcase);
 		AssignRoomRosterTest = "Admin Assign Room to Doc Test 1 (SET DOC 1)  " + result;
 		testCollection.add(AssignRoomRosterTest);
 		System.out.println(AssignRoomRosterTest);
 		
-		result = adminAssignRoomTest(driver,DocName2,centerName,RoomName,postiveTestcase);
+		result = adminAssignRoomTest(driver,DocName2,centerName,roomName,positiveTestcase);
 		AssignRoomRosterTest = "Admin Assign Room to Doc Test 2 (SET DOC 2)  " + result;
 		testCollection.add(AssignRoomRosterTest);
 		System.out.println(AssignRoomRosterTest);
 		
-		result = adminAssignRoomTest(driver,setEmpty,centerName,RoomName,postiveTestcase);
+		result = adminAssignRoomTest(driver,setEmpty,centerName,roomName,positiveTestcase);
 		AssignRoomRosterTest = "Admin Assign Room to Doc Test 3 (SET TO EMPTY)  " + result;
 		testCollection.add(AssignRoomRosterTest);
 		System.out.println(AssignRoomRosterTest);
@@ -346,37 +449,37 @@ public class Testing
 		Thread.sleep(interCatDelay);	
 				
 		// Doctor assign own roster Test
-		logoutTest(driver, postiveTestcase);
-		loginTest(driver,rightEmail,rightPassword,postiveTestcase); 
+		logoutTest(driver, positiveTestcase);
+		loginTest(driver,rightEmail,rightPassword,positiveTestcase); 
 		
 		String AssignDocOwnRosterTest = "";
 			
-		result = docAssignOwnRosterTest(driver,rightName,centerName,RoomName,postiveTestcase);
+		result = docAssignOwnRosterTest(driver,rightName,centerName,roomName,positiveTestcase);
 		AssignDocOwnRosterTest = "Doc Assign Own Roster Test 1 (SET ROOM 1)  " + result;
 		testCollection.add(AssignDocOwnRosterTest);
 		System.out.println(AssignDocOwnRosterTest);
 		
-		result = docAssignOwnRosterTest(driver,rightName,centerName,RoomName2,postiveTestcase);
+		result = docAssignOwnRosterTest(driver,rightName,centerName,roomName2,positiveTestcase);
 		AssignDocOwnRosterTest = "Doc Assign Own Roster Test 2 (SET ROOM 2)  " + result;
 		testCollection.add(AssignDocOwnRosterTest);
 		System.out.println(AssignDocOwnRosterTest);
 		
-		result = docAssignOwnRosterTest(driver,rightName,setEmpty,setEmpty,postiveTestcase);
+		result = docAssignOwnRosterTest(driver,rightName,setEmpty,setEmpty,positiveTestcase);
 		AssignDocOwnRosterTest = "Doc Assign Own Roster Test 2 (SET TO EMPTY)  " + result;
 		testCollection.add(AssignDocOwnRosterTest);
 		System.out.println(AssignDocOwnRosterTest);		
 			
-		logoutTest(driver, postiveTestcase);
+		logoutTest(driver, positiveTestcase);
 
 		Thread.sleep(interCatDelay);	
 		
 		// Delete Profile Test
 		
-		loginTest(driver,rightEmail,rightPassword,postiveTestcase);
+		loginTest(driver,rightEmail,rightPassword,positiveTestcase);
 			
 		String DeleteUserTest = "";
 		
-		result = deleteUserTest(driver, postiveTestcase);
+		result = deleteUserTest(driver, positiveTestcase);
 		DeleteUserTest = "Delete Test 1 (POSITIVE TEST CASE)  " + result;
 		System.out.println(DeleteUserTest);
 		testCollection.add(DeleteUserTest);	
@@ -386,16 +489,16 @@ public class Testing
 		// Delete Doc Test
 		
 		// Login as Admin account
-		loginTest(driver,adminEmail,adminPW,postiveTestcase);	
+		loginTest(driver,adminEmail,adminPW,positiveTestcase);	
 		
 		String DeleteDoctTest = "";
 		
-		result = deleteDoctor(driver,DocName,postiveTestcase);
+		result = deleteDoctor(driver,DocName,positiveTestcase);
 		DeleteDoctTest = "Delete Doc Test 1 (POSITIVE TEST CASE)  " + result;
 		testCollection.add(DeleteDoctTest);
 		System.out.println(DeleteDoctTest);
 		
-		result = deleteDoctor(driver,DocName2,postiveTestcase);
+		result = deleteDoctor(driver,DocName2,positiveTestcase);
 		DeleteDoctTest = "Delete Doc Test 2 (POSITIVE TEST CASE)  " + result;
 		testCollection.add(DeleteDoctTest);
 		System.out.println(DeleteDoctTest);
@@ -406,8 +509,13 @@ public class Testing
 			
 		String DeleteRoomTest = "";
 		
-		result = deleteRoom(driver,empty,postiveTestcase);
+		result = deleteRoom(driver,centerName,roomName,positiveTestcase);
 		DeleteRoomTest = "Delete Room Test 1 (Empty ALL FIELDS)  " + result;
+		testCollection.add(DeleteRoomTest);
+		System.out.println(DeleteRoomTest);
+		
+		result = deleteRoom(driver,centerName,roomName2,positiveTestcase);
+		DeleteRoomTest = "Delete Room Test 2 (Empty ALL FIELDS)  " + result;
 		testCollection.add(DeleteRoomTest);
 		System.out.println(DeleteRoomTest);
 		
@@ -417,7 +525,7 @@ public class Testing
 				
 		String DeleteCenterTest = "";
 		
-		result = deleteCenter(driver,postiveTestcase);
+		result = deleteCenter(driver,centerName,positiveTestcase);
 		DeleteCenterTest = "Delete Center Test 1 (Empty ALL FIELDS)  " + result;
 		testCollection.add(DeleteCenterTest);
 		System.out.println(DeleteCenterTest);	
@@ -426,7 +534,7 @@ public class Testing
 		
 		// Logout test
 			
-		result = logoutTest(driver, postiveTestcase);
+		result = logoutTest(driver, positiveTestcase);
 		LogoutTest = "Logout Test 1 (REGULAR LOGOUT)  " + result;
 		System.out.println(LogoutTest);
 		testCollection.add(LogoutTest);
@@ -477,10 +585,10 @@ public class Testing
 	{
 		String results = "Results : ";
 		String negativeTestcase = "NEGATIVE TESTCASE";
-		String postiveTestcase = "POSTIVE TESTCASE";
+		String positiveTestcase = "POSITIVE TESTCASE";
 		
 		driver.get("http://localhost:3000/register");
-		Thread.sleep(shortDelay*4);
+		Thread.sleep(shortDelay*2);
 		driver.findElement(By.id("name")).sendKeys(name);
 		Thread.sleep(shortDelay);
 		driver.findElement(By.id("nric")).sendKeys(nric);
@@ -526,15 +634,15 @@ public class Testing
 			
 		String driverAlert = driver.findElement(By.xpath("//div[@class = 'MuiAlert-message css-acap47-MuiAlert-message']")).getText();
 		
-		if(testCase.equals(postiveTestcase))
+		if(testCase.equals(positiveTestcase))
 		{
 			if(correctAlert.equalsIgnoreCase(driverAlert))
 			{
-				results = "[" + postiveTestcase + "]   " + results + " PASSED";
+				results = "[" + positiveTestcase + "]   " + results + " PASSED";
 			}
 			else 
 			{
-				results = "[" + postiveTestcase + "]   " + results + " FAILED";
+				results = "[" + positiveTestcase + "]   " + results + " FAILED";
 			}
 		}
 		if(testCase.equals(negativeTestcase))
@@ -559,10 +667,10 @@ public class Testing
 	{
 		String results = "Results : ";
 		String negativeTestcase = "NEGATIVE TESTCASE";
-		String postiveTestcase = "POSTIVE TESTCASE";
+		String positiveTestcase = "POSITIVE TESTCASE";
 		
 		driver.get("http://localhost:3000/login");
-		Thread.sleep(shortDelay*4);
+		Thread.sleep(shortDelay*2);
 		driver.findElement(By.id("email")).sendKeys(email);
 		Thread.sleep(shortDelay);
 		driver.findElement(By.id("password")).sendKeys(password);
@@ -577,15 +685,15 @@ public class Testing
 		String driverAlert = driver.findElement(By.xpath("//div[@class = 'MuiAlert-message css-acap47-MuiAlert-message']")).getText();
 	
 	
-		if(testCase.equals(postiveTestcase))
+		if(testCase.equals(positiveTestcase))
 		{
 			if(correctAlert.equalsIgnoreCase(driverAlert))
 			{
-				results = "[" + postiveTestcase + "]   " + results + " PASSED";
+				results = "[" + positiveTestcase + "]   " + results + " PASSED";
 			}
 			else 
 			{
-				results = "[" + postiveTestcase + "]   " + results + " FAILED";
+				results = "[" + positiveTestcase + "]   " + results + " FAILED";
 			}
 		}
 		if(testCase.equals(negativeTestcase))
@@ -613,12 +721,13 @@ public class Testing
 	{
 		String results = "Results : ";
 		String negativeTestcase = "NEGATIVE TESTCASE";
-		String postiveTestcase = "POSTIVE TESTCASE";
+		String positiveTestcase = "POSITIVE TESTCASE";
 		
 		// navigating to Profile Edit Page
 		driver.get("http://localhost:3000");	
-		Thread.sleep(shortDelay*4);
-		driver.findElement(By.xpath("//a[@id = 'profileLink']")).click();
+		Thread.sleep(shortDelay*2);
+		driver.findElement(By.xpath("html/body/div/div/header/div/nav/a")).click();
+//		driver.findElement(By.xpath("//a[@id = 'profileLink']")).click();
 		Thread.sleep(shortDelay);
 		driver.findElement(By.xpath("//button[@id = 'editProfile']")).click();
 		
@@ -653,15 +762,15 @@ public class Testing
 		String driverAlert = driver.findElement(By.xpath("//div[@class = 'MuiAlert-message css-acap47-MuiAlert-message']")).getText();
 		
 	
-		if(testCase.equals(postiveTestcase))
+		if(testCase.equals(positiveTestcase))
 		{
 			if(correctAlert.equalsIgnoreCase(driverAlert))
 			{
-				results = "[" + postiveTestcase + "]   " + results + " PASSED";
+				results = "[" + positiveTestcase + "]   " + results + " PASSED";
 			}
 			else 
 			{
-				results = "[" + postiveTestcase + "]   " + results + " FAILED";
+				results = "[" + positiveTestcase + "]   " + results + " FAILED";
 			}
 		}
 		if(testCase.equals(negativeTestcase))
@@ -684,10 +793,10 @@ public class Testing
 	{
 		String results = "Results : ";
 		String negativeTestcase = "NEGATIVE TESTCASE";
-		String postiveTestcase = "POSTIVE TESTCASE";
+		String positiveTestcase = "POSITIVE TESTCASE";
 		
 		driver.get("http://localhost:3000");	
-		Thread.sleep(shortDelay*4);
+		Thread.sleep(shortDelay*2);
 		driver.findElement(By.xpath("//button[@id = 'menuButton']")).click();
 		Thread.sleep(shortDelay);
 		driver.findElement(By.xpath("//li[@id = 'logoutButton']")).click();
@@ -695,15 +804,15 @@ public class Testing
 		String correctTitle = "Home Screen";
 		String driverTitle = driver.getTitle();
 		
-		if(testCase.equals(postiveTestcase))
+		if(testCase.equals(positiveTestcase))
 		{
 			if(correctTitle.equalsIgnoreCase(driverTitle))
 			{
-				results = "[" + postiveTestcase + "]   " + results + " PASSED";
+				results = "[" + positiveTestcase + "]   " + results + " PASSED";
 			}
 			else 
 			{
-				results = "[" + postiveTestcase + "]   " + results + " FAILED";
+				results = "[" + positiveTestcase + "]   " + results + " FAILED";
 			}
 		}
 		if(testCase.equals(negativeTestcase))
@@ -724,28 +833,29 @@ public class Testing
 	{
 		String results = "Results : ";
 		String negativeTestcase = "NEGATIVE TESTCASE";
-		String postiveTestcase = "POSTIVE TESTCASE";
+		String positiveTestcase = "POSITIVE TESTCASE";
 		
 		driver.get("http://localhost:3000");	
-		Thread.sleep(shortDelay*4);
+		Thread.sleep(shortDelay*2);
 		driver.findElement(By.xpath("//a[@id = 'profileLink']")).click();
 		Thread.sleep(shortDelay);
 		driver.findElement(By.xpath("//button[@id = 'deleteProfile']")).click();
 		Thread.sleep(longDelay);
 		String correctAlert = "User has been deleted";
+		
 		WebDriverWait wait = new WebDriverWait(driver,5);		
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class = 'MuiAlert-message css-acap47-MuiAlert-message']"))); 
 		String driverAlert = driver.findElement(By.xpath("//div[@class = 'MuiAlert-message css-acap47-MuiAlert-message']")).getText();
 		
-		if(testCase.equals(postiveTestcase))
+		if(testCase.equals(positiveTestcase))
 		{
 			if(correctAlert.equalsIgnoreCase(driverAlert))
 			{
-				results = "[" + postiveTestcase + "]   " + results + " PASSED";
+				results = "[" + positiveTestcase + "]   " + results + " PASSED";
 			}
 			else 
 			{
-				results = "[" + postiveTestcase + "]   " + results + " FAILED";
+				results = "[" + positiveTestcase + "]   " + results + " FAILED";
 			}
 		}
 		if(testCase.equals(negativeTestcase))
@@ -777,16 +887,19 @@ public class Testing
 		
 		String results = "Results : ";
 		String negativeTestcase = "NEGATIVE TESTCASE";
-		String postiveTestcase = "POSTIVE TESTCASE";
+		String positiveTestcase = "POSITIVE TESTCASE";
 		
 		// navigating to Manage Users Page
 		driver.get("http://localhost:3000");	
-		Thread.sleep(shortDelay*4);
+		Thread.sleep(shortDelay*2);
 		driver.findElement(By.xpath("//a[@id = 'manageUser']")).click();
 		Thread.sleep(shortDelay);
 		
 		// Open Add Doc Modal		
 		driver.findElement(By.xpath("//button[@id = 'addDoctor']")).click();
+		Thread.sleep(shortDelay);
+		
+		clickThruModalBG(driver);
 		Thread.sleep(shortDelay);
 		
 		//Pass values into form fields
@@ -804,6 +917,7 @@ public class Testing
 		Thread.sleep(shortDelay);
 		driver.findElement(By.id("date")).sendKeys(dob);
 		Thread.sleep(shortDelay);
+			
 		if (staffType!="") {
 			driver.findElement(By.xpath("//div[@id = 'staffType']")).click();
 			driver.findElement(By.xpath("//li[@data-value = \""+staffType+"\"]")).click();
@@ -815,7 +929,8 @@ public class Testing
 			driver.findElement(By.xpath("//li[@data-value = \""+qualType+"\"]")).click();
 			Thread.sleep(shortDelay);
 		}	
-		
+			
+				
 		driver.findElement(By.xpath("//button[@id = 'submit']")).click();
 		Thread.sleep(longDelay);
 		
@@ -826,15 +941,15 @@ public class Testing
 		String driverAlert = driver.findElement(By.xpath("//div[@class = 'MuiAlert-message css-acap47-MuiAlert-message']")).getText();
 		
 
-		if(testCase.equals(postiveTestcase))
+		if(testCase.equals(positiveTestcase))
 		{
 			if(correctAlert.equalsIgnoreCase(driverAlert))
 			{
-				results = "[" + postiveTestcase + "]   " + results + " PASSED";
+				results = "[" + positiveTestcase + "]   " + results + " PASSED";
 			}
 			else 
 			{
-				results = "[" + postiveTestcase + "]   " + results + " FAILED";
+				results = "[" + positiveTestcase + "]   " + results + " FAILED";
 			}
 		}
 		if(testCase.equals(negativeTestcase))
@@ -861,11 +976,11 @@ public class Testing
 		
 		String results = "Results : ";
 		String negativeTestcase = "NEGATIVE TESTCASE";
-		String postiveTestcase = "POSTIVE TESTCASE";
+		String positiveTestcase = "POSITIVE TESTCASE";
 		
 		// navigating to Manage Users Page
 		driver.get("http://localhost:3000");	
-		Thread.sleep(shortDelay*4);
+		Thread.sleep(shortDelay*2);
 		driver.findElement(By.xpath("//a[@id = 'manageUser']")).click();
 		Thread.sleep(shortDelay);
 		
@@ -883,15 +998,15 @@ public class Testing
 		String driverAlert = driver.findElement(By.xpath("//div[@class = 'MuiAlert-message css-acap47-MuiAlert-message']")).getText();
 		
 
-		if(testCase.equals(postiveTestcase))
+		if(testCase.equals(positiveTestcase))
 		{
 			if(correctAlert.equalsIgnoreCase(driverAlert))
 			{
-				results = "[" + postiveTestcase + "]   " + results + " PASSED";
+				results = "[" + positiveTestcase + "]   " + results + " PASSED";
 			}
 			else 
 			{
-				results = "[" + postiveTestcase + "]   " + results + " FAILED";
+				results = "[" + positiveTestcase + "]   " + results + " FAILED";
 			}
 		}
 		if(testCase.equals(negativeTestcase))
@@ -921,11 +1036,11 @@ public class Testing
 		
 		String results = "Results : ";
 		String negativeTestcase = "NEGATIVE TESTCASE";
-		String postiveTestcase = "POSTIVE TESTCASE";
+		String positiveTestcase = "POSITIVE TESTCASE";
 	
 		// navigating to Manage Centers Page
 		driver.get("http://localhost:3000");	
-		Thread.sleep(shortDelay*4);
+		Thread.sleep(shortDelay*2);
 		driver.findElement(By.xpath("//a[@id = 'manageCenter']")).click();
 		Thread.sleep(shortDelay);
 		
@@ -950,15 +1065,15 @@ public class Testing
 		String driverAlert = driver.findElement(By.xpath("//div[@class = 'MuiAlert-message css-acap47-MuiAlert-message']")).getText();
 		
 		
-		if(testCase.equals(postiveTestcase))
+		if(testCase.equals(positiveTestcase))
 		{
 			if(correctAlert.equalsIgnoreCase(driverAlert))
 			{
-				results = "[" + postiveTestcase + "]   " + results + " PASSED";
+				results = "[" + positiveTestcase + "]   " + results + " PASSED";
 		}
 		else 
 		{
-			results = "[" + postiveTestcase + "]   " + results + " FAILED";
+			results = "[" + positiveTestcase + "]   " + results + " FAILED";
 			}
 		}
 		if(testCase.equals(negativeTestcase))
@@ -978,6 +1093,7 @@ public class Testing
 	}
 	
 	public static String editCenter(WebDriver driver,
+			String centerName,
 			String name,
 			String shotType,
 			String address, 
@@ -987,16 +1103,17 @@ public class Testing
 		
 		String results = "Results : ";
 		String negativeTestcase = "NEGATIVE TESTCASE";
-		String postiveTestcase = "POSTIVE TESTCASE";
+		String positiveTestcase = "POSITIVE TESTCASE";
 	
 		// navigating to Manage Centers Page
 		driver.get("http://localhost:3000");	
-		Thread.sleep(shortDelay*4);
+		Thread.sleep(shortDelay*2);
 		driver.findElement(By.xpath("//a[@id = 'manageCenter']")).click();
 		Thread.sleep(shortDelay);
 				
 		// Selecting Center to edit
-		driver.findElement(By.xpath("//button[@id = 'Test Medical Center button']")).click();
+		String buttonName = centerName + " button";
+		driver.findElement(By.xpath("//button[@id = \""+buttonName+"\"]")).click();
 		Thread.sleep(shortDelay);
 		driver.findElement(By.xpath("//button[@id = 'editCenter']")).click();
 		Thread.sleep(shortDelay);
@@ -1032,15 +1149,15 @@ public class Testing
 		String driverAlert = driver.findElement(By.xpath("//div[@class = 'MuiAlert-message css-acap47-MuiAlert-message']")).getText();
 		
 		
-		if(testCase.equals(postiveTestcase))
+		if(testCase.equals(positiveTestcase))
 		{
 			if(correctAlert.equalsIgnoreCase(driverAlert))
 			{
-				results = "[" + postiveTestcase + "]   " + results + " PASSED";
+				results = "[" + positiveTestcase + "]   " + results + " PASSED";
 		}
 		else 
 		{
-			results = "[" + postiveTestcase + "]   " + results + " FAILED";
+			results = "[" + positiveTestcase + "]   " + results + " FAILED";
 			}
 		}
 		if(testCase.equals(negativeTestcase))
@@ -1059,21 +1176,23 @@ public class Testing
 		
 	}
 	
-	public static String deleteCenter(WebDriver driver,			
+	public static String deleteCenter(WebDriver driver,
+			String centerName,
 			String testCase) throws InterruptedException {
 		
 		String results = "Results : ";
 		String negativeTestcase = "NEGATIVE TESTCASE";
-		String postiveTestcase = "POSTIVE TESTCASE";
+		String positiveTestcase = "POSITIVE TESTCASE";
 	
 		// navigating to Manage Centers Page
 		driver.get("http://localhost:3000");	
-		Thread.sleep(shortDelay*4);
+		Thread.sleep(shortDelay*2);
 		driver.findElement(By.xpath("//a[@id = 'manageCenter']")).click();
 		Thread.sleep(shortDelay);
 		
 		// Selecting Center to delete
-		driver.findElement(By.xpath("//button[@id = 'Test Medical Center button']")).click();
+		String buttonName = centerName + " button";
+		driver.findElement(By.xpath("//button[@id = \""+buttonName+"\"]")).click();
 		Thread.sleep(shortDelay);
 		
 		//Deleting Center
@@ -1087,15 +1206,15 @@ public class Testing
 		String driverAlert = driver.findElement(By.xpath("//div[@class = 'MuiAlert-message css-acap47-MuiAlert-message']")).getText();
 		
 		
-		if(testCase.equals(postiveTestcase))
+		if(testCase.equals(positiveTestcase))
 		{
 			if(correctAlert.equalsIgnoreCase(driverAlert))
 			{
-				results = "[" + postiveTestcase + "]   " + results + " PASSED";
+				results = "[" + positiveTestcase + "]   " + results + " PASSED";
 		}
 		else 
 		{
-			results = "[" + postiveTestcase + "]   " + results + " FAILED";
+			results = "[" + positiveTestcase + "]   " + results + " FAILED";
 			}
 		}
 		if(testCase.equals(negativeTestcase))
@@ -1115,26 +1234,28 @@ public class Testing
 	}
 	
 	public static String addRoom(WebDriver driver,
-			String name,		 
+			String centerName,		 
+			String roomName,
 			String testCase) throws InterruptedException {
 		
 		String results = "Results : ";
 		String negativeTestcase = "NEGATIVE TESTCASE";
-		String postiveTestcase = "POSTIVE TESTCASE";
+		String positiveTestcase = "POSITIVE TESTCASE";
 		
 		// navigating to Manage Centers Page
 		driver.get("http://localhost:3000");	
-		Thread.sleep(shortDelay*4);
+		Thread.sleep(shortDelay*2);
 		driver.findElement(By.xpath("//a[@id = 'manageCenter']")).click();
 		Thread.sleep(shortDelay);
 		
 		// Selecting Center to add Room
-		driver.findElement(By.xpath("//button[@id = 'Test Medical Center button']")).click();
+		String buttonName = centerName + " button";
+		driver.findElement(By.xpath("//button[@id = \""+buttonName+"\"]")).click();
 		Thread.sleep(shortDelay);
 		
 		
 		//Pass values into form fields
-		driver.findElement(By.id("name")).sendKeys(name);
+		driver.findElement(By.id("name")).sendKeys(roomName);
 		Thread.sleep(shortDelay);		
 		driver.findElement(By.xpath("//button[@id = 'submit']")).click();
 		Thread.sleep(longDelay);
@@ -1147,15 +1268,15 @@ public class Testing
 		String driverAlert = driver.findElement(By.xpath("//div[@class = 'MuiAlert-message css-acap47-MuiAlert-message']")).getText();
 		
 		
-		if(testCase.equals(postiveTestcase))
+		if(testCase.equals(positiveTestcase))
 		{
 			if(correctAlert.equalsIgnoreCase(driverAlert))
 			{
-				results = "[" + postiveTestcase + "]   " + results + " PASSED";
+				results = "[" + positiveTestcase + "]   " + results + " PASSED";
 		}
 		else 
 		{
-			results = "[" + postiveTestcase + "]   " + results + " FAILED";
+			results = "[" + positiveTestcase + "]   " + results + " FAILED";
 			}
 		}
 		if(testCase.equals(negativeTestcase))
@@ -1175,23 +1296,27 @@ public class Testing
 		}
 		
 	public static String editRoom(WebDriver driver,
-			String name,		 
+			String centerName,
+			String roomName,
+			String name,
 			String testCase) throws InterruptedException {
 		
 		String results = "Results : ";
 		String negativeTestcase = "NEGATIVE TESTCASE";
-		String postiveTestcase = "POSTIVE TESTCASE";
+		String positiveTestcase = "POSITIVE TESTCASE";
 		
 		// navigating to Manage Centers Page
 		driver.get("http://localhost:3000");	
-		Thread.sleep(shortDelay*4);
+		Thread.sleep(shortDelay*2);
 		driver.findElement(By.xpath("//a[@id = 'manageCenter']")).click();
 		Thread.sleep(shortDelay);
 		
 		// Selecting Room
-		driver.findElement(By.xpath("//button[@id = 'Test Medical Center button']")).click();
+		String buttonName = centerName + " button";
+		driver.findElement(By.xpath("//button[@id = \""+buttonName+"\"]")).click();
 		Thread.sleep(shortDelay);
-		driver.findElement(By.xpath("//button[@id = 'Room 1 button']")).click();
+		String buttonName2 = roomName + " button";
+		driver.findElement(By.xpath("//button[@id = \""+buttonName2+"\"]")).click();
 		Thread.sleep(shortDelay);
 		
 		// Selecting Edit
@@ -1213,15 +1338,15 @@ public class Testing
 		String driverAlert = driver.findElement(By.xpath("//div[@class = 'MuiAlert-message css-acap47-MuiAlert-message']")).getText();
 		
 		
-		if(testCase.equals(postiveTestcase))
+		if(testCase.equals(positiveTestcase))
 		{
 			if(correctAlert.equalsIgnoreCase(driverAlert))
 			{
-				results = "[" + postiveTestcase + "]   " + results + " PASSED";
+				results = "[" + positiveTestcase + "]   " + results + " PASSED";
 		}
 		else 
 		{
-			results = "[" + postiveTestcase + "]   " + results + " FAILED";
+			results = "[" + positiveTestcase + "]   " + results + " FAILED";
 			}
 		}
 		if(testCase.equals(negativeTestcase))
@@ -1241,23 +1366,26 @@ public class Testing
 		}
 	
 	public static String deleteRoom(WebDriver driver,
-			String name,		 
+			String centerName,
+			String roomName,
 			String testCase) throws InterruptedException {
 		
 		String results = "Results : ";
 		String negativeTestcase = "NEGATIVE TESTCASE";
-		String postiveTestcase = "POSTIVE TESTCASE";
+		String positiveTestcase = "POSITIVE TESTCASE";
 		
 		// navigating to Manage Centers Page
 		driver.get("http://localhost:3000");	
-		Thread.sleep(shortDelay*4);
+		Thread.sleep(shortDelay*2);
 		driver.findElement(By.xpath("//a[@id = 'manageCenter']")).click();
 		Thread.sleep(shortDelay);
 		
 		// Selecting Room
-		driver.findElement(By.xpath("//button[@id = 'Test Medical Center button']")).click();
+		String buttonName = centerName + " button";
+		driver.findElement(By.xpath("//button[@id = \""+buttonName+"\"]")).click();
 		Thread.sleep(shortDelay);
-		driver.findElement(By.xpath("//button[@id = 'Room 1 button']")).click();
+		String buttonName2 = roomName + " button";
+		driver.findElement(By.xpath("//button[@id = \""+buttonName2+"\"]")).click();
 		Thread.sleep(shortDelay);
 		
 		// Selecting Edit
@@ -1272,15 +1400,15 @@ public class Testing
 		String driverAlert = driver.findElement(By.xpath("//div[@class = 'MuiAlert-message css-acap47-MuiAlert-message']")).getText();
 		
 		
-		if(testCase.equals(postiveTestcase))
+		if(testCase.equals(positiveTestcase))
 		{
 			if(correctAlert.equalsIgnoreCase(driverAlert))
 			{
-				results = "[" + postiveTestcase + "]   " + results + " PASSED";
+				results = "[" + positiveTestcase + "]   " + results + " PASSED";
 		}
 		else 
 		{
-			results = "[" + postiveTestcase + "]   " + results + " FAILED";
+			results = "[" + positiveTestcase + "]   " + results + " FAILED";
 			}
 		}
 		if(testCase.equals(negativeTestcase))
@@ -1306,18 +1434,18 @@ public class Testing
 		
 		String results = "Results : ";
 		String negativeTestcase = "NEGATIVE TESTCASE";
-		String postiveTestcase = "POSTIVE TESTCASE";
+		String positiveTestcase = "POSITIVE TESTCASE";
 
 		// navigating to Manage Users Page
 		driver.get("http://localhost:3000");	
-		Thread.sleep(shortDelay*4);
+		Thread.sleep(shortDelay*2);
 		driver.findElement(By.xpath("//a[@id = 'manageUser']")).click();
 		Thread.sleep(shortDelay);
 		
 		// Open Doc to approve
 		String buttonName = name + " button";
 		driver.findElement(By.xpath("//button[@id = \""+buttonName+"\"]")).click();
-		Thread.sleep(shortDelay);
+		Thread.sleep(shortDelay*2);
 		driver.findElement(By.xpath("//button[@id = 'toggleApprove']")).click();
 		Thread.sleep(longDelay);
 			
@@ -1328,16 +1456,16 @@ public class Testing
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class = 'MuiAlert-message css-acap47-MuiAlert-message']"))); 
 		String driverAlert = driver.findElement(By.xpath("//div[@class = 'MuiAlert-message css-acap47-MuiAlert-message']")).getText();	
 		
-		if(testCase.equals(postiveTestcase))
+		if(testCase.equals(positiveTestcase))
 
 		{
 			if(correctAlert.equalsIgnoreCase(driverAlert))
 			{
-				results = "[" + postiveTestcase + "]   " + results + " PASSED";
+				results = "[" + positiveTestcase + "]   " + results + " PASSED";
 		}
 		else 
 		{
-			results = "[" + postiveTestcase + "]   " + results + " FAILED";
+			results = "[" + positiveTestcase + "]   " + results + " FAILED";
 			}
 		}
 		if(testCase.equals(negativeTestcase))
@@ -1364,11 +1492,11 @@ public class Testing
 		
 		String results = "Results : ";
 		String negativeTestcase = "NEGATIVE TESTCASE";
-		String postiveTestcase = "POSTIVE TESTCASE";
+		String positiveTestcase = "POSITIVE TESTCASE";
 
 		// navigating to Manage Users Page
 		driver.get("http://localhost:3000");	
-		Thread.sleep(shortDelay*4);
+		Thread.sleep(shortDelay*2);
 		driver.findElement(By.xpath("//a[@id = 'manageUser']")).click();
 		Thread.sleep(shortDelay);
 		
@@ -1392,6 +1520,10 @@ public class Testing
 		Thread.sleep(shortDelay);
 		driver.findElement(By.xpath("//li[@id = \""+rosterName+"\"]")).click();
 		Thread.sleep(shortDelay);
+		
+		clickThruModalBG(driver);
+		Thread.sleep(shortDelay);
+		
 		driver.findElement(By.xpath("//button[@id = 'assign']")).click();
 		Thread.sleep(longDelay);
 			
@@ -1401,16 +1533,16 @@ public class Testing
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class = 'MuiAlert-message css-acap47-MuiAlert-message']"))); 
 		String driverAlert = driver.findElement(By.xpath("//div[@class = 'MuiAlert-message css-acap47-MuiAlert-message']")).getText();	
 		
-		if(testCase.equals(postiveTestcase))
+		if(testCase.equals(positiveTestcase))
 
 		{
 			if(correctAlert.equalsIgnoreCase(driverAlert))
 			{
-				results = "[" + postiveTestcase + "]   " + results + " PASSED";
+				results = "[" + positiveTestcase + "]   " + results + " PASSED";
 		}
 		else 
 		{
-			results = "[" + postiveTestcase + "]   " + results + " FAILED";
+			results = "[" + positiveTestcase + "]   " + results + " FAILED";
 			}
 		}
 		if(testCase.equals(negativeTestcase))
@@ -1437,11 +1569,11 @@ public class Testing
 		
 		String results = "Results : ";
 		String negativeTestcase = "NEGATIVE TESTCASE";
-		String postiveTestcase = "POSTIVE TESTCASE";
+		String positiveTestcase = "POSITIVE TESTCASE";
 
 		// navigating to Manage Users Page
 		driver.get("http://localhost:3000");	
-		Thread.sleep(shortDelay*4);
+		Thread.sleep(shortDelay*2);
 		driver.findElement(By.xpath("//a[@id = 'manageRoster']")).click();
 		Thread.sleep(shortDelay);
 		
@@ -1460,6 +1592,10 @@ public class Testing
 		Thread.sleep(shortDelay);
 		driver.findElement(By.xpath("//li[@id = \""+rosterName+"\"]")).click();
 		Thread.sleep(shortDelay);
+		
+		clickThruModalBG(driver);
+		Thread.sleep(shortDelay);
+		
 		driver.findElement(By.xpath("//button[@id = 'assign']")).click();
 		Thread.sleep(longDelay);
 			
@@ -1469,16 +1605,16 @@ public class Testing
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class = 'MuiAlert-message css-acap47-MuiAlert-message']"))); 
 		String driverAlert = driver.findElement(By.xpath("//div[@class = 'MuiAlert-message css-acap47-MuiAlert-message']")).getText();	
 		
-		if(testCase.equals(postiveTestcase))
+		if(testCase.equals(positiveTestcase))
 
 		{
 			if(correctAlert.equalsIgnoreCase(driverAlert))
 			{
-				results = "[" + postiveTestcase + "]   " + results + " PASSED";
+				results = "[" + positiveTestcase + "]   " + results + " PASSED";
 		}
 		else 
 		{
-			results = "[" + postiveTestcase + "]   " + results + " FAILED";
+			results = "[" + positiveTestcase + "]   " + results + " FAILED";
 			}
 		}
 		if(testCase.equals(negativeTestcase))
@@ -1505,11 +1641,11 @@ public class Testing
 		
 		String results = "Results : ";
 		String negativeTestcase = "NEGATIVE TESTCASE";
-		String postiveTestcase = "POSTIVE TESTCASE";
+		String positiveTestcase = "POSITIVE TESTCASE";
 
 		// navigating to Manage Center Page
 		driver.get("http://localhost:3000");	
-		Thread.sleep(shortDelay*4);
+		Thread.sleep(shortDelay*2);
 		driver.findElement(By.xpath("//a[@id = 'manageCenter']")).click();
 		Thread.sleep(shortDelay);
 		
@@ -1519,7 +1655,7 @@ public class Testing
 		Thread.sleep(shortDelay);
 		String roomNameButtonID = roomName + " button";
 		driver.findElement(By.xpath("//button[@id = \""+roomNameButtonID+"\"]")).click();
-		Thread.sleep(shortDelay*4);
+		Thread.sleep(shortDelay*2);
 		
 		// Select Date 
 		SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");  
@@ -1533,6 +1669,10 @@ public class Testing
 		Thread.sleep(shortDelay);
 		driver.findElement(By.xpath("//li[@id = \""+name+"\"]")).click();
 		Thread.sleep(shortDelay);
+		
+		clickThruModalBG(driver);
+		Thread.sleep(shortDelay);
+		
 		driver.findElement(By.xpath("//button[@id = 'assign']")).click();
 		Thread.sleep(longDelay);
 			
@@ -1542,16 +1682,16 @@ public class Testing
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class = 'MuiAlert-message css-acap47-MuiAlert-message']"))); 
 		String driverAlert = driver.findElement(By.xpath("//div[@class = 'MuiAlert-message css-acap47-MuiAlert-message']")).getText();	
 		
-		if(testCase.equals(postiveTestcase))
+		if(testCase.equals(positiveTestcase))
 
 		{
 			if(correctAlert.equalsIgnoreCase(driverAlert))
 			{
-				results = "[" + postiveTestcase + "]   " + results + " PASSED";
+				results = "[" + positiveTestcase + "]   " + results + " PASSED";
 		}
 		else 
 		{
-			results = "[" + postiveTestcase + "]   " + results + " FAILED";
+			results = "[" + positiveTestcase + "]   " + results + " FAILED";
 			}
 		}
 		if(testCase.equals(negativeTestcase))
@@ -1569,5 +1709,12 @@ public class Testing
 		return results;
 		
 		}	
+	
+		public static void clickThruModalBG(WebDriver driver) {
+			Boolean exists = !driver.findElements(By.xpath("//div[@class = 'MuiBackdrop-root MuiBackdrop-invisible css-g3hgs1-MuiBackdrop-root-MuiModal-backdrop']")).isEmpty();
+			if (exists) {
+				driver.findElement(By.xpath("//div[@class = 'MuiBackdrop-root MuiBackdrop-invisible css-g3hgs1-MuiBackdrop-root-MuiModal-backdrop']")).click();
+			}
+		}
 	
 	}

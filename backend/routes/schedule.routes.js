@@ -55,13 +55,9 @@ router.post("/updateRoster", async (req, res) => {
 
   try {
     if (oldDocID) {
-      let oldDoc = await UserModel.findById(oldDocID);
-      if (oldDoc.rosterArray !== undefined) {
-        oldDoc.rosterArray = oldDoc.rosterArray.filter((roster) => {
-          roster !== oldRosterID;
-        });
-        oldDoc.save();
-      }
+      await UserModel.findByIdAndUpdate(oldDocID, { 
+        $pull : { rosterArray: oldRosterID } 
+      });
     }
 
     if (oldRosterID) {

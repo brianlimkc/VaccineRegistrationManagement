@@ -162,11 +162,10 @@ function CreateCenter({ getAllCenters }) {
 
         setTimeout(reset, 1250);
       } catch (e) {
-        console.log(e.response.data);
         setAlertState({
           type: "error",
           status: true,
-          message: e.response.data.message,
+          message: "Error in creating center"
         });
       }
     }
