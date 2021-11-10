@@ -58,7 +58,9 @@ function Appointment({ user, setUser }) {
         data: { outputArray },
       } = await axios.get(`/api/schedule/availCenters/${date}`);
       setAvailRoster(outputArray);
-    } catch (e) {}
+    } catch (e) {
+      console.log(e);
+    }
   }
 
   function update(e) {

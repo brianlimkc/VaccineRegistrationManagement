@@ -23,12 +23,11 @@ public class Testing
 {
 	
 	static int shortDelay = 100;
-	static int longDelay = 500; // max 750
-	static int interCatDelay = 1000;	
+	static int longDelay = 100; // max 750
+	static int interCatDelay = 100;	
 	
 	static String adminEmail = "admin@admin.com";
 	static String adminPW = "AAAaaa123";
-
 	
 	public static void main(String[] args) throws NoSuchElementException, InterruptedException
 	{
@@ -47,149 +46,17 @@ public class Testing
 		
 		Thread.sleep(3000);
 		
-		// Register Test
-		String RegisterTest = "";
 		
-		String rightName = "Dr John Doe";
-		String rightNRIC = "S1627678B";
-		String rightEmail = "johndoe@cmail.com";
-		String rightPassword = "AAAaaa123";
-		String rightPassword2 = "AAAaaa123";
-		String rightContactNum = "88888888";
-		String rightDOB = "01011990";
-		String rightStaffType = "Doctor";
-		String rightQualType = "MD";
+		// Admin Login Test
 		
-		String wrongName = "";
-		String wrongNRIC = "S1342324Q";
-		String wrongEmail = "abcxyz";
-		String wrongPassword = "12345";
-		String wrongPassword2 = "123456";
-		String wrongContactNum = "abcdefg";
-		String wrongDOB = "01012020";
+		String AdminLoginTest = "";
 		
-		result = registerTest(driver,empty,empty,empty,empty,empty,empty,empty,true,empty,empty,negativeTestcase);
-		RegisterTest = "Register Test 1 (Empty ALL FIELDS)  " + result;
-		testCollection.add(RegisterTest);
-		System.out.println(RegisterTest);
+		result = loginTest(driver,adminEmail,adminPW,positiveTestcase);		
+		AdminLoginTest = "Admin Login Test 1 (POSITIVE TEST CASE)  " + result;
+		testCollection.add(AdminLoginTest);
+		System.out.println(AdminLoginTest);			
 		
-		result = registerTest(driver,rightName,wrongNRIC,rightEmail,rightPassword,rightPassword2,rightContactNum,rightDOB,true,rightStaffType,rightQualType,negativeTestcase);
-		RegisterTest = "Register Test 2 (INVALID NRIC)  " + result;
-		testCollection.add(RegisterTest);
-		System.out.println(RegisterTest);
-		
-		result = registerTest(driver,rightName,rightNRIC,wrongEmail,rightPassword,rightPassword2,rightContactNum,rightDOB,true,rightStaffType,rightQualType,negativeTestcase);
-		RegisterTest = "Register Test 3 (INVALID EMAIL)  " + result;
-		testCollection.add(RegisterTest);
-		System.out.println(RegisterTest);
-		
-		result = registerTest(driver,rightName,rightNRIC,rightEmail,wrongPassword,rightPassword2,rightContactNum,rightDOB,true,rightStaffType,rightQualType,negativeTestcase);
-		RegisterTest = "Register Test 4 (INVALID PASSWORD)  " + result;
-		testCollection.add(RegisterTest);
-		System.out.println(RegisterTest);
-		
-		result = registerTest(driver,rightName,rightNRIC,rightEmail,rightPassword,wrongPassword2,rightContactNum,rightDOB,true,rightStaffType,rightQualType,negativeTestcase);
-		RegisterTest = "Register Test 5 (NON MATCHING PASSWORD)  " + result;
-		testCollection.add(RegisterTest);
-		System.out.println(RegisterTest);
-		
-		result = registerTest(driver,rightName,rightNRIC,rightEmail,rightPassword,rightPassword2,wrongContactNum,rightDOB,true,rightStaffType,rightQualType,negativeTestcase);
-		RegisterTest = "Register Test 6 (INVALID CONTACT NUM)  " + result;
-		testCollection.add(RegisterTest);
-		System.out.println(RegisterTest);
-		
-		result = registerTest(driver,rightName,rightNRIC,rightEmail,rightPassword,rightPassword2,rightContactNum,wrongDOB,true,rightStaffType,rightQualType,negativeTestcase);
-		RegisterTest = "Register Test 7 (INVALID DOB)  " + result;
-		testCollection.add(RegisterTest);
-		System.out.println(RegisterTest);
-		
-		result = registerTest(driver,rightName,rightNRIC,rightEmail,rightPassword,rightPassword2,rightContactNum,rightDOB,true,rightStaffType,rightQualType,positiveTestcase);
-		RegisterTest = "Register Test 8 (POSITIVE TEST CASE)  " + result;
-		testCollection.add(RegisterTest);
-		System.out.println(RegisterTest);
-	
-		result = registerTest(driver,rightName,rightNRIC,rightEmail,rightPassword,rightPassword2,rightContactNum,rightDOB,true,rightStaffType,rightQualType,negativeTestcase);
-		RegisterTest = "Register Test 9 (DUPLICATE REGISTRATION)  " + result;
-		testCollection.add(RegisterTest);
-		System.out.println(RegisterTest);
-	
-		Thread.sleep(interCatDelay);		
-		
-		// Login Test 
-		
-		String LoginTest = "";
-		
-		result = loginTest(driver,empty,empty,negativeTestcase);
-		LoginTest = "Login Test 1 (Empty ALL FIELDS)  " + result;
-		testCollection.add(LoginTest);
-		System.out.println(LoginTest);
-
-		result = loginTest(driver,wrongEmail,rightPassword,negativeTestcase);
-		LoginTest = "Login Test 2 (INVALID EMAIL)  " + result;
-		testCollection.add(LoginTest);
-		System.out.println(LoginTest);
-		
-		result = loginTest(driver,rightEmail,wrongPassword,negativeTestcase);
-		LoginTest = "Login Test 3 (INVALID PASSWORD)  " + result;
-		testCollection.add(LoginTest);
-		System.out.println(LoginTest);
-		
-		result = loginTest(driver,rightEmail,rightPassword,positiveTestcase);
-		LoginTest = "Login Test 4 (POSITIVE TEST CASE)  " + result;
-		testCollection.add(LoginTest);
-		System.out.println(LoginTest);
-		
-		Thread.sleep(interCatDelay);	
-		
-		// Edit Profile Test
-		
-		String editProfileTest = "";
-		
-		result = editProfileTest(driver,empty,empty,empty,empty,empty,negativeTestcase);
-		editProfileTest = "Edit Profile Test 1 (Empty ALL FIELDS)  " + result;
-		testCollection.add(editProfileTest);
-		System.out.println(editProfileTest);
-		
-		result = editProfileTest(driver,rightName,wrongEmail,rightPassword,rightPassword,rightContactNum,negativeTestcase);
-		editProfileTest = "Edit Profile Test 2 (INVALID EMAIL)  " + result;
-		testCollection.add(editProfileTest);
-		System.out.println(editProfileTest);
-		
-		result = editProfileTest(driver,rightName,rightEmail,wrongPassword,rightPassword,rightContactNum,negativeTestcase);
-		editProfileTest = "Edit Profile Test 3 (INVALID PASSWORD)  " + result;
-		testCollection.add(editProfileTest);
-		System.out.println(editProfileTest);
-		
-		result = editProfileTest(driver,rightName,rightEmail,rightPassword,wrongPassword,rightContactNum,negativeTestcase);
-		editProfileTest = "Edit Profile Test 4 (NON MATCHING PASSWORD )  " + result;
-		testCollection.add(editProfileTest);
-		System.out.println(editProfileTest);
-		
-		result = editProfileTest(driver,rightName,rightEmail,rightPassword,rightPassword,wrongContactNum,negativeTestcase);
-		editProfileTest = "Edit Profile Test 5 (INVALID CONTACT NUMBER)  " + result;
-		testCollection.add(editProfileTest);
-		System.out.println(editProfileTest);
-				
-		result = editProfileTest(driver,rightName,rightEmail,rightPassword,rightPassword,rightContactNum,positiveTestcase);
-		editProfileTest = "Edit Profile Test 6 (POSITIVE TEST CASE)  " + result;
-		testCollection.add(editProfileTest);
-		System.out.println(editProfileTest);
-		
-		Thread.sleep(interCatDelay);	
-		
-		// Logout Test
-		
-		result = logoutTest(driver, positiveTestcase);
-		String LogoutTest = ""; 		
-		LogoutTest = "Logout Test 1 (REGULAR LOGOUT)  " + result;
-		System.out.println(LogoutTest);
-		testCollection.add(LogoutTest);
-			
-		
-		// Add New Doctor Test		
-			
-		// Login as Admin account
-		loginTest(driver,adminEmail,adminPW,positiveTestcase);		
+		// Add New Doctor Test				
 		
 		String DocName = "Joyce H Brewton";
 		String DocNRIC = "S1330866G";
@@ -215,39 +82,39 @@ public class Testing
 		AddDocTest = "Add Doc Test 1 (Empty ALL FIELDS)  " + result;
 		testCollection.add(AddDocTest);
 		System.out.println(AddDocTest);
-		
-		result = addDoctor(driver,DocName,wrongNRIC,DocEmail,DocPassword,DocPassword2,DocContactNum,DocDOB,DocStaffType,DocQualType,negativeTestcase);
-		AddDocTest = "Add Doc Test 3 (INVALID NRIC)  " + result;
-		testCollection.add(AddDocTest);
-		System.out.println(AddDocTest);
-		
-		result = addDoctor(driver,DocName,DocNRIC,wrongEmail,DocPassword,DocPassword2,DocContactNum,DocDOB,DocStaffType,DocQualType,negativeTestcase);
-		AddDocTest = "Add Doc Test 3 (INVALID EMAIL)  " + result;
-		testCollection.add(AddDocTest);
-		System.out.println(AddDocTest);
-		
-		result = addDoctor(driver,DocName,DocNRIC,DocEmail,wrongPassword,DocPassword2,DocContactNum,DocDOB,DocStaffType,DocQualType,negativeTestcase);
-		AddDocTest = "Add Doc Test 3 (INVALID PASSWORD)  " + result;
-		testCollection.add(AddDocTest);
-		System.out.println(AddDocTest);
-		
-		result = addDoctor(driver,DocName,DocNRIC,DocEmail,DocPassword,wrongPassword2,DocContactNum,DocDOB,DocStaffType,DocQualType,negativeTestcase);
-		AddDocTest = "Add Doc Test 3 (NON MATCHING PASSWORD)  " + result;
-		testCollection.add(AddDocTest);
-		System.out.println(AddDocTest);
-		
-		result = addDoctor(driver,DocName,DocNRIC,DocEmail,DocPassword,DocPassword2,wrongContactNum,DocDOB,DocStaffType,DocQualType,negativeTestcase);
-		AddDocTest = "Add Doc Test 3 (INVALID CONTACT)  " + result;
-		testCollection.add(AddDocTest);
-		System.out.println(AddDocTest);
-		
-		result = addDoctor(driver,DocName,DocNRIC,DocEmail,DocPassword,DocPassword2,DocContactNum,wrongDOB,DocStaffType,DocQualType,negativeTestcase);
-		AddDocTest = "Add Doc Test 3 (INVALID DOB)  " + result;
-		testCollection.add(AddDocTest);
-		System.out.println(AddDocTest);
+//		
+//		result = addDoctor(driver,DocName,wrongNRIC,DocEmail,DocPassword,DocPassword2,DocContactNum,DocDOB,DocStaffType,DocQualType,negativeTestcase);
+//		AddDocTest = "Add Doc Test 2 (INVALID NRIC)  " + result;
+//		testCollection.add(AddDocTest);
+//		System.out.println(AddDocTest);
+//		
+//		result = addDoctor(driver,DocName,DocNRIC,wrongEmail,DocPassword,DocPassword2,DocContactNum,DocDOB,DocStaffType,DocQualType,negativeTestcase);
+//		AddDocTest = "Add Doc Test 3 (INVALID EMAIL)  " + result;
+//		testCollection.add(AddDocTest);
+//		System.out.println(AddDocTest);
+//		
+//		result = addDoctor(driver,DocName,DocNRIC,DocEmail,wrongPassword,DocPassword2,DocContactNum,DocDOB,DocStaffType,DocQualType,negativeTestcase);
+//		AddDocTest = "Add Doc Test 4 (INVALID PASSWORD)  " + result;
+//		testCollection.add(AddDocTest);
+//		System.out.println(AddDocTest);
+//		
+//		result = addDoctor(driver,DocName,DocNRIC,DocEmail,DocPassword,wrongPassword2,DocContactNum,DocDOB,DocStaffType,DocQualType,negativeTestcase);
+//		AddDocTest = "Add Doc Test 5 (NON MATCHING PASSWORD)  " + result;
+//		testCollection.add(AddDocTest);
+//		System.out.println(AddDocTest);
+//		
+//		result = addDoctor(driver,DocName,DocNRIC,DocEmail,DocPassword,DocPassword2,wrongContactNum,DocDOB,DocStaffType,DocQualType,negativeTestcase);
+//		AddDocTest = "Add Doc Test 6 (INVALID CONTACT)  " + result;
+//		testCollection.add(AddDocTest);
+//		System.out.println(AddDocTest);
+//		
+//		result = addDoctor(driver,DocName,DocNRIC,DocEmail,DocPassword,DocPassword2,DocContactNum,wrongDOB,DocStaffType,DocQualType,negativeTestcase);
+//		AddDocTest = "Add Doc Test 7 (INVALID DOB)  " + result;
+//		testCollection.add(AddDocTest);
+//		System.out.println(AddDocTest);
 		
 		result = addDoctor(driver,DocName,DocNRIC,DocEmail,DocPassword,DocPassword2,DocContactNum,DocDOB,DocStaffType,DocQualType,positiveTestcase);
-		AddDocTest = "Add Doc Test 3 (POSITIVE TEST CASE - ADD DOC 1)  " + result;
+		AddDocTest = "Add Doc Test 8 (POSITIVE TEST CASE - ADD DOC 1)  " + result;
 		testCollection.add(AddDocTest);
 		System.out.println(AddDocTest);
 		
@@ -267,23 +134,18 @@ public class Testing
 		testCollection.add(ApproveDocTest);
 		System.out.println(ApproveDocTest);
 		
-		result = toggleDocApprovalTest(driver,DocName,false,positiveTestcase);
-		ApproveDocTest = "Toggle Doc Approval 2 (TOGGLE NEGATIVE TEST)  " + result;
-		testCollection.add(ApproveDocTest);
-		System.out.println(ApproveDocTest);
-		
-		result = toggleDocApprovalTest(driver,DocName,true,positiveTestcase);
-		ApproveDocTest = "Toggle Doc Approval 3 (TOGGLE APPROVE TEST)  " + result;
-		testCollection.add(ApproveDocTest);
-		System.out.println(ApproveDocTest);
+//		result = toggleDocApprovalTest(driver,DocName,false,positiveTestcase);
+//		ApproveDocTest = "Toggle Doc Approval 2 (TOGGLE NEGATIVE TEST)  " + result;
+//		testCollection.add(ApproveDocTest);
+//		System.out.println(ApproveDocTest);
+//		
+//		result = toggleDocApprovalTest(driver,DocName,true,positiveTestcase);
+//		ApproveDocTest = "Toggle Doc Approval 3 (TOGGLE APPROVE TEST)  " + result;
+//		testCollection.add(ApproveDocTest);
+//		System.out.println(ApproveDocTest);
 		
 		result = toggleDocApprovalTest(driver,DocName2,true,positiveTestcase);
 		ApproveDocTest = "Toggle Doc Approval 4 (TOGGLE APPROVE TEST)  " + result;
-		testCollection.add(ApproveDocTest);
-		System.out.println(ApproveDocTest);
-		
-		result = toggleDocApprovalTest(driver,rightName,true,positiveTestcase);
-		ApproveDocTest = "Toggle Doc Approval 5 (TOGGLE APPROVE TEST)  " + result;
 		testCollection.add(ApproveDocTest);
 		System.out.println(ApproveDocTest);
 		
@@ -306,24 +168,24 @@ public class Testing
 		AddCenterTest = "Add Center Test 1 (Empty ALL FIELDS)  " + result;
 		testCollection.add(AddCenterTest);
 		System.out.println(AddCenterTest);			
-		
-		result = addCenter(driver,centerName,wrongShotType,centerAddress,centerPostal,centerContactNum,negativeTestcase);
-		AddCenterTest = "Add Center Test 2 (INVALID SHOTTYPE)  " + result;
-		testCollection.add(AddCenterTest);
-		System.out.println(AddCenterTest);
-		
-		result = addCenter(driver,centerName,centerShotType,centerAddress,wrongPostal,centerContactNum,negativeTestcase);
-		AddCenterTest = "Add Center Test 2 (INVALID POSTAL CODE)  " + result;
-		testCollection.add(AddCenterTest);
-		System.out.println(AddCenterTest);
-		
-		result = addCenter(driver,centerName,centerShotType,centerAddress,centerPostal,wrongContactNum,negativeTestcase);
-		AddCenterTest = "Add Center Test 2 (INVALID CONTACT NUMBER)  " + result;
-		testCollection.add(AddCenterTest);
-		System.out.println(AddCenterTest);
+//		
+//		result = addCenter(driver,centerName,wrongShotType,centerAddress,centerPostal,centerContactNum,negativeTestcase);
+//		AddCenterTest = "Add Center Test 2 (INVALID SHOTTYPE)  " + result;
+//		testCollection.add(AddCenterTest);
+//		System.out.println(AddCenterTest);
+//		
+//		result = addCenter(driver,centerName,centerShotType,centerAddress,wrongPostal,centerContactNum,negativeTestcase);
+//		AddCenterTest = "Add Center Test 3 (INVALID POSTAL CODE)  " + result;
+//		testCollection.add(AddCenterTest);
+//		System.out.println(AddCenterTest);
+//		
+//		result = addCenter(driver,centerName,centerShotType,centerAddress,centerPostal,wrongContactNum,negativeTestcase);
+//		AddCenterTest = "Add Center Test 4 (INVALID CONTACT NUMBER)  " + result;
+//		testCollection.add(AddCenterTest);
+//		System.out.println(AddCenterTest);
 		
 		result = addCenter(driver,centerName,centerShotType,centerAddress,centerPostal,centerContactNum,positiveTestcase);
-		AddCenterTest = "Add Center Test 2 (POSITIVE TEST CASE)  " + result;
+		AddCenterTest = "Add Center Test 5 (POSITIVE TEST CASE)  " + result;
 		testCollection.add(AddCenterTest);
 		System.out.println(AddCenterTest);
 		
@@ -335,29 +197,24 @@ public class Testing
 		EditCenterTest = "Edit Center Test 1 (Empty ALL FIELDS)  " + result;
 		testCollection.add(EditCenterTest);
 		System.out.println(EditCenterTest);
-		
-		result = editCenter(driver,centerName,centerName,wrongShotType,centerAddress,centerPostal,centerContactNum,negativeTestcase);
-		EditCenterTest = "Edit Center Test 2 (INVALID SHOTTYPE)  " + result;
-		testCollection.add(EditCenterTest);
-		System.out.println(EditCenterTest);
-		
-		result = editCenter(driver,centerName,centerName,centerShotType,centerAddress,wrongPostal,centerContactNum,negativeTestcase);
-		EditCenterTest = "Edit Center Test 3 (INVALID POSTAL CODE)  " + result;
-		testCollection.add(EditCenterTest);
-		System.out.println(EditCenterTest);
-		
-		result = editCenter(driver,centerName,centerName,centerShotType,centerAddress,centerPostal,wrongContactNum,negativeTestcase);
-		EditCenterTest = "Edit Center Test 4 (INVALID CONTACT NUMBER)  " + result;
-		testCollection.add(EditCenterTest);
-		System.out.println(EditCenterTest);
+//		
+//		result = editCenter(driver,centerName,centerName,wrongShotType,centerAddress,centerPostal,centerContactNum,negativeTestcase);
+//		EditCenterTest = "Edit Center Test 2 (INVALID SHOTTYPE)  " + result;
+//		testCollection.add(EditCenterTest);
+//		System.out.println(EditCenterTest);
+//		
+//		result = editCenter(driver,centerName,centerName,centerShotType,centerAddress,wrongPostal,centerContactNum,negativeTestcase);
+//		EditCenterTest = "Edit Center Test 3 (INVALID POSTAL CODE)  " + result;
+//		testCollection.add(EditCenterTest);
+//		System.out.println(EditCenterTest);
+//		
+//		result = editCenter(driver,centerName,centerName,centerShotType,centerAddress,centerPostal,wrongContactNum,negativeTestcase);
+//		EditCenterTest = "Edit Center Test 4 (INVALID CONTACT NUMBER)  " + result;
+//		testCollection.add(EditCenterTest);
+//		System.out.println(EditCenterTest);
 		
 		result = editCenter(driver,centerName,centerName,centerShotType,centerAddress,centerPostal,centerContactNum,positiveTestcase);
 		EditCenterTest = "Edit Center Test 5 (POSITIVE TESTCASE)  " + result;
-		testCollection.add(EditCenterTest);
-		System.out.println(EditCenterTest);
-
-		result = editCenter(driver,centerName,centerName,centerShotType,centerAddress,centerPostal,centerContactNum,positiveTestcase);
-		EditCenterTest = "Edit Center Test 6 (POSITIVE TESTCASE )  " + result;
 		testCollection.add(EditCenterTest);
 		System.out.println(EditCenterTest);
 		
@@ -446,50 +303,9 @@ public class Testing
 		testCollection.add(AssignRoomRosterTest);
 		System.out.println(AssignRoomRosterTest);
 		
-		Thread.sleep(interCatDelay);	
+		Thread.sleep(interCatDelay);			
 				
-		// Doctor assign own roster Test
-		logoutTest(driver, positiveTestcase);
-		loginTest(driver,rightEmail,rightPassword,positiveTestcase); 
-		
-		String AssignDocOwnRosterTest = "";
-			
-		result = docAssignOwnRosterTest(driver,rightName,centerName,roomName,positiveTestcase);
-		AssignDocOwnRosterTest = "Doc Assign Own Roster Test 1 (SET ROOM 1)  " + result;
-		testCollection.add(AssignDocOwnRosterTest);
-		System.out.println(AssignDocOwnRosterTest);
-		
-		result = docAssignOwnRosterTest(driver,rightName,centerName,roomName2,positiveTestcase);
-		AssignDocOwnRosterTest = "Doc Assign Own Roster Test 2 (SET ROOM 2)  " + result;
-		testCollection.add(AssignDocOwnRosterTest);
-		System.out.println(AssignDocOwnRosterTest);
-		
-		result = docAssignOwnRosterTest(driver,rightName,setEmpty,setEmpty,positiveTestcase);
-		AssignDocOwnRosterTest = "Doc Assign Own Roster Test 2 (SET TO EMPTY)  " + result;
-		testCollection.add(AssignDocOwnRosterTest);
-		System.out.println(AssignDocOwnRosterTest);		
-			
-		logoutTest(driver, positiveTestcase);
-
-		Thread.sleep(interCatDelay);	
-		
-		// Delete Profile Test
-		
-		loginTest(driver,rightEmail,rightPassword,positiveTestcase);
-			
-		String DeleteUserTest = "";
-		
-		result = deleteUserTest(driver, positiveTestcase);
-		DeleteUserTest = "Delete Test 1 (POSITIVE TEST CASE)  " + result;
-		System.out.println(DeleteUserTest);
-		testCollection.add(DeleteUserTest);	
-		
-		Thread.sleep(interCatDelay);	
-		
 		// Delete Doc Test
-		
-		// Login as Admin account
-		loginTest(driver,adminEmail,adminPW,positiveTestcase);	
 		
 		String DeleteDoctTest = "";
 		
@@ -533,18 +349,210 @@ public class Testing
 		Thread.sleep(interCatDelay);	
 		
 		// Logout test
-			
+		
+		String AdminLogoutTest = "";
+		
 		result = logoutTest(driver, positiveTestcase);
-		LogoutTest = "Logout Test 1 (REGULAR LOGOUT)  " + result;
-		System.out.println(LogoutTest);
-		testCollection.add(LogoutTest);
+		AdminLogoutTest = "Admin Logout Test 1 (REGULAR LOGOUT)  " + result;
+		System.out.println(AdminLogoutTest);
+		testCollection.add(AdminLogoutTest);
+		
+		Thread.sleep(interCatDelay);	
+					
+		Thread.sleep(longDelay);				
+		
+		// Register Test
+		String RegisterTest = "";
+		
+		String rightName = "Dr John Doe";
+		String rightNRIC = "S1627678B";
+		String rightEmail = "johndoe@cmail.com";
+		String rightPassword = "AAAaaa123";
+		String rightPassword2 = "AAAaaa123";
+		String rightContactNum = "88888888";
+		String rightDOB = "01011990";
+		String rightStaffType = "Doctor";
+		String rightQualType = "MD";
+		
+		String wrongNRIC = "S1342324Q";
+		String wrongEmail = "abcxyz";
+		String wrongPassword = "12345";
+		String wrongPassword2 = "123456";
+		String wrongContactNum = "abcdefg";
+		String wrongDOB = "01012020";
+				
+		result = registerTest(driver,empty,empty,empty,empty,empty,empty,empty,true,empty,empty,negativeTestcase);
+		RegisterTest = "Register Test 1 (Empty ALL FIELDS)  " + result;
+		testCollection.add(RegisterTest);
+		System.out.println(RegisterTest);
+//		
+//		result = registerTest(driver,rightName,wrongNRIC,rightEmail,rightPassword,rightPassword2,rightContactNum,rightDOB,true,rightStaffType,rightQualType,negativeTestcase);
+//		RegisterTest = "Register Test 2 (INVALID NRIC)  " + result;
+//		testCollection.add(RegisterTest);
+//		System.out.println(RegisterTest);
+//		
+//		result = registerTest(driver,rightName,rightNRIC,wrongEmail,rightPassword,rightPassword2,rightContactNum,rightDOB,true,rightStaffType,rightQualType,negativeTestcase);
+//		RegisterTest = "Register Test 3 (INVALID EMAIL)  " + result;
+//		testCollection.add(RegisterTest);
+//		System.out.println(RegisterTest);
+//		
+//		result = registerTest(driver,rightName,rightNRIC,rightEmail,wrongPassword,rightPassword2,rightContactNum,rightDOB,true,rightStaffType,rightQualType,negativeTestcase);
+//		RegisterTest = "Register Test 4 (INVALID PASSWORD)  " + result;
+//		testCollection.add(RegisterTest);
+//		System.out.println(RegisterTest);
+//		
+//		result = registerTest(driver,rightName,rightNRIC,rightEmail,rightPassword,wrongPassword2,rightContactNum,rightDOB,true,rightStaffType,rightQualType,negativeTestcase);
+//		RegisterTest = "Register Test 5 (NON MATCHING PASSWORD)  " + result;
+//		testCollection.add(RegisterTest);
+//		System.out.println(RegisterTest);
+//		
+//		result = registerTest(driver,rightName,rightNRIC,rightEmail,rightPassword,rightPassword2,wrongContactNum,rightDOB,true,rightStaffType,rightQualType,negativeTestcase);
+//		RegisterTest = "Register Test 6 (INVALID CONTACT NUM)  " + result;
+//		testCollection.add(RegisterTest);
+//		System.out.println(RegisterTest);
+//		
+//		result = registerTest(driver,rightName,rightNRIC,rightEmail,rightPassword,rightPassword2,rightContactNum,wrongDOB,true,rightStaffType,rightQualType,negativeTestcase);
+//		RegisterTest = "Register Test 7 (INVALID DOB)  " + result;
+//		testCollection.add(RegisterTest);
+//		System.out.println(RegisterTest);
+				
+		result = registerTest(driver,rightName,rightNRIC,rightEmail,rightPassword,rightPassword2,rightContactNum,rightDOB,true,rightStaffType,rightQualType,positiveTestcase);
+		RegisterTest = "Register Test 8 (POSITIVE TEST CASE)  " + result;
+		testCollection.add(RegisterTest);
+		System.out.println(RegisterTest);
+			
+//		result = registerTest(driver,rightName,rightNRIC,rightEmail,rightPassword,rightPassword2,rightContactNum,rightDOB,true,rightStaffType,rightQualType,negativeTestcase);
+//		RegisterTest = "Register Test 9 (DUPLICATE REGISTRATION)  " + result;
+//		testCollection.add(RegisterTest);
+//		System.out.println(RegisterTest);
+			
+		Thread.sleep(interCatDelay);		
+		
+		// Login Test 
+		
+		String LoginTest = "";
+				
+		result = loginTest(driver,empty,empty,negativeTestcase);
+		LoginTest = "Login Test 1 (Empty ALL FIELDS)  " + result;
+		testCollection.add(LoginTest);
+		System.out.println(LoginTest);
+//
+//		result = loginTest(driver,wrongEmail,rightPassword,negativeTestcase);
+//		LoginTest = "Login Test 2 (INVALID EMAIL)  " + result;
+//		testCollection.add(LoginTest);
+//		System.out.println(LoginTest);
+//		
+//		result = loginTest(driver,rightEmail,wrongPassword,negativeTestcase);
+//		LoginTest = "Login Test 3 (INVALID PASSWORD)  " + result;
+//		testCollection.add(LoginTest);
+//		System.out.println(LoginTest);
+				
+		result = loginTest(driver,rightEmail,rightPassword,positiveTestcase);
+		LoginTest = "Login Test 4 (POSITIVE TEST CASE)  " + result;
+		testCollection.add(LoginTest);
+		System.out.println(LoginTest);
+		
+		Thread.sleep(interCatDelay);	
+		
+		// Edit Profile Test
+		
+		String editProfileTest = "";
+				
+		result = editProfileTest(driver,empty,empty,empty,empty,empty,negativeTestcase);
+		editProfileTest = "Edit Profile Test 1 (Empty ALL FIELDS)  " + result;
+		testCollection.add(editProfileTest);
+		System.out.println(editProfileTest);
+//		
+//		result = editProfileTest(driver,rightName,wrongEmail,rightPassword,rightPassword,rightContactNum,negativeTestcase);
+//		editProfileTest = "Edit Profile Test 2 (INVALID EMAIL)  " + result;
+//		testCollection.add(editProfileTest);
+//		System.out.println(editProfileTest);
+//		
+//		result = editProfileTest(driver,rightName,rightEmail,wrongPassword,rightPassword,rightContactNum,negativeTestcase);
+//		editProfileTest = "Edit Profile Test 3 (INVALID PASSWORD)  " + result;
+//		testCollection.add(editProfileTest);
+//		System.out.println(editProfileTest);
+//		
+//		result = editProfileTest(driver,rightName,rightEmail,rightPassword,wrongPassword,rightContactNum,negativeTestcase);
+//		editProfileTest = "Edit Profile Test 4 (NON MATCHING PASSWORD )  " + result;
+//		testCollection.add(editProfileTest);
+//		System.out.println(editProfileTest);
+//		
+//		result = editProfileTest(driver,rightName,rightEmail,rightPassword,rightPassword,wrongContactNum,negativeTestcase);
+//		editProfileTest = "Edit Profile Test 5 (INVALID CONTACT NUMBER)  " + result;
+//		testCollection.add(editProfileTest);
+//		System.out.println(editProfileTest);
+						
+		result = editProfileTest(driver,rightName,rightEmail,rightPassword,rightPassword,rightContactNum,positiveTestcase);
+		editProfileTest = "Edit Profile Test 6 (POSITIVE TEST CASE)  " + result;
+		testCollection.add(editProfileTest);
+		System.out.println(editProfileTest);
 		
 		Thread.sleep(interCatDelay);	
 
-					
-		Thread.sleep(longDelay);
+		// Doctor assign own roster Test
 		
+		String AssignDocOwnRosterTest = "";
+		String centerNameA = "Radin Mas Community Club";
+		String roomNameA = "Room A";
+		String centerNameB = "Buona Vista Community Club";
+		String roomNameB = "Room 1";
+			
+		result = docAssignOwnRosterTest(driver,rightName,centerNameA,roomNameA,negativeTestcase);
+		AssignDocOwnRosterTest = "Doc Assign Own Roster Test 1 (SET ROOM 1)  " + result;
+		testCollection.add(AssignDocOwnRosterTest);
+		System.out.println(AssignDocOwnRosterTest);
 		
+		// Login Admin 
+		loginTest(driver,adminEmail,adminPW,positiveTestcase);
+		
+		// Toogle Approval for new Doc
+		toggleDocApprovalTest(driver,rightName,true,positiveTestcase);
+		
+		// Logout Admin
+		logoutTest(driver, positiveTestcase);
+		
+		// Login new Doc
+		loginTest(driver,rightEmail,rightPassword,positiveTestcase);
+		
+		result = docAssignOwnRosterTest(driver,rightName,centerNameA,roomNameA,positiveTestcase);
+		AssignDocOwnRosterTest = "Doc Assign Own Roster Test 2 (SET ROOM 1)  " + result;
+		testCollection.add(AssignDocOwnRosterTest);
+		System.out.println(AssignDocOwnRosterTest);	
+		
+		result = docAssignOwnRosterTest(driver,rightName,centerNameB,roomNameB,positiveTestcase);
+		AssignDocOwnRosterTest = "Doc Assign Own Roster Test 3 (SET ROOM 2)  " + result;
+		testCollection.add(AssignDocOwnRosterTest);
+		System.out.println(AssignDocOwnRosterTest);
+		
+		result = docAssignOwnRosterTest(driver,rightName,setEmpty,setEmpty,positiveTestcase);
+		AssignDocOwnRosterTest = "Doc Assign Own Roster Test 4 (SET TO EMPTY)  " + result;
+		testCollection.add(AssignDocOwnRosterTest);
+		System.out.println(AssignDocOwnRosterTest);		
+		
+		Thread.sleep(interCatDelay);	
+		
+		// Logout Test
+		
+		result = logoutTest(driver, positiveTestcase);
+		String LogoutTest = ""; 		
+		LogoutTest = "Logout Test 1 (REGULAR LOGOUT)  " + result;
+		System.out.println(LogoutTest);
+		testCollection.add(LogoutTest);
+			
+		// Delete Profile Test
+		
+		loginTest(driver,rightEmail,rightPassword,positiveTestcase);
+			
+		String DeleteUserTest = "";
+		
+		result = deleteUserTest(driver, positiveTestcase);
+		DeleteUserTest = "Delete Test 1 (POSITIVE TEST CASE)  " + result;
+		System.out.println(DeleteUserTest);
+		testCollection.add(DeleteUserTest);	
+		
+		Thread.sleep(interCatDelay);	
+						
 		
 		//write to result file
 		try 
@@ -656,6 +664,7 @@ public class Testing
 				results = "[" + negativeTestcase + "]   " + results + " PASSED";
 			}
 		}
+		Thread.sleep(longDelay);		
 		return results;
 	}
 	
@@ -707,6 +716,7 @@ public class Testing
 				results = "[" + negativeTestcase + "]   " + results + " PASSED";
 			}
 		}
+		Thread.sleep(longDelay);
 		return results;
 	}
 	
@@ -786,6 +796,7 @@ public class Testing
 		}
 		
 		driver.findElement(By.xpath("//button[@id = 'goBack']")).click();
+		Thread.sleep(longDelay);
 		return results;
 	}
 	
@@ -826,6 +837,7 @@ public class Testing
 				results = "[" + negativeTestcase + "]   " + results + " PASSED";
 			}
 		}
+		Thread.sleep(longDelay);
 		return results;
 	}
 	
@@ -869,6 +881,7 @@ public class Testing
 				results = "[" + negativeTestcase + "]   " + results + " PASSED";
 			}
 		}
+		Thread.sleep(longDelay);
 		return results;
 	}
 		
@@ -965,7 +978,7 @@ public class Testing
 		}
 		
 		driver.findElement(By.xpath("//button[@id = 'close']")).click();
-
+		Thread.sleep(longDelay);
 		return results;
 		
 	}
@@ -1020,7 +1033,7 @@ public class Testing
 				results = "[" + negativeTestcase + "]   " + results + " PASSED";
 			}
 		}
-		
+		Thread.sleep(longDelay);
 		return results;
 		
 	}
@@ -1087,7 +1100,7 @@ public class Testing
 			results = "[" + negativeTestcase + "]   " + results + " PASSED";
 			}
 		}
-			
+		Thread.sleep(longDelay);
 		return results;
 		
 	}
@@ -1171,7 +1184,7 @@ public class Testing
 			results = "[" + negativeTestcase + "]   " + results + " PASSED";
 			}
 		}
-			
+		Thread.sleep(longDelay);
 		return results;
 		
 	}
@@ -1228,7 +1241,7 @@ public class Testing
 			results = "[" + negativeTestcase + "]   " + results + " PASSED";
 			}
 		}
-			
+		Thread.sleep(longDelay);
 		return results;
 		
 	}
@@ -1290,7 +1303,7 @@ public class Testing
 			results = "[" + negativeTestcase + "]   " + results + " PASSED";
 			}
 		}							
-		
+		Thread.sleep(longDelay);
 		return results;
 		
 		}
@@ -1360,7 +1373,7 @@ public class Testing
 			results = "[" + negativeTestcase + "]   " + results + " PASSED";
 			}
 		}							
-		
+		Thread.sleep(longDelay);
 		return results;
 		
 		}
@@ -1422,7 +1435,7 @@ public class Testing
 			results = "[" + negativeTestcase + "]   " + results + " PASSED";
 			}
 		}							
-		
+		Thread.sleep(longDelay);
 		return results;
 		
 		}
@@ -1479,7 +1492,7 @@ public class Testing
 			results = "[" + negativeTestcase + "]   " + results + " PASSED";
 			}
 		}
-			
+		Thread.sleep(longDelay);
 		return results;
 		
 	}	
@@ -1492,8 +1505,8 @@ public class Testing
 		
 		String results = "Results : ";
 		String negativeTestcase = "NEGATIVE TESTCASE";
-		String positiveTestcase = "POSITIVE TESTCASE";
-
+		String positiveTestcase = "POSITIVE TESTCASE";	
+		
 		// navigating to Manage Users Page
 		driver.get("http://localhost:3000");	
 		Thread.sleep(shortDelay*2);
@@ -1512,23 +1525,31 @@ public class Testing
 		driver.findElement(By.xpath("//button[@id = \""+dateStr+"\"]")).click();
 		Thread.sleep(shortDelay);
 		
-		// Select Roster 
-		String rosterName = "0";	
-		if (centerName != "Set to Empty") {rosterName = centerName + " / "+ roomName;}
+		// Checks for error Alert for trying to assign un-approved Doctor		
 		
-		driver.findElement(By.xpath("//div[@id = 'roomSelect']")).click();
-		Thread.sleep(shortDelay);
-		driver.findElement(By.xpath("//li[@id = \""+rosterName+"\"]")).click();
-		Thread.sleep(shortDelay);
-		
-		clickThruModalBG(driver);
-		Thread.sleep(shortDelay);
-		
-		driver.findElement(By.xpath("//button[@id = 'assign']")).click();
-		Thread.sleep(longDelay);
+		if (driver.findElements(By.xpath("//div[@class = 'MuiAlert-message css-acap47-MuiAlert-message']")).isEmpty()) {
 			
+			
+			
+			// Select Roster 
+			String rosterName = "0";	
+			if (centerName != "Set to Empty") {rosterName = centerName + " / "+ roomName;}
+			
+			driver.findElement(By.xpath("//div[@id = 'roomSelect']")).click();
+			Thread.sleep(shortDelay);
+			driver.findElement(By.xpath("//li[@id = \""+rosterName+"\"]")).click();
+			Thread.sleep(shortDelay);
+			
+			clickThruModalBG(driver);
+			Thread.sleep(shortDelay);
+			
+			driver.findElement(By.xpath("//button[@id = 'assign']")).click();
+			Thread.sleep(longDelay);						
+			
+		} 		
+		
 		// Verifying and returning results		
-		String correctAlert = "Doctor has been assigned";
+		String correctAlert = "Doctor has been assigned";	
 		WebDriverWait wait = new WebDriverWait(driver,5);		
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class = 'MuiAlert-message css-acap47-MuiAlert-message']"))); 
 		String driverAlert = driver.findElement(By.xpath("//div[@class = 'MuiAlert-message css-acap47-MuiAlert-message']")).getText();	
@@ -1556,7 +1577,7 @@ public class Testing
 			results = "[" + negativeTestcase + "]   " + results + " PASSED";
 			}
 		}
-			
+		Thread.sleep(longDelay);
 		return results;
 		
 	}
@@ -1584,20 +1605,25 @@ public class Testing
 		driver.findElement(By.xpath("//button[@id = \""+dateStr+"\"]")).click();
 		Thread.sleep(shortDelay);
 		
-		// Select Roster 
-		String rosterName = "0";	
-		if (centerName != "Set to Empty") {rosterName = centerName + " / "+ roomName;}
-		
-		driver.findElement(By.xpath("//div[@id = 'roomSelect']")).click();
-		Thread.sleep(shortDelay);
-		driver.findElement(By.xpath("//li[@id = \""+rosterName+"\"]")).click();
-		Thread.sleep(shortDelay);
-		
-		clickThruModalBG(driver);
-		Thread.sleep(shortDelay);
-		
-		driver.findElement(By.xpath("//button[@id = 'assign']")).click();
-		Thread.sleep(longDelay);
+		// Checks for error Alert for trying to assign un-approved Doctor
+		if (driver.findElements(By.xpath("//div[@class = 'MuiAlert-message css-acap47-MuiAlert-message']")).isEmpty()) {	
+			
+			// Select Roster 
+			String rosterName = "0";	
+			if (centerName != "Set to Empty") {rosterName = centerName + " / "+ roomName;}
+			
+			driver.findElement(By.xpath("//div[@id = 'roomSelect']")).click();
+			Thread.sleep(shortDelay);
+			driver.findElement(By.xpath("//li[@id = \""+rosterName+"\"]")).click();
+			Thread.sleep(shortDelay);
+			
+			clickThruModalBG(driver);
+			Thread.sleep(shortDelay);
+			
+			driver.findElement(By.xpath("//button[@id = 'assign']")).click();
+			Thread.sleep(longDelay);
+	
+		}	
 			
 		// Verifying and returning results		
 		String correctAlert = "Doctor has been assigned";
@@ -1628,7 +1654,7 @@ public class Testing
 			results = "[" + negativeTestcase + "]   " + results + " PASSED";
 			}
 		}
-			
+		Thread.sleep(longDelay);
 		return results;
 		
 	}
@@ -1705,7 +1731,7 @@ public class Testing
 			results = "[" + negativeTestcase + "]   " + results + " PASSED";
 			}
 		}
-			
+		Thread.sleep(longDelay);
 		return results;
 		
 		}	

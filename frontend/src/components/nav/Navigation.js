@@ -148,8 +148,6 @@ function Navigation({ auth, user, logout }) {
                     "aria-labelledby": "basic-button",
                   }}
                 >
-                  {/* <MenuItem onClick={visitProfile}>Profile</MenuItem> */}
-                  {/* <MenuItem onClick={visitAdmin}>Admin</MenuItem> */}
                   <MenuItem id="logoutButton" onClick={menuLogout}>
                     Logout
                   </MenuItem>

@@ -44,6 +44,7 @@ function App() {
     setUserStats();
   }, [auth]);
 
+
   function logout() {
     setAuth(false);
     setUser(null);
@@ -69,32 +70,8 @@ function App() {
 
         <Route path="/bookAppt">
           <Appointment user={user} setUser={setUser} />
-        </Route>
-
-        <Route path="/admin/center" exact>
-          <Center />
-        </Route>
-
-        <Route path="/admin/showcenter/:centerID">
-          <ShowCenter />
-        </Route>
-
-        <Route path="/admin/showroom/:roomID">
-          <ShowRoom />
-        </Route>
-
-        <Route path="/admin/user/:userID">
-          <ViewUser />
-        </Route>
-
-        <Route path="/admin/user">
-          <UserAdmin />
-        </Route>
-
-        <Route path="/roster">
-          <UserRoster user={user} setUser={setUser} />
-        </Route>
-
+        </Route> 
+   
         <PrivateRouter
           auth={auth}
           path="/profile"
@@ -104,17 +81,55 @@ function App() {
           setUser={setUser}
           exact
         />
+
+        {/* <PrivateRouter
+          auth={auth}     
+          path="/bookAppt"     
+          Component={Appointment}          
+          user={user} 
+          setUser={setUser}
+          exact
+        /> */}
+
         <PrivateRouter
           auth={auth}
           path="/admin/center"
           Component={Center}
           exact
         />
+
         <PrivateRouter
           auth={auth}
-          path="/admin/showcenter"
+          path="/admin/showcenter/:centerID"
           Component={ShowCenter}
         />
+
+        <PrivateRouter
+          auth={auth}
+          path="/admin/showroom/:roomID"
+          Component={ShowRoom}
+        />
+
+        <PrivateRouter
+          auth={auth}
+          path="/admin/user/:userID"
+          Component={ViewUser}
+        />
+
+        <PrivateRouter
+          auth={auth}
+          path="/admin/user"
+          Component={UserAdmin}
+        />
+
+        <PrivateRouter
+          auth={auth}
+          path="/roster"
+          Component={UserRoster}
+          user={user} 
+          setUser={setUser}
+        />
+
         <PrivateRouter
           auth={auth}
           path="/admin"
@@ -134,6 +149,7 @@ function PrivateRouter({ auth, Component, path, location, ...rest }) {
   //if auth is true then show Route else redirect to login
   return (
     <>
+
       {auth ? (
         <Route path={path}>
           <Component {...rest} />

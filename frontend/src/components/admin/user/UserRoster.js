@@ -135,26 +135,29 @@ function UserRoster({ user, setUser }) {
   }
 
   async function assignRoom() {
-    try {
-      await axios.post("/api/schedule/updateRoster", rosterUpdate);
 
-      setAlertState({
-        type: "success",
-        status: true,
-        message: "Doctor has been assigned",
-      });      
-    } catch (e) {
-      console.log(e);
-      setAlertState({
-        type: "error",
-        status: true,
-        message: "Error in assigning room",
-      });
-    }
-    getUser(user._id);
-       
-    resetAlert();
-    handleClose();
+
+      try {
+        await axios.post("/api/schedule/updateRoster", rosterUpdate);
+  
+        setAlertState({
+          type: "success",
+          status: true,
+          message: "Doctor has been assigned",
+        });      
+      } catch (e) {
+        console.log(e);
+        setAlertState({
+          type: "error",
+          status: true,
+          message: "Error in assigning room",
+        });
+      }
+      getUser(user._id);
+         
+      resetAlert();
+      handleClose();
+      
   }
 
   async function getUser(id) {
@@ -178,7 +181,7 @@ function UserRoster({ user, setUser }) {
       newRoster: e.target.value,
     }));
   }
-
+ 
   return (
     <Container component="main" maxWidth="md">
       <Grid className={"d-flex justify-content-center mt-3"}>
@@ -238,7 +241,17 @@ function UserRoster({ user, setUser }) {
                                     variant="contained"
                                     id={date}
                                     onClick={() => {
-                                      getAvailRoster(key, value.rosterID);
+
+                                      if(user.approved){
+                                        getAvailRoster(key, value.rosterID);
+                                      } else {
+                                        setAlertState({
+                                          type: "error",
+                                          status: true,
+                                          message: "Unable to assign Doctor before approval",
+                                        });
+                                        resetAlert();
+                                      }                                      
                                     }}
                                   >
                                     Assign

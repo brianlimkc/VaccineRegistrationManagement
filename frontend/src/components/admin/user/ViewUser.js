@@ -223,6 +223,7 @@ function ViewUser() {
   }
 
   async function assignRoom() {
+    
     try {
       await axios.post("/api/schedule/updateRoster", rosterUpdate);
 
