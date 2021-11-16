@@ -1,4 +1,3 @@
-import Alert from "@mui/material/Alert";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
@@ -7,6 +6,9 @@ import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
+import { checkForm } from "../../common/checkForm";
+import FormAlert from "../../common/FormAlert";
+
 
 function EditCenter({ center, setEditState }) {
   let history = useHistory();
@@ -36,115 +38,115 @@ function EditCenter({ center, setEditState }) {
     contactMsg: "",
   });
 
-  function checkForm() {
-    let validForm = true;
-    let tempFormData = formData;
+  // function checkForm() {
+  //   let validForm = true;
+  //   let tempFormData = formData;
 
-    if (tempFormData.name === "") {
-      setErrorState((prevState) => ({
-        ...prevState,
-        nameValid: true,
-        nameMsg: "Please enter a name",
-      }));
-      validForm = false;
-    } else {
-      setErrorState((prevState) => ({
-        ...prevState,
-        nameValid: false,
-        nameMsg: "",
-      }));
-    }
+  //   if (tempFormData.name === "") {
+  //     setErrorState((prevState) => ({
+  //       ...prevState,
+  //       nameValid: true,
+  //       nameMsg: "Please enter a name",
+  //     }));
+  //     validForm = false;
+  //   } else {
+  //     setErrorState((prevState) => ({
+  //       ...prevState,
+  //       nameValid: false,
+  //       nameMsg: "",
+  //     }));
+  //   }
 
-    if (tempFormData.shotType === "") {
-      setErrorState((prevState) => ({
-        ...prevState,
-        shotValid: true,
-        shotMsg: "Please select a shot type",
-      }));
-      validForm = false;
-    } else {
-      setErrorState((prevState) => ({
-        ...prevState,
-        shotValid: false,
-        shotMsg: "",
-      }));
-    }
+  //   if (tempFormData.shotType === "") {
+  //     setErrorState((prevState) => ({
+  //       ...prevState,
+  //       shotValid: true,
+  //       shotMsg: "Please select a shot type",
+  //     }));
+  //     validForm = false;
+  //   } else {
+  //     setErrorState((prevState) => ({
+  //       ...prevState,
+  //       shotValid: false,
+  //       shotMsg: "",
+  //     }));
+  //   }
 
-    if (tempFormData.streetAddress === "") {
-      setErrorState((prevState) => ({
-        ...prevState,
-        addressValid: true,
-        addressMsg: "Please enter an address",
-      }));
-      validForm = false;
-    } else {
-      setErrorState((prevState) => ({
-        ...prevState,
-        addressValid: false,
-        addressMsg: "",
-      }));
-    }
+  //   if (tempFormData.streetAddress === "") {
+  //     setErrorState((prevState) => ({
+  //       ...prevState,
+  //       addressValid: true,
+  //       addressMsg: "Please enter an address",
+  //     }));
+  //     validForm = false;
+  //   } else {
+  //     setErrorState((prevState) => ({
+  //       ...prevState,
+  //       addressValid: false,
+  //       addressMsg: "",
+  //     }));
+  //   }
 
-    if (!postalCheck(tempFormData.postalCode)) {
-      setErrorState((prevState) => ({
-        ...prevState,
-        postalValid: true,
-        postalMsg: "Please enter a valid postal code",
-      }));
-      validForm = false;
-    } else {
-      setErrorState((prevState) => ({
-        ...prevState,
-        postalValid: false,
-        postalMsg: "",
-      }));
-    }
+  //   if (!postalCheck(tempFormData.postalCode)) {
+  //     setErrorState((prevState) => ({
+  //       ...prevState,
+  //       postalValid: true,
+  //       postalMsg: "Please enter a valid postal code",
+  //     }));
+  //     validForm = false;
+  //   } else {
+  //     setErrorState((prevState) => ({
+  //       ...prevState,
+  //       postalValid: false,
+  //       postalMsg: "",
+  //     }));
+  //   }
 
-    if (!contactCheck(tempFormData.contactNumber)) {
-      setErrorState((prevState) => ({
-        ...prevState,
-        contactValid: true,
-        contactMsg: "Please enter a valid contact number",
-      }));
-      validForm = false;
-    } else {
-      setErrorState((prevState) => ({
-        ...prevState,
-        contactValid: false,
-        contactMsg: "",
-      }));
-    }
+  //   if (!contactCheck(tempFormData.contactNumber)) {
+  //     setErrorState((prevState) => ({
+  //       ...prevState,
+  //       contactValid: true,
+  //       contactMsg: "Please enter a valid contact number",
+  //     }));
+  //     validForm = false;
+  //   } else {
+  //     setErrorState((prevState) => ({
+  //       ...prevState,
+  //       contactValid: false,
+  //       contactMsg: "",
+  //     }));
+  //   }
 
-    if (!validForm) {
-      setAlertState({
-        type: "error",
-        status: true,
-        message: "Error in form, please check!",
-      });
-    } else {
-      setAlertState({
-        type: "",
-        status: false,
-        message: "",
-      });
-    }
+  //   if (!validForm) {
+  //     setAlertState({
+  //       type: "error",
+  //       status: true,
+  //       message: "Error in form, please check!",
+  //     });
+  //   } else {
+  //     setAlertState({
+  //       type: "",
+  //       status: false,
+  //       message: "",
+  //     });
+  //   }
 
-    return validForm;
-  }
+  //   return validForm;
+  // }
 
-  function contactCheck(contact) {
-    const regexp = /^(?=.*[0-9])(?=.{8,})/;
-    return regexp.test(contact);
-  }
+  // function contactCheck(contact) {
+  //   const regexp = /^(?=.*[0-9])(?=.{8,})/;
+  //   return regexp.test(contact);
+  // }
 
-  function postalCheck(postal) {
-    const regexp = /^(?=.*[0-9])(?=.{6,})/;
-    return regexp.test(postal);
-  }
+  // function postalCheck(postal) {
+  //   const regexp = /^(?=.*[0-9])(?=.{6,})/;
+  //   return regexp.test(postal);
+  // }
 
   async function submit(e) {
     e.preventDefault();
-    if (checkForm()) {
+    if (checkForm(formData,setErrorState,setAlertState)) {
       try {
         await axios.post("/api/center/update", formData, {});
 
@@ -184,13 +186,7 @@ function EditCenter({ center, setEditState }) {
           alignItems: "center",
         }}
       >
-        {alertState.status ? (
-          <Alert id="alert" severity={alertState.type}>
-            {alertState.message}
-          </Alert>
-        ) : (
-          <></>
-        )}
+        <FormAlert alertState={alertState}/>
         <Typography component="h1" variant="h5">
           Edit Center
         </Typography>

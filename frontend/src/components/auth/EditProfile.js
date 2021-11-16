@@ -6,15 +6,17 @@ import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import axios from "axios";
+import { checkForm } from "../common/checkForm";
+import FormAlert from "../common/FormAlert";
 
-import Alert from "@mui/material/Alert";
-
-function EditProfile({ auth, setAuth, user, setUser, setEditState }) {
+function EditProfile({ user, setUser, setEditState }) {
   const [formData, setFormData] = useState({
     id: user._id,
     name: user.name,
     email: user.email,
     contactNum: user.contactNum,
+    password: "",
+    password2: ""
   });
 
   const [alertState, setAlertState] = useState({
@@ -22,6 +24,7 @@ function EditProfile({ auth, setAuth, user, setUser, setEditState }) {
     status: false,
     message: "",
   });
+
   const [errorState, setErrorState] = useState({
     nameValid: false,
     nameMsg: "",
@@ -37,7 +40,7 @@ function EditProfile({ auth, setAuth, user, setUser, setEditState }) {
 
   async function submit(e) {
     e.preventDefault();
-    if (checkForm()) {
+    if (checkForm(formData,setErrorState,setAlertState)) {
       try {
         let {
           data: { user },
@@ -83,120 +86,120 @@ function EditProfile({ auth, setAuth, user, setUser, setEditState }) {
     }
   }
 
-  function checkForm() {
-    let validForm = true;
-    let tempFormData = formData;
+  // function checkForm() {
+  //   let validForm = true;
+  //   let tempFormData = formData;
 
-    if (tempFormData.name === "") {
-      setErrorState((prevState) => ({
-        ...prevState,
-        nameValid: true,
-        nameMsg: "Please enter a name",
-      }));
-      validForm = false;
-    } else {
-      setErrorState((prevState) => ({
-        ...prevState,
-        nameValid: false,
-        nameMsg: "",
-      }));
-    }
+  //   if (tempFormData.name === "") {
+  //     setErrorState((prevState) => ({
+  //       ...prevState,
+  //       nameValid: true,
+  //       nameMsg: "Please enter a name",
+  //     }));
+  //     validForm = false;
+  //   } else {
+  //     setErrorState((prevState) => ({
+  //       ...prevState,
+  //       nameValid: false,
+  //       nameMsg: "",
+  //     }));
+  //   }
 
-    if (tempFormData.email === "" || !emailCheck(tempFormData.email)) {
-      setErrorState((prevState) => ({
-        ...prevState,
-        emailValid: true,
-        emailMsg: "Please enter a valid email",
-      }));
-      validForm = false;
-    } else {
-      setErrorState((prevState) => ({
-        ...prevState,
-        emailValid: false,
-        emailMsg: "",
-      }));
-    }
+  //   if (tempFormData.email === "" || !emailCheck(tempFormData.email)) {
+  //     setErrorState((prevState) => ({
+  //       ...prevState,
+  //       emailValid: true,
+  //       emailMsg: "Please enter a valid email",
+  //     }));
+  //     validForm = false;
+  //   } else {
+  //     setErrorState((prevState) => ({
+  //       ...prevState,
+  //       emailValid: false,
+  //       emailMsg: "",
+  //     }));
+  //   }
 
-    if (tempFormData.password !== "" && tempFormData.password !== "") {
-      if (!passwordCheck(tempFormData.password)) {
-        setErrorState((prevState) => ({
-          ...prevState,
-          passwordValid: true,
-          passwordMsg:
-            "Please enter a valid password (1 lowercase char, 1 uppercase char, 1 number, at least 8 chars)",
-        }));
-        validForm = false;
-      } else {
-        setErrorState((prevState) => ({
-          ...prevState,
-          passwordValid: false,
-          passwordMsg: "",
-        }));
-      }
+  //   if (tempFormData.password !== "" && tempFormData.password !== "") {
+  //     if (!passwordCheck(tempFormData.password)) {
+  //       setErrorState((prevState) => ({
+  //         ...prevState,
+  //         passwordValid: true,
+  //         passwordMsg:
+  //           "Please enter a valid password (1 lowercase char, 1 uppercase char, 1 number, at least 8 chars)",
+  //       }));
+  //       validForm = false;
+  //     } else {
+  //       setErrorState((prevState) => ({
+  //         ...prevState,
+  //         passwordValid: false,
+  //         passwordMsg: "",
+  //       }));
+  //     }
 
-      if (tempFormData.password !== tempFormData.password2) {
-        setErrorState((prevState) => ({
-          ...prevState,
-          password2Valid: true,
-          password2Msg: "Passwords do not match. Please check and type again",
-        }));
-        validForm = false;
-      } else {
-        setErrorState((prevState) => ({
-          ...prevState,
-          password2Valid: false,
-          password2Msg: "",
-        }));
-      }
-    }
+  //     if (tempFormData.password !== tempFormData.password2) {
+  //       setErrorState((prevState) => ({
+  //         ...prevState,
+  //         password2Valid: true,
+  //         password2Msg: "Passwords do not match. Please check and type again",
+  //       }));
+  //       validForm = false;
+  //     } else {
+  //       setErrorState((prevState) => ({
+  //         ...prevState,
+  //         password2Valid: false,
+  //         password2Msg: "",
+  //       }));
+  //     }
+  //   }
 
-    if (!contactCheck(tempFormData.contactNum)) {
-      setErrorState((prevState) => ({
-        ...prevState,
-        contactValid: true,
-        contactMsg: "Please enter a valid contact number",
-      }));
-      validForm = false;
-    } else {
-      setErrorState((prevState) => ({
-        ...prevState,
-        contactValid: false,
-        contactMsg: "",
-      }));
-    }
+  //   if (!contactCheck(tempFormData.contactNum)) {
+  //     setErrorState((prevState) => ({
+  //       ...prevState,
+  //       contactValid: true,
+  //       contactMsg: "Please enter a valid contact number",
+  //     }));
+  //     validForm = false;
+  //   } else {
+  //     setErrorState((prevState) => ({
+  //       ...prevState,
+  //       contactValid: false,
+  //       contactMsg: "",
+  //     }));
+  //   }
 
-    if (!validForm) {
-      setAlertState({
-        type: "error",
-        status: true,
-        message: "Error in form, please check!",
-      });
-    } else {
-      setAlertState({
-        type: "",
-        status: false,
-        message: "",
-      });
-    }
+  //   if (!validForm) {
+  //     setAlertState({
+  //       type: "error",
+  //       status: true,
+  //       message: "Error in form, please check!",
+  //     });
+  //   } else {
+  //     setAlertState({
+  //       type: "",
+  //       status: false,
+  //       message: "",
+  //     });
+  //   }
 
-    return validForm;
-  }
+  //   return validForm;
+  // }
 
-  function emailCheck(email) {
-    const regexp =
-      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return regexp.test(email);
-  }
+  // function emailCheck(email) {
+  //   const regexp =
+  //     /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  //   return regexp.test(email);
+  // }
 
-  function passwordCheck(password) {
-    const regexp = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})/;
-    return regexp.test(password);
-  }
+  // function passwordCheck(password) {
+  //   const regexp = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})/;
+  //   return regexp.test(password);
+  // }
 
-  function contactCheck(contact) {
-    const regexp = /^(?=.*[0-9])(?=.{8,})/;
-    return regexp.test(contact);
-  }
+  // function contactCheck(contact) {
+  //   const regexp = /^(?=.*[0-9])(?=.{8,})/;
+  //   return regexp.test(contact);
+  // }
 
   return (
     <Container component="main" maxWidth="xs">
@@ -208,13 +211,7 @@ function EditProfile({ auth, setAuth, user, setUser, setEditState }) {
             alignItems: "center",
           }}
         >
-          {alertState.status ? (
-            <Alert id="alert" severity={alertState.type}>
-              {alertState.message}
-            </Alert>
-          ) : (
-            <></>
-          )}
+          <FormAlert alertState={alertState}/>
 
           <Typography component="h1" variant="h4">
             Edit Account Details

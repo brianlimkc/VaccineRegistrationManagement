@@ -6,7 +6,9 @@ import React, { useState } from "react";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 import axios from "axios";
-import Alert from "@mui/material/Alert";
+import { checkForm } from "../../common/checkForm";
+import FormAlert from "../../common/FormAlert";
+
 
 function CreateRoom({ centerID, center, getRoomArray }) {
   const [roomData, setRoomData] = useState({ name: "" });
@@ -24,7 +26,7 @@ function CreateRoom({ centerID, center, getRoomArray }) {
   async function submit(e) {
     e.preventDefault();
 
-    if (checkForm()) {
+    if (checkForm(roomData,setErrorState,setAlertState)) {
       try {
         let {
           data: { room },
@@ -63,49 +65,49 @@ function CreateRoom({ centerID, center, getRoomArray }) {
     }));
   }
 
-  function checkForm() {
-    let validForm = true;
-    let tempFormData = roomData;
+  // function checkForm() {
+  //   let validForm = true;
+  //   let tempFormData = roomData;
 
-    if (tempFormData.name === "") {
-      setErrorState((prevState) => ({
-        ...prevState,
-        nameValid: true,
-        nameMsg: "Please enter a name",
-      }));
-      validForm = false;
-    } else {
-      setErrorState((prevState) => ({
-        ...prevState,
-        nameValid: false,
-        nameMsg: "",
-      }));
-    }
+  //   if (tempFormData.name === "") {
+  //     setErrorState((prevState) => ({
+  //       ...prevState,
+  //       nameValid: true,
+  //       nameMsg: "Please enter a name",
+  //     }));
+  //     validForm = false;
+  //   } else {
+  //     setErrorState((prevState) => ({
+  //       ...prevState,
+  //       nameValid: false,
+  //       nameMsg: "",
+  //     }));
+  //   }
 
-    if (!validForm) {
-      setAlertState({
-        type: "error",
-        status: true,
-        message: "Error in form, please check!",
-      });
-    } else {
-      setAlertState({
-        type: "",
-        status: false,
-        message: "",
-      });
+  //   if (!validForm) {
+  //     setAlertState({
+  //       type: "error",
+  //       status: true,
+  //       message: "Error in form, please check!",
+  //     });
+  //   } else {
+  //     setAlertState({
+  //       type: "",
+  //       status: false,
+  //       message: "",
+  //     });
 
-      setTimeout(() => {
-        setAlertState({
-          type: "success",
-          status: false,
-          message: "",
-        });
-      }, 1250);
-    }
+  //     setTimeout(() => {
+  //       setAlertState({
+  //         type: "success",
+  //         status: false,
+  //         message: "",
+  //       });
+  //     }, 1250);
+  //   }
 
-    return validForm;
-  }
+  //   return validForm;
+  // }
 
   return (
     <Container component="main" fullWidth>
@@ -118,13 +120,8 @@ function CreateRoom({ centerID, center, getRoomArray }) {
             alignItems: "center",
           }}
         >
-          {alertState.status ? (
-            <Alert id="alert" severity={alertState.type}>
-              {alertState.message}
-            </Alert>
-          ) : (
-            <></>
-          )}
+          <FormAlert alertState={alertState}/>
+
           <Typography component="h1" variant="h5">
             Create a new Room
           </Typography>

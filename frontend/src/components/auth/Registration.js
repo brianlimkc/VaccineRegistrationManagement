@@ -1,7 +1,7 @@
-import Alert from "@mui/material/Alert";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Container from "@mui/material/Container";
+import FormAlert from "../common/FormAlert";
 import FormControl from "@mui/material/FormControl";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormGroup from "@mui/material/FormGroup";
@@ -16,10 +16,13 @@ import Switch from "@mui/material/Switch";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 import axios from "axios";
+import { checkForm } from "../common/checkForm";
 import { useHistory } from "react-router-dom";
 
 function Registration({ setAuth, setUser }) {
+
   let history = useHistory();
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -32,11 +35,13 @@ function Registration({ setAuth, setUser }) {
   const [docSwitch, setDocSwitch] = useState(false);
   const [staffTypeState, setStaffTypeState] = useState("");
   const [qualificationTypeState, setQualificationTypeState] = useState("");
+  
   const [alertState, setAlertState] = useState({
     type: "error",
     status: false,
     message: "",
   });
+  
   const [errorState, setErrorState] = useState({
     nameValid: false,
     nameMsg: "",
@@ -58,243 +63,10 @@ function Registration({ setAuth, setUser }) {
     qualMsg: "",
   });
 
-  function checkForm() {
-    let validForm = true;
-    let tempFormData = formData;
-
-    if (tempFormData.name === "") {
-      setErrorState((prevState) => ({
-        ...prevState,
-        nameValid: true,
-        nameMsg: "Please enter a name",
-      }));
-      validForm = false;
-    } else {
-      setErrorState((prevState) => ({
-        ...prevState,
-        nameValid: false,
-        nameMsg: "",
-      }));
-    }
-
-    if (tempFormData.nric === "" || !nricCheck(tempFormData.nric)) {
-      setErrorState((prevState) => ({
-        ...prevState,
-        nricValid: true,
-        nricMsg: "Please enter a valid nric",
-      }));
-      validForm = false;
-    } else {
-      setErrorState((prevState) => ({
-        ...prevState,
-        nricValid: false,
-        nricMsg: "",
-      }));
-    }
-
-    if (tempFormData.email === "" || !emailCheck(tempFormData.email)) {
-      setErrorState((prevState) => ({
-        ...prevState,
-        emailValid: true,
-        emailMsg: "Please enter a valid email",
-      }));
-      validForm = false;
-    } else {
-      setErrorState((prevState) => ({
-        ...prevState,
-        emailValid: false,
-        emailMsg: "",
-      }));
-    }
-
-    if (tempFormData.password === "" || !passwordCheck(tempFormData.password)) {
-      setErrorState((prevState) => ({
-        ...prevState,
-        passwordValid: true,
-        passwordMsg:
-          "Please enter a valid password (1 lowercase char, 1 uppercase char, 1 number, at least 8 chars)",
-      }));
-      validForm = false;
-    } else {
-      setErrorState((prevState) => ({
-        ...prevState,
-        passwordValid: false,
-        passwordMsg: "",
-      }));
-    }
-
-    if (
-      tempFormData.password2 === "" ||
-      tempFormData.password !== tempFormData.password2
-    ) {
-      setErrorState((prevState) => ({
-        ...prevState,
-        password2Valid: true,
-        password2Msg: "Passwords do not match. Please check and type again",
-      }));
-      validForm = false;
-    } else {
-      setErrorState((prevState) => ({
-        ...prevState,
-        password2Valid: false,
-        password2Msg: "",
-      }));
-    }
-
-    if (!contactCheck(tempFormData.contactNum)) {
-      setErrorState((prevState) => ({
-        ...prevState,
-        contactValid: true,
-        contactMsg: "Please enter a valid contact number",
-      }));
-      validForm = false;
-    } else {
-      setErrorState((prevState) => ({
-        ...prevState,
-        contactValid: false,
-        contactMsg: "",
-      }));
-    }
-
-    if (
-      tempFormData.dateOfBirth === "" ||
-      !dateCheck(tempFormData.dateOfBirth)
-    ) {
-      setErrorState((prevState) => ({
-        ...prevState,
-        dobValid: true,
-        dobMsg: "Please enter a valid date of birth (at least 12 years of age",
-      }));
-      validForm = false;
-    } else {
-      setErrorState((prevState) => ({
-        ...prevState,
-        dobValid: false,
-        dobMsg: "",
-      }));
-    }
-
-    if (tempFormData.isStaff && tempFormData.staffType === "") {
-      setErrorState((prevState) => ({
-        ...prevState,
-        staffValid: true,
-        staffMsg: "Please select staff type",
-      }));
-      validForm = false;
-    } else {
-      setErrorState((prevState) => ({
-        ...prevState,
-        staffValid: false,
-        staffMsg: "",
-      }));
-    }
-
-    if (tempFormData.isStaff && tempFormData.qualificationType === "") {
-      setErrorState((prevState) => ({
-        ...prevState,
-        qualValid: true,
-        qualMsg: "Please select qualification type",
-      }));
-      validForm = false;
-    } else {
-      setErrorState((prevState) => ({
-        ...prevState,
-        qualValid: false,
-        qualMsg: "",
-      }));
-    }
-
-    if (!validForm) {
-      setAlertState({
-        type: "error",
-        status: true,
-        message: "Error in form, please check!",
-      });
-    } else {
-      setAlertState({
-        type: "",
-        status: false,
-        message: "",
-      });
-    }
-
-    return validForm;
-  }
-
-  function nricCheck(nric) {
-    let validFirstChar = ["S", "T", "F", "G"];
-    let nricWeight = [2, 7, 6, 5, 4, 3, 2];
-    let nricCheckSum = 0;
-    let stCheckChar = ["J", "Z", "I", "H", "G", "F", "E", "D", "C", "B", "A"];
-    let fgCheckChar = ["X", "W", "U", "T", "R", "Q", "P", "N", "M", "L", "K"];
-
-    if (nric.length !== 9) {
-      return false;
-    }
-
-    let firstChar = nric[0];
-    let lastChar = nric[8];
-
-    if (validFirstChar.indexOf(firstChar) === -1) {
-      return false;
-    }
-
-    for (let i = 0; i < 7; i++) {
-      nricCheckSum += parseInt(nric[i + 1]) * nricWeight[i];
-    }
-
-    if (firstChar === "T" || firstChar === "G") {
-      nricCheckSum += 4;
-    }
-
-    nricCheckSum %= 11;
-
-    if (
-      validFirstChar.indexOf(firstChar) < 2 &&
-      stCheckChar[nricCheckSum] === lastChar
-    ) {
-      return true;
-    } else if (
-      validFirstChar.indexOf(firstChar) > 1 &&
-      fgCheckChar[nricCheckSum] === lastChar
-    ) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-
-  function emailCheck(email) {
-    const regexp =
-      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return regexp.test(email);
-  }
-
-  function passwordCheck(password) {
-    const regexp = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})/;
-    return regexp.test(password);
-  }
-
-  function contactCheck(contact) {
-    const regexp = /^(?=.*[0-9])(?=.{8,})/;
-    return regexp.test(contact);
-  }
-
-  function dateCheck(date) {
-    let dateTimeNow = Date.now();
-    let ageGap = 86400000 * 365 * 12;
-
-    if (Date.parse(date) > dateTimeNow - ageGap) {
-      return false;
-    } else {
-      return true;
-    }
-  }
-
   async function submit(e) {
     e.preventDefault();
 
-    if (checkForm()) {
+    if (checkForm(formData,setErrorState,setAlertState)) {
       try {
         let {
           data: { user, token },
@@ -388,14 +160,8 @@ function Registration({ setAuth, setUser }) {
             alignItems: "center",
           }}
         >
-          {alertState.status ? (
-            <Alert id="alert" severity={alertState.type}>
-              {alertState.message}
-            </Alert>
-          ) : (
-            <></>
-          )}
-
+          <FormAlert alertState={alertState}/>
+        
           <Typography component="h1" variant="h5">
             Sign up for a new account
           </Typography>

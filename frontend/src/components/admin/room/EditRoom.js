@@ -1,4 +1,3 @@
-import Alert from "@mui/material/Alert";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
@@ -6,6 +5,8 @@ import React, { useState } from "react";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 import axios from "axios";
+import FormAlert from "../../common/FormAlert";
+import { checkForm } from "../../common/checkForm";
 
 function EditCenter({ room, center, setEditState, setRoom }) {
   const [formData, setFormData] = useState({ name: room.name });
@@ -21,7 +22,7 @@ function EditCenter({ room, center, setEditState, setRoom }) {
 
   async function submit(e) {
     e.preventDefault();
-    if (checkForm()) {
+    if (checkForm(formData,setErrorState,setAlertState)) {
       try {
         let {
           data: { updatedRoom },
@@ -54,49 +55,49 @@ function EditCenter({ room, center, setEditState, setRoom }) {
     }));
   }
 
-  function checkForm() {
-    let validForm = true;
-    let tempFormData = formData;
+  // function checkForm() {
+  //   let validForm = true;
+  //   let tempFormData = formData;
 
-    if (tempFormData.name === "") {
-      setErrorState((prevState) => ({
-        ...prevState,
-        nameValid: true,
-        nameMsg: "Please enter a name",
-      }));
-      validForm = false;
-    } else {
-      setErrorState((prevState) => ({
-        ...prevState,
-        nameValid: false,
-        nameMsg: "",
-      }));
-    }
+  //   if (tempFormData.name === "") {
+  //     setErrorState((prevState) => ({
+  //       ...prevState,
+  //       nameValid: true,
+  //       nameMsg: "Please enter a name",
+  //     }));
+  //     validForm = false;
+  //   } else {
+  //     setErrorState((prevState) => ({
+  //       ...prevState,
+  //       nameValid: false,
+  //       nameMsg: "",
+  //     }));
+  //   }
 
-    if (!validForm) {
-      setAlertState({
-        type: "error",
-        status: true,
-        message: "Error in form, please check!",
-      });
-    } else {
-      setAlertState({
-        type: "",
-        status: false,
-        message: "",
-      });
+  //   if (!validForm) {
+  //     setAlertState({
+  //       type: "error",
+  //       status: true,
+  //       message: "Error in form, please check!",
+  //     });
+  //   } else {
+  //     setAlertState({
+  //       type: "",
+  //       status: false,
+  //       message: "",
+  //     });
 
-      setTimeout(() => {
-        setAlertState({
-          type: "success",
-          status: false,
-          message: "",
-        });
-      }, 1250);
-    }
+  //     setTimeout(() => {
+  //       setAlertState({
+  //         type: "success",
+  //         status: false,
+  //         message: "",
+  //       });
+  //     }, 1250);
+  //   }
 
-    return validForm;
-  }
+  //   return validForm;
+  // }
 
   return (
     <Box
@@ -107,13 +108,8 @@ function EditCenter({ room, center, setEditState, setRoom }) {
         alignItems: "center",
       }}
     >
-      {alertState.status ? (
-        <Alert id="alert" severity={alertState.type}>
-          {alertState.message}
-        </Alert>
-      ) : (
-        <></>
-      )}
+      <FormAlert alertState={alertState}/>
+
       <Typography component="h1" variant="h5">
         Edit Room
       </Typography>

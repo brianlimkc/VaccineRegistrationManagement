@@ -1,13 +1,13 @@
-import Alert from "@mui/material/Alert";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 import axios from "axios";
-
+import { checkForm } from "../../common/checkForm";
+import FormAlert from "../../common/FormAlert";
 
 function CreateCenter({ getAllCenters }) {
   const [centerData, setCenterData] = useState({
@@ -15,7 +15,7 @@ function CreateCenter({ getAllCenters }) {
     shotType: "",
     streetAddress: "",
     postalCode: "",
-    contactNumber: "",
+    contactNum: "",
   });
 
   const [alertState, setAlertState] = useState({
@@ -23,6 +23,7 @@ function CreateCenter({ getAllCenters }) {
     status: false,
     message: "",
   });
+
   const [errorState, setErrorState] = useState({
     nameValid: false,
     nameMsg: "",
@@ -36,116 +37,119 @@ function CreateCenter({ getAllCenters }) {
     contactMsg: "",
   });
 
-  function checkForm() {
-    let validForm = true;
-    let tempFormData = centerData;
+  // function checkForm() {
+  //   let validForm = true;
+  //   let tempFormData = centerData;
 
-    if (tempFormData.name === "") {
-      setErrorState((prevState) => ({
-        ...prevState,
-        nameValid: true,
-        nameMsg: "Please enter a name",
-      }));
-      validForm = false;
-    } else {
-      setErrorState((prevState) => ({
-        ...prevState,
-        nameValid: false,
-        nameMsg: "",
-      }));
-    }
+  //   if (tempFormData.name === "") {
+  //     setErrorState((prevState) => ({
+  //       ...prevState,
+  //       nameValid: true,
+  //       nameMsg: "Please enter a name",
+  //     }));
+  //     validForm = false;
+  //   } else {
+  //     setErrorState((prevState) => ({
+  //       ...prevState,
+  //       nameValid: false,
+  //       nameMsg: "",
+  //     }));
+  //   }
 
-    if (tempFormData.shotType === "") {
-      setErrorState((prevState) => ({
-        ...prevState,
-        shotValid: true,
-        shotMsg: "Please select a shot type",
-      }));
-      validForm = false;
-    } else {
-      setErrorState((prevState) => ({
-        ...prevState,
-        shotValid: false,
-        shotMsg: "",
-      }));
-    }
+  //   if (tempFormData.shotType === "") {
+  //     setErrorState((prevState) => ({
+  //       ...prevState,
+  //       shotValid: true,
+  //       shotMsg: "Please select a shot type",
+  //     }));
+  //     validForm = false;
+  //   } else {
+  //     setErrorState((prevState) => ({
+  //       ...prevState,
+  //       shotValid: false,
+  //       shotMsg: "",
+  //     }));
+  //   }
 
-    if (tempFormData.streetAddress === "") {
-      setErrorState((prevState) => ({
-        ...prevState,
-        addressValid: true,
-        addressMsg: "Please enter an address",
-      }));
-      validForm = false;
-    } else {
-      setErrorState((prevState) => ({
-        ...prevState,
-        addressValid: false,
-        addressMsg: "",
-      }));
-    }
+  //   if (tempFormData.streetAddress === "") {
+  //     setErrorState((prevState) => ({
+  //       ...prevState,
+  //       addressValid: true,
+  //       addressMsg: "Please enter an address",
+  //     }));
+  //     validForm = false;
+  //   } else {
+  //     setErrorState((prevState) => ({
+  //       ...prevState,
+  //       addressValid: false,
+  //       addressMsg: "",
+  //     }));
+  //   }
 
-    if (!postalCheck(tempFormData.postalCode)) {
-      setErrorState((prevState) => ({
-        ...prevState,
-        postalValid: true,
-        postalMsg: "Please enter a valid postal code",
-      }));
-      validForm = false;
-    } else {
-      setErrorState((prevState) => ({
-        ...prevState,
-        postalValid: false,
-        postalMsg: "",
-      }));
-    }
+  //   if (!postalCheck(tempFormData.postalCode)) {
+  //     setErrorState((prevState) => ({
+  //       ...prevState,
+  //       postalValid: true,
+  //       postalMsg: "Please enter a valid postal code",
+  //     }));
+  //     validForm = false;
+  //   } else {
+  //     setErrorState((prevState) => ({
+  //       ...prevState,
+  //       postalValid: false,
+  //       postalMsg: "",
+  //     }));
+  //   }
 
-    if (!contactCheck(tempFormData.contactNumber)) {
-      setErrorState((prevState) => ({
-        ...prevState,
-        contactValid: true,
-        contactMsg: "Please enter a valid contact number",
-      }));
-      validForm = false;
-    } else {
-      setErrorState((prevState) => ({
-        ...prevState,
-        contactValid: false,
-        contactMsg: "",
-      }));
-    }
+  //   if (!contactCheck(tempFormData.contactNumber)) {
+  //     setErrorState((prevState) => ({
+  //       ...prevState,
+  //       contactValid: true,
+  //       contactMsg: "Please enter a valid contact number",
+  //     }));
+  //     validForm = false;
+  //   } else {
+  //     setErrorState((prevState) => ({
+  //       ...prevState,
+  //       contactValid: false,
+  //       contactMsg: "",
+  //     }));
+  //   }
 
-    if (!validForm) {
-      setAlertState({
-        type: "error",
-        status: true,
-        message: "Error in form, please check!",
-      });
-    } else {
-      setAlertState({
-        type: "",
-        status: false,
-        message: "",
-      });
-    }
+  //   if (!validForm) {
+  //     setAlertState({
+  //       type: "error",
+  //       status: true,
+  //       message: "Error in form, please check!",
+  //     });
+  //   } else {
+  //     setAlertState({
+  //       type: "",
+  //       status: false,
+  //       message: "",
+  //     });
+  //   }
 
-    return validForm;
-  }
+  //   return validForm;
+  // }
 
-  function contactCheck(contact) {
-    const regexp = /^(?=.*[0-9])(?=.{8,})/;
-    return regexp.test(contact);
-  }
+  // function contactCheck(contact) {
+  //   const regexp = /^(?=.*[0-9])(?=.{8,})/;
+  //   return regexp.test(contact);
+  // }
 
-  function postalCheck(postal) {
-    const regexp = /^(?=.*[0-9])(?=.{6,})/;
-    return regexp.test(postal);
-  }
+  // function postalCheck(postal) {
+  //   const regexp = /^(?=.*[0-9])(?=.{6,})/;
+  //   return regexp.test(postal);
+  // }
+
+  useEffect(() => {console.log(centerData)},[centerData])
+  useEffect(() => {console.log(errorState)},[errorState])
 
   async function submit(e) {
     e.preventDefault();
 
-    if (checkForm()) {
+    if (checkForm(centerData,setErrorState,setAlertState)) {
       try {
           await axios.post("/api/center/create", centerData, {
           headers: {
@@ -196,17 +200,11 @@ function CreateCenter({ getAllCenters }) {
             alignItems: "center",
           }}
         >
+          <FormAlert alertState={alertState}/>
+          
           <Typography component="h1" variant="h5">
             Create a new center
           </Typography>
-
-          {alertState.status ? (
-            <Alert id="alert" severity={alertState.type}>
-              {alertState.message}
-            </Alert>
-          ) : (
-            <></>
-          )}
 
           <Box component="form" noValidate onSubmit={submit} sx={{ mt: 3 }}>
             <Grid container spacing={2}>
@@ -268,7 +266,7 @@ function CreateCenter({ getAllCenters }) {
                   fullWidth
                   id="contactNumber"
                   label="Contact Number"
-                  name="contactNumber"
+                  name="contactNum"
                   onChange={change}
                   error={errorState.contactValid}
                   helperText={errorState.contactMsg}
