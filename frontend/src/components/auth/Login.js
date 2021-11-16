@@ -48,11 +48,11 @@ function Login({ setAuth, setUser }) {
 
         setTimeout(()=>(history.push("/")), 1250);
       } catch (e) {
-        console.log(e.response.data);
+        console.log(e);
         setAlertState({
           type: "error",
           status: true,
-          message: e.response.data.message,
+          message: e.response.data.message ,
         });
       }
     }

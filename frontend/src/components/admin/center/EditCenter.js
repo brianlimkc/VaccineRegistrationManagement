@@ -9,7 +9,6 @@ import { useHistory } from "react-router-dom";
 import { checkForm } from "../../common/checkForm";
 import FormAlert from "../../common/FormAlert";
 
-
 function EditCenter({ center, setEditState }) {
   let history = useHistory();
   const [formData, setFormData] = useState({
@@ -18,7 +17,7 @@ function EditCenter({ center, setEditState }) {
     shotType: center.shotType,
     streetAddress: center.streetAddress,
     postalCode: center.postalCode,
-    contactNumber: center.contactNumber,
+    contactNum: center.contactNumber,
   });
   const [alertState, setAlertState] = useState({
     type: "error",
@@ -151,7 +150,7 @@ function EditCenter({ center, setEditState }) {
                 id="contactNumber"
                 label="Contact Number"
                 defaultValue={center.contactNumber}
-                name="contactNumber"
+                name="contactNum"
                 autoComplete="contact"
                 onChange={change}
                 error={errorState.contactValid}

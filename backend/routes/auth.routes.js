@@ -103,7 +103,7 @@ router.post('/login', async(req, res) => {
             throw "user not found"
         }
         //if password is not a match
-        if(!user.validPassword(req.body.password)){
+        if(!user.validPassword(req.body.passwordLogin)){
             throw "check user password"
         }
 
@@ -115,8 +115,6 @@ router.post('/login', async(req, res) => {
                 isStaff: user.isStaff,
                 isAdmin: user.isAdmin
             }},process.env.JWTSECRET,{expiresIn: "7d" })
-
-
 
         res.status(200).json({user, token})
     }catch (e){
