@@ -65,49 +65,6 @@ function CreateRoom({ centerID, center, getRoomArray }) {
     }));
   }
 
-  // function checkForm() {
-  //   let validForm = true;
-  //   let tempFormData = roomData;
-
-  //   if (tempFormData.name === "") {
-  //     setErrorState((prevState) => ({
-  //       ...prevState,
-  //       nameValid: true,
-  //       nameMsg: "Please enter a name",
-  //     }));
-  //     validForm = false;
-  //   } else {
-  //     setErrorState((prevState) => ({
-  //       ...prevState,
-  //       nameValid: false,
-  //       nameMsg: "",
-  //     }));
-  //   }
-
-  //   if (!validForm) {
-  //     setAlertState({
-  //       type: "error",
-  //       status: true,
-  //       message: "Error in form, please check!",
-  //     });
-  //   } else {
-  //     setAlertState({
-  //       type: "",
-  //       status: false,
-  //       message: "",
-  //     });
-
-  //     setTimeout(() => {
-  //       setAlertState({
-  //         type: "success",
-  //         status: false,
-  //         message: "",
-  //       });
-  //     }, 1250);
-  //   }
-
-  //   return validForm;
-  // }
 
   return (
     <Container component="main" fullWidth>

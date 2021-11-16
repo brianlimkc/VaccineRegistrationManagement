@@ -7,15 +7,14 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 import axios from "axios";
-import Alert from "@mui/material/Alert";
-
+import { checkForm } from "../common/checkForm";
+import FormAlert from "../common/FormAlert";
 import { useTitle } from "react-use";
-
 import { useHistory } from "react-router-dom";
 
 function Login({ setAuth, setUser }) {
   let history = useHistory();
-  const [formData, setFormData] = useState({ email: "", password: "" });
+  const [formData, setFormData] = useState({ email: "", passwordLogin: "" });
   const [alertState, setAlertState] = useState({
     type: "error",
     status: false,
@@ -32,7 +31,7 @@ function Login({ setAuth, setUser }) {
 
   async function submit(e) {
     e.preventDefault();
-    if (checkForm()) {
+    if (checkForm(formData,setErrorState,setAlertState)) {
       try {
         let {
           data: { user, token },
@@ -47,7 +46,7 @@ function Login({ setAuth, setUser }) {
           message: "Login Successful",
         });
 
-        setTimeout(goHome, 1250);
+        setTimeout(()=>(history.push("/")), 1250);
       } catch (e) {
         console.log(e.response.data);
         setAlertState({
@@ -59,74 +58,13 @@ function Login({ setAuth, setUser }) {
     }
   }
 
-  function goHome() {
-    history.push("/");
-  }
-
   function change(e) {
     setFormData((prevState) => ({
       ...prevState,
       [e.target.name]: e.target.value,
     }));
   }
-
-  function checkForm() {
-    let validForm = true;
-    let tempFormData = formData;
-
-    if (tempFormData.email === "" || !emailCheck(tempFormData.email)) {
-      setErrorState((prevState) => ({
-        ...prevState,
-        emailValid: true,
-        emailMsg: "Please enter a valid email",
-      }));
-      validForm = false;
-    } else {
-      setErrorState((prevState) => ({
-        ...prevState,
-        emailValid: false,
-        emailMsg: "",
-      }));
-    }
-
-    if (tempFormData.password === "") {
-      setErrorState((prevState) => ({
-        ...prevState,
-        passwordValid: true,
-        passwordMsg: "Password field is empty",
-      }));
-      validForm = false;
-    } else {
-      setErrorState((prevState) => ({
-        ...prevState,
-        passwordValid: false,
-        passwordMsg: "",
-      }));
-    }
-
-    if (!validForm) {
-      setAlertState({
-        type: "error",
-        status: true,
-        message: "Login Form Error, Please Check!",
-      });
-    } else {
-      setAlertState({
-        type: "",
-        status: false,
-        message: "",
-      });
-    }
-
-    return validForm;
-  }
-
-  function emailCheck(email) {
-    const regexp =
-      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return regexp.test(email);
-  }
-
+ 
   return (
     <Container component="main" maxWidth="xs">
       <Grid className={"d-flex justify-content-center mt-3"}>
@@ -138,13 +76,8 @@ function Login({ setAuth, setUser }) {
             alignItems: "center",
           }}
         >
-          {alertState.status ? (
-            <Alert id="alert" severity={alertState.type}>
-              {alertState.message}
-            </Alert>
-          ) : (
-            <></>
-          )}
+          <FormAlert alertState={alertState}/>
+
           <Typography component="h1" variant="h5">
             Login to your account
           </Typography>
@@ -169,7 +102,7 @@ function Login({ setAuth, setUser }) {
                 <TextField
                   required
                   fullWidth
-                  name="password"
+                  name="passwordLogin"
                   label="Password"
                   type="password"
                   id="password"

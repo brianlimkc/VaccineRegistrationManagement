@@ -54,51 +54,7 @@ function EditCenter({ room, center, setEditState, setRoom }) {
       [e.target.name]: e.target.value,
     }));
   }
-
-  // function checkForm() {
-  //   let validForm = true;
-  //   let tempFormData = formData;
-
-  //   if (tempFormData.name === "") {
-  //     setErrorState((prevState) => ({
-  //       ...prevState,
-  //       nameValid: true,
-  //       nameMsg: "Please enter a name",
-  //     }));
-  //     validForm = false;
-  //   } else {
-  //     setErrorState((prevState) => ({
-  //       ...prevState,
-  //       nameValid: false,
-  //       nameMsg: "",
-  //     }));
-  //   }
-
-  //   if (!validForm) {
-  //     setAlertState({
-  //       type: "error",
-  //       status: true,
-  //       message: "Error in form, please check!",
-  //     });
-  //   } else {
-  //     setAlertState({
-  //       type: "",
-  //       status: false,
-  //       message: "",
-  //     });
-
-  //     setTimeout(() => {
-  //       setAlertState({
-  //         type: "success",
-  //         status: false,
-  //         message: "",
-  //       });
-  //     }, 1250);
-  //   }
-
-  //   return validForm;
-  // }
-
+  
   return (
     <Box
       sx={{

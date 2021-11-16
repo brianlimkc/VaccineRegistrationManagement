@@ -56,7 +56,7 @@ function EditProfile({ user, setUser, setEditState }) {
           status: true,
           message: "Account successfully updated!",
         });
-        setTimeout(goBack, 1250);
+        setTimeout(()=>(setEditState(false)),1250);
       } catch (e) {
         console.log(e);
         setAlertState({
@@ -66,10 +66,6 @@ function EditProfile({ user, setUser, setEditState }) {
         });
       }
     }
-  }
-
-  function goBack() {
-    setEditState(false);
   }
 
   function change(e) {
@@ -85,121 +81,6 @@ function EditProfile({ user, setUser, setEditState }) {
       }));
     }
   }
-
-  // function checkForm() {
-  //   let validForm = true;
-  //   let tempFormData = formData;
-
-  //   if (tempFormData.name === "") {
-  //     setErrorState((prevState) => ({
-  //       ...prevState,
-  //       nameValid: true,
-  //       nameMsg: "Please enter a name",
-  //     }));
-  //     validForm = false;
-  //   } else {
-  //     setErrorState((prevState) => ({
-  //       ...prevState,
-  //       nameValid: false,
-  //       nameMsg: "",
-  //     }));
-  //   }
-
-  //   if (tempFormData.email === "" || !emailCheck(tempFormData.email)) {
-  //     setErrorState((prevState) => ({
-  //       ...prevState,
-  //       emailValid: true,
-  //       emailMsg: "Please enter a valid email",
-  //     }));
-  //     validForm = false;
-  //   } else {
-  //     setErrorState((prevState) => ({
-  //       ...prevState,
-  //       emailValid: false,
-  //       emailMsg: "",
-  //     }));
-  //   }
-
-  //   if (tempFormData.password !== "" && tempFormData.password !== "") {
-  //     if (!passwordCheck(tempFormData.password)) {
-  //       setErrorState((prevState) => ({
-  //         ...prevState,
-  //         passwordValid: true,
-  //         passwordMsg:
-  //           "Please enter a valid password (1 lowercase char, 1 uppercase char, 1 number, at least 8 chars)",
-  //       }));
-  //       validForm = false;
-  //     } else {
-  //       setErrorState((prevState) => ({
-  //         ...prevState,
-  //         passwordValid: false,
-  //         passwordMsg: "",
-  //       }));
-  //     }
-
-  //     if (tempFormData.password !== tempFormData.password2) {
-  //       setErrorState((prevState) => ({
-  //         ...prevState,
-  //         password2Valid: true,
-  //         password2Msg: "Passwords do not match. Please check and type again",
-  //       }));
-  //       validForm = false;
-  //     } else {
-  //       setErrorState((prevState) => ({
-  //         ...prevState,
-  //         password2Valid: false,
-  //         password2Msg: "",
-  //       }));
-  //     }
-  //   }
-
-  //   if (!contactCheck(tempFormData.contactNum)) {
-  //     setErrorState((prevState) => ({
-  //       ...prevState,
-  //       contactValid: true,
-  //       contactMsg: "Please enter a valid contact number",
-  //     }));
-  //     validForm = false;
-  //   } else {
-  //     setErrorState((prevState) => ({
-  //       ...prevState,
-  //       contactValid: false,
-  //       contactMsg: "",
-  //     }));
-  //   }
-
-  //   if (!validForm) {
-  //     setAlertState({
-  //       type: "error",
-  //       status: true,
-  //       message: "Error in form, please check!",
-  //     });
-  //   } else {
-  //     setAlertState({
-  //       type: "",
-  //       status: false,
-  //       message: "",
-  //     });
-  //   }
-
-  //   return validForm;
-  // }
-
-  // function emailCheck(email) {
-  //   const regexp =
-  //     /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  //   return regexp.test(email);
-  // }
-
-  // function passwordCheck(password) {
-  //   const regexp = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})/;
-  //   return regexp.test(password);
-  // }
-
-  // function contactCheck(contact) {
-  //   const regexp = /^(?=.*[0-9])(?=.{8,})/;
-  //   return regexp.test(contact);
-  // }
 
   return (
     <Container component="main" maxWidth="xs">
