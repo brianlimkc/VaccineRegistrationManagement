@@ -8,14 +8,11 @@ import Grid from "@mui/material/Grid";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
 import FormAlert from "../common/FormAlert";
+import {alertStateConst} from "../common/constants";
 
 function Profile({ setAuth, user, setUser }) {
   const [editState, setEditState] = useState(false);
-  const [alertState2, setAlertState2] = useState({
-    type: "error",
-    status: false,
-    message: "",
-  });
+  const [alertState2, setAlertState2] = useState(alertStateConst);
 
   let history = useHistory();
 

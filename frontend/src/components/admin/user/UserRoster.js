@@ -17,7 +17,7 @@ import {
   TableCell,
 } from "@mui/material";
 import { Box } from "@mui/system";
-import {StyledModal, Backdrop, style} from "../../common/constants";
+import {StyledModal, Backdrop, style, alertStateConst} from "../../common/constants";
 import FormAlert from "../../common/FormAlert";
 
 function UserRoster({ user, setUser }) {
@@ -33,11 +33,7 @@ function UserRoster({ user, setUser }) {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  const [alertState, setAlertState] = useState({
-    type: "error",
-    status: false,
-    message: "",
-  });
+  const [alertState, setAlertState] = useState(alertStateConst);
 
 
   useEffect(() => {generateSchedule()}, [user])

@@ -106,6 +106,15 @@ export const centerErrorStateConst = {
 
 export const roomFormDataConst = { name: "" }
 
+export const loginFormDataConst = { email: "", passwordLogin: "" }
+
+export const loginErrorStateConst = {
+  emailValid: false,
+  emailMsg: "",
+  passwordLoginValid: false,
+  passwordLoginMsg: "",
+}
+
 export const roomErrorStateConst = {
   nameValid: false,
   nameMsg: "",

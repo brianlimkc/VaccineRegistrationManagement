@@ -11,21 +11,13 @@ import { checkForm } from "../common/checkForm";
 import FormAlert from "../common/FormAlert";
 import { useTitle } from "react-use";
 import { useHistory } from "react-router-dom";
+import {alertStateConst, loginFormDataConst, loginErrorStateConst} from "../common/constants";
 
 function Login({ setAuth, setUser }) {
   let history = useHistory();
-  const [formData, setFormData] = useState({ email: "", passwordLogin: "" });
-  const [alertState, setAlertState] = useState({
-    type: "error",
-    status: false,
-    message: "",
-  });
-  const [errorState, setErrorState] = useState({
-    emailValid: false,
-    emailMsg: "",
-    passwordLoginValid: false,
-    passwordLoginMsg: "",
-  });
+  const [formData, setFormData] = useState(loginFormDataConst);
+  const [alertState, setAlertState] = useState(alertStateConst);
+  const [errorState, setErrorState] = useState(loginErrorStateConst);
 
   useTitle("Login Screen");
 

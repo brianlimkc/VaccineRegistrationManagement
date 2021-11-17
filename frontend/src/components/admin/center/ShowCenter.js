@@ -11,17 +11,14 @@ import Typography from "@mui/material/Typography";
 import axios from "axios";
 import { useParams, useHistory } from "react-router-dom";
 import FormAlert from "../../common/FormAlert";
+import {alertStateConst} from "../../common/constants";
 
 function ShowCenter() {
   const { centerID } = useParams();
   const [center, setCenter] = useState({});
   const [editState, setEditState] = useState(false);
   const [roomArray, setRoomArray] = useState([]);
-  const [alertState2, setAlertState2] = useState({
-    type: "error",
-    status: false,
-    message: "",
-  });
+  const [alertState2, setAlertState2] = useState(alertStateConst);
 
   let history = useHistory();
 
