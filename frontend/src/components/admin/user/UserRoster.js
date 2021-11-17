@@ -18,7 +18,7 @@ import {
 } from "@mui/material";
 import { Box } from "@mui/system";
 import Alert from "@mui/material/Alert";
-import {StyledModal, Backdrop, style} from "../../common/modalDefault";
+import {StyledModal, Backdrop, style} from "../../common/constants";
 
 
 function UserRoster({ user, setUser }) {

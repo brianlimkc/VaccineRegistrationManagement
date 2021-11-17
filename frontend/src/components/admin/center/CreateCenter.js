@@ -8,41 +8,20 @@ import Typography from "@mui/material/Typography";
 import axios from "axios";
 import { checkForm } from "../../common/checkForm";
 import FormAlert from "../../common/FormAlert";
+import { centerFormDataConst, centerErrorStateConst, alertStateConst} from "../../common/constants";
+
 
 function CreateCenter({ getAllCenters }) {
-  const [centerData, setCenterData] = useState({
-    name: "",
-    shotType: "",
-    streetAddress: "",
-    postalCode: "",
-    contactNum: "",
-  });
-
-  const [alertState, setAlertState] = useState({
-    type: "error",
-    status: false,
-    message: "",
-  });
-
-  const [errorState, setErrorState] = useState({
-    nameValid: false,
-    nameMsg: "",
-    shotValid: false,
-    shotMsg: "",
-    addressValid: false,
-    addressMsg: "",
-    postalValid: false,
-    postalMsg: "",
-    contactValid: false,
-    contactMsg: "",
-  });
+  const [formData, setFormData] = useState(centerFormDataConst);
+  const [alertState, setAlertState] = useState(alertStateConst);
+  const [errorState, setErrorState] = useState(centerErrorStateConst);
  
   async function submit(e) {
     e.preventDefault();
 
-    if (checkForm(centerData,setErrorState,setAlertState)) {
+    if (checkForm(formData,setErrorState,setAlertState)) {
       try {
-          await axios.post("/api/center/create", centerData, {
+          await axios.post("/api/center/create", formData, {
           headers: {
             authorization: `Bearer ${localStorage.token}`,
           },
@@ -75,7 +54,7 @@ function CreateCenter({ getAllCenters }) {
   }
 
   async function change(e) {
-    await setCenterData((prevState) => ({
+    await setFormData((prevState) => ({
       ...prevState,
       [e.target.name]: e.target.value,
     }));

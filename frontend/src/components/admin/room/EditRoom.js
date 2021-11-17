@@ -7,18 +7,13 @@ import Typography from "@mui/material/Typography";
 import axios from "axios";
 import FormAlert from "../../common/FormAlert";
 import { checkForm } from "../../common/checkForm";
+import { roomErrorStateConst, alertStateConst} from "../../common/constants";
+
 
 function EditCenter({ room, center, setEditState, setRoom }) {
   const [formData, setFormData] = useState({ name: room.name });
-  const [alertState, setAlertState] = useState({
-    type: "error",
-    status: false,
-    message: "",
-  });
-  const [errorState, setErrorState] = useState({
-    nameValid: false,
-    nameMsg: "",
-  });
+  const [alertState, setAlertState] = useState(alertStateConst);
+  const [errorState, setErrorState] = useState(roomErrorStateConst);
 
   async function submit(e) {
     e.preventDefault();

@@ -8,20 +8,13 @@ import Typography from "@mui/material/Typography";
 import axios from "axios";
 import { checkForm } from "../../common/checkForm";
 import FormAlert from "../../common/FormAlert";
+import { roomFormDataConst, roomErrorStateConst, alertStateConst} from "../../common/constants";
 
 
 function CreateRoom({ centerID, center, getRoomArray }) {
-  const [roomData, setRoomData] = useState({ name: "" });
-  const [alertState, setAlertState] = useState({
-    type: "error",
-    status: false,
-    message: "",
-  });
-  const [errorState, setErrorState] = useState({
-    nameValid: false,
-    nameMsg: "",
-  });
-
+  const [roomData, setRoomData] = useState(roomFormDataConst);
+  const [alertState, setAlertState] = useState(alertStateConst);
+  const [errorState, setErrorState] = useState(roomErrorStateConst);
 
   async function submit(e) {
     e.preventDefault();

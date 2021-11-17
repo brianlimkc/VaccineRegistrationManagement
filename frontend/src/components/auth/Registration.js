@@ -9,46 +9,15 @@ import Typography from "@mui/material/Typography";
 import axios from "axios";
 import { checkForm } from "../common/checkForm";
 import { useHistory } from "react-router-dom";
+import { formDataConst, errorStateConst, alertStateConst } from "../common/constants";
 
 function Registration({ setAuth, setUser }) {
+
   let history = useHistory();
 
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    nric: "",
-    password: "",
-    password2: "",
-    dateOfBirth: "",
-    contactNum: "",
-  });
-
-  const [alertState, setAlertState] = useState({
-    type: "error",
-    status: false,
-    message: "",
-  });
-
-  const [errorState, setErrorState] = useState({
-    nameValid: false,
-    nameMsg: "",
-    emailValid: false,
-    emailMsg: "",
-    nricValid: false,
-    nricMsg: "",
-    passwordValid: false,
-    passwordMsg: "",
-    password2Valid: false,
-    password2Msg: "",
-    contactValid: false,
-    contactMsg: "",
-    dobValid: false,
-    dobMsg: "",
-    staffValid: false,
-    staffMsg: "",
-    qualValid: false,
-    qualMsg: "",
-  });
+  const [formData, setFormData] = useState(formDataConst);
+  const [alertState, setAlertState] = useState(alertStateConst);
+  const [errorState, setErrorState] = useState(errorStateConst);
 
   async function submit(e) {
     e.preventDefault();

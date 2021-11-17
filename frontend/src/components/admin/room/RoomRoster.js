@@ -17,7 +17,7 @@ import {
   TableRow,
   TableCell,
 } from "@mui/material";
-import {StyledModal, Backdrop, style} from "../../common/modalDefault";
+import {StyledModal, Backdrop, style} from "../../common/constants";
 
 
 function RoomRoster({ room, setAlertState, resetAlert }) {

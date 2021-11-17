@@ -7,6 +7,8 @@ import React, { useState } from "react";
 import Typography from "@mui/material/Typography";
 import axios from "axios";
 import { checkForm } from "../common/checkForm";
+import  { errorStateConst, alertStateConst  } from "../common/constants";
+
 
 function EditProfile({ user, setUser, setEditState }) {
   const [formData, setFormData] = useState({
@@ -18,24 +20,9 @@ function EditProfile({ user, setUser, setEditState }) {
     password2: "",
   });
 
-  const [alertState, setAlertState] = useState({
-    type: "error",
-    status: false,
-    message: "",
-  });
+  const [alertState, setAlertState] = useState(alertStateConst);
 
-  const [errorState, setErrorState] = useState({
-    nameValid: false,
-    nameMsg: "",
-    emailValid: false,
-    emailMsg: "",
-    passwordValid: false,
-    passwordMsg: "",
-    password2Valid: false,
-    password2Msg: "",
-    contactValid: false,
-    contactMsg: "",
-  });
+  const [errorState, setErrorState] = useState(errorStateConst);
 
   async function submit(e) {
     e.preventDefault();

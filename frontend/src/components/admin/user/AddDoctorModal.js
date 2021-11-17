@@ -4,49 +4,13 @@ import React, { useState } from "react";
 import axios from "axios";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import { checkForm } from "../../common/checkForm";
-import {StyledModal, Backdrop, style} from "../../common/modalDefault";
+import { StyledModal, Backdrop, style, docFormDataConst, errorStateConst, alertStateConst} from "../../common/constants";
 
 function AddDoctorModal({ open, setOpen }) {
   const handleClose = () => setOpen(false);
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    nric: "",
-    password: "",
-    password2: "",
-    dateOfBirth: "",
-    contactNum: "",
-    staffType: "",
-    qualificationType: "",
-    isStaff: true,
-  });
-
-  const [alertState, setAlertState] = useState({
-    type: "error",
-    status: false,
-    message: "",
-  });
-
-  const [errorState, setErrorState] = useState({
-    nameValid: false,
-    nameMsg: "",
-    emailValid: false,
-    emailMsg: "",
-    nricValid: false,
-    nricMsg: "",
-    passwordValid: false,
-    passwordMsg: "",
-    password2Valid: false,
-    password2Msg: "",
-    contactValid: false,
-    contactMsg: "",
-    dobValid: false,
-    dobMsg: "",
-    staffValid: false,
-    staffMsg: "",
-    qualValid: false,
-    qualMsg: "",
-  });
+  const [formData, setFormData] = useState(docFormDataConst);
+  const [alertState, setAlertState] = useState(alertStateConst);
+  const [errorState, setErrorState] = useState(errorStateConst);
 
   async function submit(e) {
     e.preventDefault();
@@ -76,43 +40,9 @@ function AddDoctorModal({ open, setOpen }) {
   }
 
   function closeModal() {
-    setAlertState({
-      type: "error",
-      status: false,
-      message: "",
-    });
-    setFormData({
-      name: "",
-      email: "",
-      nric: "",
-      password: "",
-      password2: "",
-      dateOfBirth: "",
-      contactNum: "",
-      staffType: "",
-      qualificationType: "",
-      isStaff: true,
-    });
-    setErrorState({
-      nameValid: false,
-      nameMsg: "",
-      emailValid: false,
-      emailMsg: "",
-      nricValid: false,
-      nricMsg: "",
-      passwordValid: false,
-      passwordMsg: "",
-      password2Valid: false,
-      password2Msg: "",
-      contactValid: false,
-      contactMsg: "",
-      dobValid: false,
-      dobMsg: "",
-      staffValid: false,
-      staffMsg: "",
-      qualValid: false,
-      qualMsg: "",
-    });
+    setAlertState(alertStateConst);
+    setFormData(docFormDataConst);
+    setErrorState(errorStateConst);
     handleClose();
   }
 

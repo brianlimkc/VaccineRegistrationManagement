@@ -8,6 +8,8 @@ import axios from "axios";
 import { useHistory } from "react-router-dom";
 import { checkForm } from "../../common/checkForm";
 import FormAlert from "../../common/FormAlert";
+import { centerErrorStateConst, alertStateConst} from "../../common/constants";
+
 
 function EditCenter({ center, setEditState }) {
   let history = useHistory();
@@ -19,23 +21,8 @@ function EditCenter({ center, setEditState }) {
     postalCode: center.postalCode,
     contactNum: center.contactNumber,
   });
-  const [alertState, setAlertState] = useState({
-    type: "error",
-    status: false,
-    message: "",
-  });
-  const [errorState, setErrorState] = useState({
-    nameValid: false,
-    nameMsg: "",
-    shotValid: false,
-    shotMsg: "",
-    addressValid: false,
-    addressMsg: "",
-    postalValid: false,
-    postalMsg: "",
-    contactValid: false,
-    contactMsg: "",
-  });
+  const [alertState, setAlertState] = useState(alertStateConst);
+  const [errorState, setErrorState] = useState(centerErrorStateConst);
 
   async function submit(e) {
     e.preventDefault();
