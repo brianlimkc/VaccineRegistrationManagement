@@ -65,15 +65,15 @@ export function checkForm(formData, setErrorState, setAlertState) {
   if ("passwordLogin" in formData && formData.passwordLogin === "") {
     setErrorState((prevState) => ({
       ...prevState,
-      passwordValid: true,
-      passwordMsg: "Password field is empty",
+      passwordLoginValid: true,
+      passwordLoginMsg: "Password field is empty",
     }));
     validForm = false;
   } else {
     setErrorState((prevState) => ({
       ...prevState,
-      passwordValid: false,
-      passwordMsg: "",
+      passwordLoginValid: false,
+      passwordLoginMsg: "",
     }));
   }
 

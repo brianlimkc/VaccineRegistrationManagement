@@ -23,8 +23,8 @@ function Login({ setAuth, setUser }) {
   const [errorState, setErrorState] = useState({
     emailValid: false,
     emailMsg: "",
-    passwordValid: false,
-    passwordMsg: "",
+    passwordLoginValid: false,
+    passwordLoginMsg: "",
   });
 
   useTitle("Login Screen");
@@ -108,8 +108,8 @@ function Login({ setAuth, setUser }) {
                   id="password"
                   autoComplete="password"
                   onChange={change}
-                  error={errorState.passwordValid}
-                  helperText={errorState.passwordMsg}
+                  error={errorState.passwordLoginValid}
+                  helperText={errorState.passwordLoginMsg}
                 />
               </Grid>
             </Grid>

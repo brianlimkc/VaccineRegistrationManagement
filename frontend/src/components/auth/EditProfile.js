@@ -1,13 +1,12 @@
-import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
+import FormAlert from "../common/FormAlert";
 import Grid from "@mui/material/Grid";
-import TextField from "@mui/material/TextField";
+import ProfileForm from "./ProfileForm";
+import React, { useState } from "react";
 import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
 import axios from "axios";
 import { checkForm } from "../common/checkForm";
-import FormAlert from "../common/FormAlert";
 
 function EditProfile({ user, setUser, setEditState }) {
   const [formData, setFormData] = useState({
@@ -16,7 +15,7 @@ function EditProfile({ user, setUser, setEditState }) {
     email: user.email,
     contactNum: user.contactNum,
     password: "",
-    password2: ""
+    password2: "",
   });
 
   const [alertState, setAlertState] = useState({
@@ -40,7 +39,7 @@ function EditProfile({ user, setUser, setEditState }) {
 
   async function submit(e) {
     e.preventDefault();
-    if (checkForm(formData,setErrorState,setAlertState)) {
+    if (checkForm(formData, setErrorState, setAlertState)) {
       try {
         let {
           data: { user },
@@ -56,7 +55,7 @@ function EditProfile({ user, setUser, setEditState }) {
           status: true,
           message: "Account successfully updated!",
         });
-        setTimeout(()=>(setEditState(false)),1250);
+        setTimeout(() => setEditState(false), 1250);
       } catch (e) {
         console.log(e);
         setAlertState({
@@ -65,20 +64,6 @@ function EditProfile({ user, setUser, setEditState }) {
           message: "Error in updating account!",
         });
       }
-    }
-  }
-
-  function change(e) {
-    if (e.target.name === "nric") {
-      setFormData((prevState) => ({
-        ...prevState,
-        [e.target.name]: e.target.value.toUpperCase(),
-      }));
-    } else {
-      setFormData((prevState) => ({
-        ...prevState,
-        [e.target.name]: e.target.value,
-      }));
     }
   }
 
@@ -92,114 +77,21 @@ function EditProfile({ user, setUser, setEditState }) {
             alignItems: "center",
           }}
         >
-          <FormAlert alertState={alertState}/>
+          <FormAlert alertState={alertState} />
 
           <Typography component="h1" variant="h4">
             Edit Account Details
           </Typography>
 
-          <Box component="form" noValidate onSubmit={submit} sx={{ mt: 3 }}>
-            <Grid container spacing={2}>
-              <Grid item xs={12}>
-                <TextField
-                  autoComplete="name"
-                  name="name"
-                  required
-                  fullWidth
-                  id="name"
-                  label="Full Name"
-                  defaultValue={user.name}
-                  onChange={change}
-                  autoFocus
-                  error={errorState.nameValid}
-                  helperText={errorState.nameMsg}
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  required
-                  fullWidth
-                  id="email"
-                  label="Email Address"
-                  defaultValue={user.email}
-                  name="email"
-                  autoComplete="email"
-                  onChange={change}
-                  error={errorState.emailValid}
-                  helperText={errorState.emailMsg}
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  required
-                  fullWidth
-                  name="password"
-                  label="Password"
-                  type="password"
-                  id="password"
-                  autoComplete="new-password"
-                  onChange={change}
-                  error={errorState.passwordValid}
-                  helperText={errorState.passwordMsg}
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  required
-                  fullWidth
-                  name="password2"
-                  label="Password2"
-                  type="password"
-                  id="password2"
-                  autoComplete="new-password2"
-                  onChange={change}
-                  error={errorState.password2Valid}
-                  helperText={errorState.password2Msg}
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  required
-                  fullWidth
-                  id="contactNum"
-                  label="Contact Number"
-                  defaultValue={user.contactNum}
-                  name="contactNum"
-                  autoComplete="contact"
-                  onChange={change}
-                  error={errorState.contactValid}
-                  helperText={errorState.contactMsg}
-                />
-              </Grid>
-            </Grid>
-            <Box
-              sx={{
-                marginTop: 1,
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "center",
-              }}
-            >
-              <Button
-                type="submit"
-                id="submitChange"
-                variant="contained"
-                sx={{ margin: 1 }}
-              >
-                Submit
-              </Button>
-              <Button
-                variant="contained"
-                sx={{ margin: 1 }}
-                onClick={() => setEditState(false)}
-                id="goBack"
-              >
-                Go Back
-              </Button>
-            </Box>
-
-            <Grid container justifyContent="flex-end"></Grid>
-          </Box>
+          <ProfileForm
+            formData={formData}
+            setFormData={setFormData}
+            errorState={errorState}
+            submit={submit}
+            addDocFlag={false}
+            editFlag={true}
+            setEditState={setEditState}
+          />
         </Box>
       </Grid>
     </Container>
