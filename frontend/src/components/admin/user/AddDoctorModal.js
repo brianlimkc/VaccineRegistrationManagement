@@ -1,43 +1,10 @@
 import FormAlert from "../../common/FormAlert";
-import ModalUnstyled from "@mui/core/ModalUnstyled";
 import ProfileForm from "../../auth/ProfileForm";
 import React, { useState } from "react";
 import axios from "axios";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import { checkForm } from "../../common/checkForm";
-import { styled } from "@mui/system";
-
-const StyledModal = styled(ModalUnstyled)`
-  position: fixed;
-  z-index: 1300;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
-const Backdrop = styled("div")`
-  z-index: -1;
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  -webkit-tap-highlight-color: transparent;
-`;
-
-const style = {
-  width: 600,
-  bgcolor: "white",
-  border: "2px solid #000",
-  p: 2,
-  px: 4,
-  pb: 3,
-};
+import {StyledModal, Backdrop, style} from "../../common/modalDefault";
 
 function AddDoctorModal({ open, setOpen }) {
   const handleClose = () => setOpen(false);
