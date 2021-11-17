@@ -10,7 +10,6 @@ import { checkForm } from "../../common/checkForm";
 import FormAlert from "../../common/FormAlert";
 import { centerErrorStateConst, alertStateConst} from "../../common/constants";
 
-
 function EditCenter({ center, setEditState }) {
   let history = useHistory();
   const [formData, setFormData] = useState({

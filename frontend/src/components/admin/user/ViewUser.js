@@ -20,7 +20,8 @@ import {
 } from "@mui/material";
 import { styled, Box } from "@mui/system";
 import ModalUnstyled from "@mui/core/ModalUnstyled";
-import Alert from "@mui/material/Alert";
+import FormAlert from "../../common/FormAlert";
+
 
 const StyledModal = styled(ModalUnstyled)`
   position: fixed;
@@ -267,13 +268,8 @@ function ViewUser() {
           <Typography component="h1" variant="h4">
             User Management
           </Typography>
-          {alertState.status ? (
-            <Alert id="alert" severity={alertState.type}>
-              {alertState.message}
-            </Alert>
-          ) : (
-            <></>
-          )}
+          
+          <FormAlert alertState={alertState}/>
 
           <Grid container spacing={2}>
             <Grid item xs={6} sx={{ mt: 2 }}>

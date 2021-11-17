@@ -188,12 +188,7 @@ function Appointment({ user, setUser }) {
                     )}
                   </TableCell>
                 </TableRow>
-                {/* <TableRow>
-                        <TableCell>Appointment Two</TableCell>
-                        <TableCell>Date : {new Intl.DateTimeFormat("en-GB").format(
-                                new Date(user.secondShotApptID.date)
-                            )} / Time: {timeSlot[user.secondShotApptID.time]}</TableCell>
-                        </TableRow> */}
+
               </TableBody>
             </Table>
           </TableContainer>

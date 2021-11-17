@@ -10,7 +10,6 @@ import { checkForm } from "../../common/checkForm";
 import FormAlert from "../../common/FormAlert";
 import { roomFormDataConst, roomErrorStateConst, alertStateConst} from "../../common/constants";
 
-
 function CreateRoom({ centerID, center, getRoomArray }) {
   const [roomData, setRoomData] = useState(roomFormDataConst);
   const [alertState, setAlertState] = useState(alertStateConst);

@@ -1,4 +1,3 @@
-import Alert from "@mui/material/Alert";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import CenterTable from "./CenterTable";
@@ -11,6 +10,7 @@ import ShowRooms from "../room/ShowRooms";
 import Typography from "@mui/material/Typography";
 import axios from "axios";
 import { useParams, useHistory } from "react-router-dom";
+import FormAlert from "../../common/FormAlert";
 
 function ShowCenter() {
   const { centerID } = useParams();
@@ -119,13 +119,7 @@ function ShowCenter() {
               alignItems: "center",
             }}
           >
-            {alertState2.status ? (
-              <Alert id="alert" severity={alertState2.type}>
-                {alertState2.message}
-              </Alert>
-            ) : (
-              <></>
-            )}
+          <FormAlert alertState={alertState2}/>
 
             {!editState ? (
               <CenterTable center={center} />

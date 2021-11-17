@@ -1,4 +1,3 @@
-import Alert from "@mui/material/Alert";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Container from "@mui/material/Container";
@@ -10,6 +9,8 @@ import axios from "axios";
 import { useParams, useHistory } from "react-router-dom";
 import RoomRoster from "./RoomRoster";
 import Typography from "@mui/material/Typography";
+import FormAlert from "../../common/FormAlert";
+import { alertStateConst } from "../../common/constants";
 
 function ShowRoom() {
   const { roomID } = useParams();
@@ -17,11 +18,7 @@ function ShowRoom() {
   const [room, setRoom] = useState({});
   const [center, setCenter] = useState({});
   const [editState, setEditState] = useState(false);
-  const [alertState, setAlertState] = useState({
-    type: "success",
-    status: false,
-    message: "Room Deleted!",
-  });
+  const [alertState, setAlertState] = useState(alertStateConst);
 
   useEffect(() => {
     getRoom(roomID);
@@ -100,13 +97,7 @@ function ShowRoom() {
             />
           )}
 
-          {alertState.status ? (
-            <Alert id="alert" severity={alertState.type}>
-              {alertState.message}
-            </Alert>
-          ) : (
-            <></>
-          )}
+          <FormAlert alertState={alertState} />
 
           <Box
             sx={{

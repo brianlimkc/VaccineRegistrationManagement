@@ -7,7 +7,7 @@ import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
-import Alert from "@mui/material/Alert";
+import FormAlert from "../common/FormAlert";
 
 function Profile({ setAuth, user, setUser }) {
   const [editState, setEditState] = useState(false);
@@ -71,13 +71,8 @@ function Profile({ setAuth, user, setUser }) {
             alignItems: "center",
           }}
         >
-          {alertState2.status ? (
-            <Alert id="alert" severity={alertState2.type}>
-              {alertState2.message}
-            </Alert>
-          ) : (
-            <></>
-          )}
+          
+          <FormAlert alertState={alertState2}/>
 
           {!editState ? (
             <ShowProfile user={user} />

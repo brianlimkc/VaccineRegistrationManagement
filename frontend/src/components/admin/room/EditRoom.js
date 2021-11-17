@@ -9,7 +9,6 @@ import FormAlert from "../../common/FormAlert";
 import { checkForm } from "../../common/checkForm";
 import { roomErrorStateConst, alertStateConst} from "../../common/constants";
 
-
 function EditCenter({ room, center, setEditState, setRoom }) {
   const [formData, setFormData] = useState({ name: room.name });
   const [alertState, setAlertState] = useState(alertStateConst);

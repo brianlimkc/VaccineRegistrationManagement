@@ -5,15 +5,12 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 import { useHistory } from "react-router-dom";
-
-
 import {
   TableContainer,
   TableRow,
   TableHead,
   TableCell,
   TableBody,
-
 } from "@mui/material";
 
 function ShowCenters({ centerArray, getAllCenters }) {

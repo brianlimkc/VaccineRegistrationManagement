@@ -9,7 +9,6 @@ import axios from "axios";
 import { checkForm } from "../common/checkForm";
 import  { errorStateConst, alertStateConst  } from "../common/constants";
 
-
 function EditProfile({ user, setUser, setEditState }) {
   const [formData, setFormData] = useState({
     id: user._id,
@@ -21,7 +20,6 @@ function EditProfile({ user, setUser, setEditState }) {
   });
 
   const [alertState, setAlertState] = useState(alertStateConst);
-
   const [errorState, setErrorState] = useState(errorStateConst);
 
   async function submit(e) {

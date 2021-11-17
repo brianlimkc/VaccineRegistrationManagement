@@ -10,7 +10,6 @@ import { checkForm } from "../../common/checkForm";
 import FormAlert from "../../common/FormAlert";
 import { centerFormDataConst, centerErrorStateConst, alertStateConst} from "../../common/constants";
 
-
 function CreateCenter({ getAllCenters }) {
   const [formData, setFormData] = useState(centerFormDataConst);
   const [alertState, setAlertState] = useState(alertStateConst);

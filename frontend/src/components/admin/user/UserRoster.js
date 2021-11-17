@@ -17,9 +17,8 @@ import {
   TableCell,
 } from "@mui/material";
 import { Box } from "@mui/system";
-import Alert from "@mui/material/Alert";
 import {StyledModal, Backdrop, style} from "../../common/constants";
-
+import FormAlert from "../../common/FormAlert";
 
 function UserRoster({ user, setUser }) {
   const [schedule, setSchedule] = useState({});
@@ -104,8 +103,6 @@ function UserRoster({ user, setUser }) {
   }
 
   async function assignRoom() {
-
-
       try {
         await axios.post("/api/schedule/updateRoster", rosterUpdate);
   
@@ -165,13 +162,9 @@ function UserRoster({ user, setUser }) {
           <Typography component="h1" variant="h4">
             Manage Roster
           </Typography>
-          {alertState.status ? (
-            <Alert id="alert" severity={alertState.type}>
-              {alertState.message}
-            </Alert>
-          ) : (
-            <></>
-          )}
+
+          <FormAlert alertState={alertState}/>
+
 
           <Grid container spacing={2}>
             {Object.keys(schedule).length > 0 ? (

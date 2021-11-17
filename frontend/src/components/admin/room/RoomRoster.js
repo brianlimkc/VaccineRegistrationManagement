@@ -19,7 +19,6 @@ import {
 } from "@mui/material";
 import {StyledModal, Backdrop, style} from "../../common/constants";
 
-
 function RoomRoster({ room, setAlertState, resetAlert }) {
   const [rosterArray, setRosterArray] = useState([]);
   const [availDocArr, setAvailDocArr] = useState([]);
