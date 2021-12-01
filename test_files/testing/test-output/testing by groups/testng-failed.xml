@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [testing by groups]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="GRP-addDocTest(failed)">
+    <groups>
+      <run>
+        <include name="addDocTest"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testing.Testing_TestNG">
+        <methods>
+          <include name="addDoctor" invocation-numbers="6 7"/>
+        </methods>
+      </class> <!-- testing.Testing_TestNG -->
+    </classes>
+  </test> <!-- GRP-addDocTest(failed) -->
+</suite> <!-- Failed suite [testing by groups] -->

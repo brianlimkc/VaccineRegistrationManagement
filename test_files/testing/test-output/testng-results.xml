@@ -1,0 +1,2212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="61" passed="60" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-12-01T12:11:40 SGT" name="Suite" finished-at="2021-12-01T12:11:40 SGT" duration-ms="0">
+    <groups>
+    </groups>
+  </suite> <!-- Suite -->
+  <suite started-at="2021-12-01T12:10:39 SGT" name="Suite (1)" finished-at="2021-12-01T12:11:40 SGT" duration-ms="60215">
+    <groups>
+    </groups>
+    <test started-at="2021-12-01T12:10:39 SGT" name="Test" finished-at="2021-12-01T12:11:40 SGT" duration-ms="60215">
+      <class name="testing.Doctor_Module_Test">
+        <test-method is-config="true" signature="initialise()[pri:0, instance:testing.Doctor_Module_Test@3daa422a]" started-at="2021-12-01T12:10:37 SGT" name="initialise" finished-at="2021-12-01T12:10:39 SGT" duration-ms="2362" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialise -->
+        <test-method signature="registerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)[pri:1, instance:testing.Doctor_Module_Test@3daa422a]" started-at="2021-12-01T12:10:39 SGT" name="registerTest" data-provider="registerData" finished-at="2021-12-01T12:10:46 SGT" duration-ms="6180" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerTest -->
+        <test-method signature="registerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)[pri:1, instance:testing.Doctor_Module_Test@3daa422a]" started-at="2021-12-01T12:10:46 SGT" name="registerTest" data-provider="registerData" finished-at="2021-12-01T12:10:51 SGT" duration-ms="4995" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dr John Doe]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[S1342324Q]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[johndoe@cmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[AAAaaa123]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[AAAaaa123]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[88888888]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[01011990]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Doctor]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[MD]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerTest -->
+        <test-method signature="registerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)[pri:1, instance:testing.Doctor_Module_Test@3daa422a]" started-at="2021-12-01T12:10:51 SGT" name="registerTest" data-provider="registerData" finished-at="2021-12-01T12:10:53 SGT" duration-ms="2957" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dr John Doe]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[S1627678B]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[abcxyz]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[AAAaaa123]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[AAAaaa123]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[88888888]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[01011990]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Doctor]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[MD]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerTest -->
+        <test-method signature="registerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)[pri:1, instance:testing.Doctor_Module_Test@3daa422a]" started-at="2021-12-01T12:10:53 SGT" name="registerTest" data-provider="registerData" finished-at="2021-12-01T12:10:56 SGT" duration-ms="2916" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dr John Doe]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[S1627678B]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[johndoe@cmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[AAAaaa123]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[88888888]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[01011990]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Doctor]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[MD]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerTest -->
+        <test-method signature="registerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)[pri:1, instance:testing.Doctor_Module_Test@3daa422a]" started-at="2021-12-01T12:10:56 SGT" name="registerTest" data-provider="registerData" finished-at="2021-12-01T12:10:59 SGT" duration-ms="2883" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dr John Doe]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[S1627678B]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[johndoe@cmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[AAAaaa123]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[88888888]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[01011990]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Doctor]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[MD]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerTest -->
+        <test-method signature="registerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)[pri:1, instance:testing.Doctor_Module_Test@3daa422a]" started-at="2021-12-01T12:10:59 SGT" name="registerTest" data-provider="registerData" finished-at="2021-12-01T12:11:02 SGT" duration-ms="2990" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dr John Doe]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[S1627678B]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[johndoe@cmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[AAAaaa123]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[AAAaaa123]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[abcdefg]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[01011990]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Doctor]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[MD]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerTest -->
+        <test-method signature="registerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)[pri:1, instance:testing.Doctor_Module_Test@3daa422a]" started-at="2021-12-01T12:11:02 SGT" name="registerTest" data-provider="registerData" finished-at="2021-12-01T12:11:05 SGT" duration-ms="2875" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dr John Doe]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[S1627678B]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[johndoe@cmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[AAAaaa123]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[AAAaaa123]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[88888888]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[01012020]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Doctor]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[MD]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerTest -->
+        <test-method signature="registerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)[pri:1, instance:testing.Doctor_Module_Test@3daa422a]" started-at="2021-12-01T12:11:05 SGT" name="registerTest" data-provider="registerData" finished-at="2021-12-01T12:11:09 SGT" duration-ms="3395" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dr John Doe]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[S1627678B]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[johndoe@cmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[AAAaaa123]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[AAAaaa123]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[88888888]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[01011990]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Doctor]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[MD]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerTest -->
+        <test-method signature="registerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)[pri:1, instance:testing.Doctor_Module_Test@3daa422a]" started-at="2021-12-01T12:11:09 SGT" name="registerTest" data-provider="registerData" finished-at="2021-12-01T12:11:12 SGT" duration-ms="3007" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dr John Doe]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[S1627678B]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[johndoe@cmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[AAAaaa123]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[AAAaaa123]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[88888888]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[01011990]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Doctor]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[MD]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerTest -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,boolean)[pri:2, instance:testing.Doctor_Module_Test@3daa422a]" started-at="2021-12-01T12:11:12 SGT" name="loginTest" data-provider="loginData" finished-at="2021-12-01T12:11:12 SGT" duration-ms="356" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,boolean)[pri:2, instance:testing.Doctor_Module_Test@3daa422a]" started-at="2021-12-01T12:11:12 SGT" name="loginTest" data-provider="loginData" finished-at="2021-12-01T12:11:12 SGT" duration-ms="540" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[invalidID]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[AAAaaa123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,boolean)[pri:2, instance:testing.Doctor_Module_Test@3daa422a]" started-at="2021-12-01T12:11:12 SGT" name="loginTest" data-provider="loginData" finished-at="2021-12-01T12:11:14 SGT" duration-ms="1133" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[johndoe@cmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[invalidPW]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,boolean)[pri:2, instance:testing.Doctor_Module_Test@3daa422a]" started-at="2021-12-01T12:11:14 SGT" name="loginTest" data-provider="loginData" finished-at="2021-12-01T12:11:15 SGT" duration-ms="1090" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[johndoe@cmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[AAAaaa123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="editProfileTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)[pri:3, instance:testing.Doctor_Module_Test@3daa422a]" started-at="2021-12-01T12:11:15 SGT" name="editProfileTest" data-provider="editProfileData" finished-at="2021-12-01T12:11:16 SGT" duration-ms="1192" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editProfileTest -->
+        <test-method signature="editProfileTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)[pri:3, instance:testing.Doctor_Module_Test@3daa422a]" started-at="2021-12-01T12:11:16 SGT" name="editProfileTest" data-provider="editProfileData" finished-at="2021-12-01T12:11:17 SGT" duration-ms="1481" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dr John Doe]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abcxyz]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[AAAaaa123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[AAAaaa123]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[88888888]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editProfileTest -->
+        <test-method signature="editProfileTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)[pri:3, instance:testing.Doctor_Module_Test@3daa422a]" started-at="2021-12-01T12:11:17 SGT" name="editProfileTest" data-provider="editProfileData" finished-at="2021-12-01T12:11:19 SGT" duration-ms="2062" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dr John Doe]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[johndoe@cmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[AAAaaa123]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[88888888]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editProfileTest -->
+        <test-method signature="editProfileTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)[pri:3, instance:testing.Doctor_Module_Test@3daa422a]" started-at="2021-12-01T12:11:19 SGT" name="editProfileTest" data-provider="editProfileData" finished-at="2021-12-01T12:11:21 SGT" duration-ms="1482" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dr John Doe]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[johndoe@cmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[AAAaaa123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[88888888]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editProfileTest -->
+        <test-method signature="editProfileTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)[pri:3, instance:testing.Doctor_Module_Test@3daa422a]" started-at="2021-12-01T12:11:21 SGT" name="editProfileTest" data-provider="editProfileData" finished-at="2021-12-01T12:11:22 SGT" duration-ms="1558" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dr John Doe]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[johndoe@cmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[AAAaaa123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[AAAaaa123]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[abcdefg]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editProfileTest -->
+        <test-method signature="editProfileTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)[pri:3, instance:testing.Doctor_Module_Test@3daa422a]" started-at="2021-12-01T12:11:22 SGT" name="editProfileTest" data-provider="editProfileData" finished-at="2021-12-01T12:11:24 SGT" duration-ms="1976" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dr John Doe]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[johndoe@cmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[AAAaaa123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[AAAaaa123]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[88888888]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editProfileTest -->
+        <test-method signature="docAssignOwnRosterTestOne()[pri:4, instance:testing.Doctor_Module_Test@3daa422a]" started-at="2021-12-01T12:11:24 SGT" name="docAssignOwnRosterTestOne" finished-at="2021-12-01T12:11:26 SGT" duration-ms="1344" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- docAssignOwnRosterTestOne -->
+        <test-method signature="approveDoc(java.lang.String,boolean,boolean)[pri:5, instance:testing.Doctor_Module_Test@3daa422a]" started-at="2021-12-01T12:11:26 SGT" name="approveDoc" data-provider="approveDocData" finished-at="2021-12-01T12:11:33 SGT" duration-ms="7180" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dr John Doe]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- approveDoc -->
+        <test-method signature="docAssignOwnRosterTestTwo(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:8, instance:testing.Doctor_Module_Test@3daa422a]" started-at="2021-12-01T12:11:33 SGT" name="docAssignOwnRosterTestTwo" data-provider="assignRosterData" finished-at="2021-12-01T12:11:35 SGT" duration-ms="1945" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dr John Doe]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Radin Mas Community Club]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Room A]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- docAssignOwnRosterTestTwo -->
+        <test-method signature="docAssignOwnRosterTestTwo(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:8, instance:testing.Doctor_Module_Test@3daa422a]" started-at="2021-12-01T12:11:35 SGT" name="docAssignOwnRosterTestTwo" data-provider="assignRosterData" finished-at="2021-12-01T12:11:37 SGT" duration-ms="1972" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dr John Doe]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Buona Vista Community Club]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Room 1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- docAssignOwnRosterTestTwo -->
+        <test-method signature="docAssignOwnRosterTestTwo(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:8, instance:testing.Doctor_Module_Test@3daa422a]" started-at="2021-12-01T12:11:37 SGT" name="docAssignOwnRosterTestTwo" data-provider="assignRosterData" finished-at="2021-12-01T12:11:39 SGT" duration-ms="2137" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dr John Doe]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Set to Empty]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Set to Empty]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- docAssignOwnRosterTestTwo -->
+        <test-method signature="deleteDoctor(java.lang.String,boolean)[pri:9, instance:testing.Doctor_Module_Test@3daa422a]" started-at="2021-12-01T12:11:39 SGT" name="deleteDoctor" data-provider="deleteDocData" finished-at="2021-12-01T12:11:40 SGT" duration-ms="455" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dr John Doe]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteDoctor -->
+        <test-method is-config="true" signature="end()[pri:0, instance:testing.Doctor_Module_Test@3daa422a]" started-at="2021-12-01T12:11:40 SGT" name="end" finished-at="2021-12-01T12:11:40 SGT" duration-ms="119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- testing.Doctor_Module_Test -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite (1) -->
+  <suite started-at="2021-12-01T12:09:16 SGT" name="Suite (0)" finished-at="2021-12-01T12:10:36 SGT" duration-ms="80029">
+    <groups>
+      <group name="editCenterTest">
+        <method signature="Admin_Module_Test.editCenter(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)[pri:4, instance:testing.Admin_Module_Test@769f71a9]" name="editCenter" class="testing.Admin_Module_Test"/>
+      </group> <!-- editCenterTest -->
+      <group name="deleteDocTest">
+        <method signature="Admin_Module_Test.deleteDoctor(java.lang.String,boolean)[pri:9, instance:testing.Admin_Module_Test@769f71a9]" name="deleteDoctor" class="testing.Admin_Module_Test"/>
+      </group> <!-- deleteDocTest -->
+      <group name="editRoomTest">
+        <method signature="Admin_Module_Test.editRoom(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:6, instance:testing.Admin_Module_Test@769f71a9]" name="editRoom" class="testing.Admin_Module_Test"/>
+      </group> <!-- editRoomTest -->
+      <group name="deleteRoomTest">
+        <method signature="Admin_Module_Test.deleteRoom(java.lang.String,java.lang.String,boolean)[pri:10, instance:testing.Admin_Module_Test@769f71a9]" name="deleteRoom" class="testing.Admin_Module_Test"/>
+      </group> <!-- deleteRoomTest -->
+      <group name="assignRoomTest">
+        <method signature="Admin_Module_Test.adminAssignRoomTest(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:8, instance:testing.Admin_Module_Test@769f71a9]" name="adminAssignRoomTest" class="testing.Admin_Module_Test"/>
+      </group> <!-- assignRoomTest -->
+      <group name="addRoomTest">
+        <method signature="Admin_Module_Test.addRoom(java.lang.String,java.lang.String,boolean)[pri:5, instance:testing.Admin_Module_Test@769f71a9]" name="addRoom" class="testing.Admin_Module_Test"/>
+      </group> <!-- addRoomTest -->
+      <group name="addDocTest">
+        <method signature="Admin_Module_Test.addDoctor(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)[pri:1, instance:testing.Admin_Module_Test@769f71a9]" name="addDoctor" class="testing.Admin_Module_Test"/>
+      </group> <!-- addDocTest -->
+      <group name="deleteCenterTest">
+        <method signature="Admin_Module_Test.deleteCenter(java.lang.String,boolean)[pri:11, instance:testing.Admin_Module_Test@769f71a9]" name="deleteCenter" class="testing.Admin_Module_Test"/>
+      </group> <!-- deleteCenterTest -->
+      <group name="addCenterTest">
+        <method signature="Admin_Module_Test.addCenter(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)[pri:3, instance:testing.Admin_Module_Test@769f71a9]" name="addCenter" class="testing.Admin_Module_Test"/>
+      </group> <!-- addCenterTest -->
+      <group name="approveDocTest">
+        <method signature="Admin_Module_Test.approveDoc(java.lang.String,boolean,boolean)[pri:2, instance:testing.Admin_Module_Test@769f71a9]" name="approveDoc" class="testing.Admin_Module_Test"/>
+      </group> <!-- approveDocTest -->
+      <group name="assignDocTest">
+        <method signature="Admin_Module_Test.adminAsignDocTest(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:7, instance:testing.Admin_Module_Test@769f71a9]" name="adminAsignDocTest" class="testing.Admin_Module_Test"/>
+      </group> <!-- assignDocTest -->
+    </groups>
+    <test started-at="2021-12-01T12:09:16 SGT" name="Test" finished-at="2021-12-01T12:10:36 SGT" duration-ms="80029">
+      <class name="testing.Admin_Module_Test">
+        <test-method is-config="true" signature="loginAdmin()[pri:0, instance:testing.Admin_Module_Test@769f71a9]" started-at="2021-12-01T12:09:02 SGT" name="loginAdmin" finished-at="2021-12-01T12:09:16 SGT" duration-ms="14708" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAdmin -->
+        <test-method signature="addDoctor(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)[pri:1, instance:testing.Admin_Module_Test@769f71a9]" started-at="2021-12-01T12:09:16 SGT" name="addDoctor" data-provider="addDoc" finished-at="2021-12-01T12:09:19 SGT" duration-ms="2671" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addDoctor -->
+        <test-method signature="addDoctor(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)[pri:1, instance:testing.Admin_Module_Test@769f71a9]" started-at="2021-12-01T12:09:19 SGT" name="addDoctor" data-provider="addDoc" finished-at="2021-12-01T12:09:24 SGT" duration-ms="5200" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Joyce H Brewton]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[S1342324Q]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[laurie.reiche@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[AAAaaa123]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[AAAaaa123]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[68524214]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[21071985]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Doctor]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[MD]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addDoctor -->
+        <test-method signature="addDoctor(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)[pri:1, instance:testing.Admin_Module_Test@769f71a9]" started-at="2021-12-01T12:09:24 SGT" name="addDoctor" data-provider="addDoc" finished-at="2021-12-01T12:09:29 SGT" duration-ms="4369" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Joyce H Brewton]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[S1330866G]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[abcxyz]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[AAAaaa123]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[AAAaaa123]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[68524214]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[21071985]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Doctor]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[MD]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addDoctor -->
+        <test-method signature="addDoctor(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)[pri:1, instance:testing.Admin_Module_Test@769f71a9]" started-at="2021-12-01T12:09:29 SGT" name="addDoctor" data-provider="addDoc" finished-at="2021-12-01T12:09:33 SGT" duration-ms="4099" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Joyce H Brewton]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[S1330866G]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[laurie.reiche@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[AAAaaa123]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[68524214]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[21071985]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Doctor]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[MD]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addDoctor -->
+        <test-method signature="addDoctor(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)[pri:1, instance:testing.Admin_Module_Test@769f71a9]" started-at="2021-12-01T12:09:33 SGT" name="addDoctor" data-provider="addDoc" finished-at="2021-12-01T12:09:36 SGT" duration-ms="3651" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Joyce H Brewton]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[S1330866G]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[laurie.reiche@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[AAAaaa123]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[68524214]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[21071985]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Doctor]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[MD]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addDoctor -->
+        <test-method signature="addDoctor(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)[pri:1, instance:testing.Admin_Module_Test@769f71a9]" started-at="2021-12-01T12:09:36 SGT" name="addDoctor" data-provider="addDoc" finished-at="2021-12-01T12:09:40 SGT" duration-ms="4050" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Joyce H Brewton]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[S1330866G]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[laurie.reiche@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[AAAaaa123]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[AAAaaa123]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[abcdefg]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[21071985]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Doctor]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[MD]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addDoctor -->
+        <test-method signature="addDoctor(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)[pri:1, instance:testing.Admin_Module_Test@769f71a9]" started-at="2021-12-01T12:09:40 SGT" name="addDoctor" data-provider="addDoc" finished-at="2021-12-01T12:09:44 SGT" duration-ms="3561" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Joyce H Brewton]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[S1330866G]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[laurie.reiche@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[AAAaaa123]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[AAAaaa123]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[68524214]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[01012020]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Doctor]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[MD]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addDoctor -->
+        <test-method signature="addDoctor(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)[pri:1, instance:testing.Admin_Module_Test@769f71a9]" started-at="2021-12-01T12:09:44 SGT" name="addDoctor" data-provider="addDoc" finished-at="2021-12-01T12:09:48 SGT" duration-ms="3980" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Joyce H Brewton]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[S1330866G]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[laurie.reiche@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[AAAaaa123]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[AAAaaa123]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[68524214]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[21071985]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Doctor]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[MD]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addDoctor -->
+        <test-method signature="addDoctor(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)[pri:1, instance:testing.Admin_Module_Test@769f71a9]" started-at="2021-12-01T12:09:48 SGT" name="addDoctor" data-provider="addDoc" finished-at="2021-12-01T12:09:52 SGT" duration-ms="4024" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Charles B Perry]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[S1330866G]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[franco2008@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[AAAaaa123]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[AAAaaa123]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[68541478]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[01091975]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Doctor]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[MD]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addDoctor -->
+        <test-method signature="approveDoc(java.lang.String,boolean,boolean)[pri:2, instance:testing.Admin_Module_Test@769f71a9]" started-at="2021-12-01T12:09:52 SGT" name="approveDoc" data-provider="approveDoc" finished-at="2021-12-01T12:09:54 SGT" duration-ms="1872" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Joyce H Brewton]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- approveDoc -->
+        <test-method signature="approveDoc(java.lang.String,boolean,boolean)[pri:2, instance:testing.Admin_Module_Test@769f71a9]" started-at="2021-12-01T12:09:54 SGT" name="approveDoc" data-provider="approveDoc" finished-at="2021-12-01T12:09:55 SGT" duration-ms="1366" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Charles B Perry]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- approveDoc -->
+        <test-method signature="addCenter(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)[pri:3, instance:testing.Admin_Module_Test@769f71a9]" started-at="2021-12-01T12:09:55 SGT" name="addCenter" data-provider="centerData" finished-at="2021-12-01T12:09:56 SGT" duration-ms="803" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCenter -->
+        <test-method signature="addCenter(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)[pri:3, instance:testing.Admin_Module_Test@769f71a9]" started-at="2021-12-01T12:09:56 SGT" name="addCenter" data-provider="centerData" finished-at="2021-12-01T12:09:57 SGT" duration-ms="731" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[abcdef]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCenter -->
+        <test-method signature="addCenter(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)[pri:3, instance:testing.Admin_Module_Test@769f71a9]" started-at="2021-12-01T12:09:57 SGT" name="addCenter" data-provider="centerData" finished-at="2021-12-01T12:09:58 SGT" duration-ms="748" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[abcdef]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCenter -->
+        <test-method signature="addCenter(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)[pri:3, instance:testing.Admin_Module_Test@769f71a9]" started-at="2021-12-01T12:09:58 SGT" name="addCenter" data-provider="centerData" finished-at="2021-12-01T12:09:59 SGT" duration-ms="1601" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Medical Center]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pfizer]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ABC Central Blk 123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[666666]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[88888888]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCenter -->
+        <test-method signature="editCenter(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)[pri:4, instance:testing.Admin_Module_Test@769f71a9]" started-at="2021-12-01T12:09:59 SGT" name="editCenter" data-provider="centerEditData" finished-at="2021-12-01T12:10:00 SGT" duration-ms="1205" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Medical Center]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editCenter -->
+        <test-method signature="editCenter(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)[pri:4, instance:testing.Admin_Module_Test@769f71a9]" started-at="2021-12-01T12:10:00 SGT" name="editCenter" data-provider="centerEditData" finished-at="2021-12-01T12:10:02 SGT" duration-ms="1109" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Medical Center]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[abcdef]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editCenter -->
+        <test-method signature="editCenter(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)[pri:4, instance:testing.Admin_Module_Test@769f71a9]" started-at="2021-12-01T12:10:02 SGT" name="editCenter" data-provider="centerEditData" finished-at="2021-12-01T12:10:03 SGT" duration-ms="1675" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Medical Center]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[abcdef]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editCenter -->
+        <test-method signature="editCenter(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)[pri:4, instance:testing.Admin_Module_Test@769f71a9]" started-at="2021-12-01T12:10:03 SGT" name="editCenter" data-provider="centerEditData" finished-at="2021-12-01T12:10:05 SGT" duration-ms="1696" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Medical Center]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test Medical Center]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Pfizer]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[ABC Central Blk 123]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[666666]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[88888888]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editCenter -->
+        <test-method signature="addRoom(java.lang.String,java.lang.String,boolean)[pri:5, instance:testing.Admin_Module_Test@769f71a9]" started-at="2021-12-01T12:10:05 SGT" name="addRoom" data-provider="roomData" finished-at="2021-12-01T12:10:05 SGT" duration-ms="550" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Medical Center]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addRoom -->
+        <test-method signature="addRoom(java.lang.String,java.lang.String,boolean)[pri:5, instance:testing.Admin_Module_Test@769f71a9]" started-at="2021-12-01T12:10:05 SGT" name="addRoom" data-provider="roomData" finished-at="2021-12-01T12:10:07 SGT" duration-ms="1160" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Medical Center]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Room 1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addRoom -->
+        <test-method signature="addRoom(java.lang.String,java.lang.String,boolean)[pri:5, instance:testing.Admin_Module_Test@769f71a9]" started-at="2021-12-01T12:10:07 SGT" name="addRoom" data-provider="roomData" finished-at="2021-12-01T12:10:08 SGT" duration-ms="1144" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Medical Center]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Room 2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addRoom -->
+        <test-method signature="editRoom(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:6, instance:testing.Admin_Module_Test@769f71a9]" started-at="2021-12-01T12:10:08 SGT" name="editRoom" data-provider="roomEditData" finished-at="2021-12-01T12:10:09 SGT" duration-ms="1584" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Medical Center]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Room 1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editRoom -->
+        <test-method signature="editRoom(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:6, instance:testing.Admin_Module_Test@769f71a9]" started-at="2021-12-01T12:10:09 SGT" name="editRoom" data-provider="roomEditData" finished-at="2021-12-01T12:10:11 SGT" duration-ms="1293" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Medical Center]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Room 1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Room 1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editRoom -->
+        <test-method signature="adminAsignDocTest(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:7, instance:testing.Admin_Module_Test@769f71a9]" started-at="2021-12-01T12:10:11 SGT" name="adminAsignDocTest" data-provider="assignDocData" finished-at="2021-12-01T12:10:14 SGT" duration-ms="3283" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Joyce H Brewton]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test Medical Center]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Room 1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminAsignDocTest -->
+        <test-method signature="adminAsignDocTest(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:7, instance:testing.Admin_Module_Test@769f71a9]" started-at="2021-12-01T12:10:14 SGT" name="adminAsignDocTest" data-provider="assignDocData" finished-at="2021-12-01T12:10:17 SGT" duration-ms="2743" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Joyce H Brewton]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test Medical Center]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Room 2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminAsignDocTest -->
+        <test-method signature="adminAsignDocTest(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:7, instance:testing.Admin_Module_Test@769f71a9]" started-at="2021-12-01T12:10:17 SGT" name="adminAsignDocTest" data-provider="assignDocData" finished-at="2021-12-01T12:10:20 SGT" duration-ms="3756" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Joyce H Brewton]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Set to Empty]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Set to Empty]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminAsignDocTest -->
+        <test-method signature="adminAssignRoomTest(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:8, instance:testing.Admin_Module_Test@769f71a9]" started-at="2021-12-01T12:10:20 SGT" name="adminAssignRoomTest" data-provider="assignRoomData" finished-at="2021-12-01T12:10:23 SGT" duration-ms="2753" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Joyce H Brewton]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test Medical Center]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Room 1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminAssignRoomTest -->
+        <test-method signature="adminAssignRoomTest(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:8, instance:testing.Admin_Module_Test@769f71a9]" started-at="2021-12-01T12:10:23 SGT" name="adminAssignRoomTest" data-provider="assignRoomData" finished-at="2021-12-01T12:10:26 SGT" duration-ms="2770" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Charles B Perry]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test Medical Center]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Room 1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminAssignRoomTest -->
+        <test-method signature="adminAssignRoomTest(java.lang.String,java.lang.String,java.lang.String,boolean)[pri:8, instance:testing.Admin_Module_Test@769f71a9]" started-at="2021-12-01T12:10:26 SGT" name="adminAssignRoomTest" data-provider="assignRoomData" finished-at="2021-12-01T12:10:29 SGT" duration-ms="2812" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Set to Empty]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test Medical Center]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Room 1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminAssignRoomTest -->
+        <test-method signature="deleteDoctor(java.lang.String,boolean)[pri:9, instance:testing.Admin_Module_Test@769f71a9]" started-at="2021-12-01T12:10:29 SGT" name="deleteDoctor" data-provider="deleteDocData" finished-at="2021-12-01T12:10:31 SGT" duration-ms="1795" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Joyce H Brewton]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteDoctor -->
+        <test-method signature="deleteDoctor(java.lang.String,boolean)[pri:9, instance:testing.Admin_Module_Test@769f71a9]" started-at="2021-12-01T12:10:31 SGT" name="deleteDoctor" data-provider="deleteDocData" finished-at="2021-12-01T12:10:32 SGT" duration-ms="1798" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Charles B Perry]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteDoctor -->
+        <test-method signature="deleteRoom(java.lang.String,java.lang.String,boolean)[pri:10, instance:testing.Admin_Module_Test@769f71a9]" started-at="2021-12-01T12:10:32 SGT" name="deleteRoom" data-provider="deleteRoomData" finished-at="2021-12-01T12:10:34 SGT" duration-ms="1407" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Medical Center]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Room 1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteRoom -->
+        <test-method signature="deleteRoom(java.lang.String,java.lang.String,boolean)[pri:10, instance:testing.Admin_Module_Test@769f71a9]" started-at="2021-12-01T12:10:34 SGT" name="deleteRoom" data-provider="deleteRoomData" finished-at="2021-12-01T12:10:35 SGT" duration-ms="1421" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Medical Center]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Room 2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteRoom -->
+        <test-method signature="deleteCenter(java.lang.String,boolean)[pri:11, instance:testing.Admin_Module_Test@769f71a9]" started-at="2021-12-01T12:10:35 SGT" name="deleteCenter" data-provider="deleteCenterData" finished-at="2021-12-01T12:10:36 SGT" duration-ms="1134" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Medical Center]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteCenter -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:testing.Admin_Module_Test@769f71a9]" started-at="2021-12-01T12:10:36 SGT" name="logout" finished-at="2021-12-01T12:10:37 SGT" duration-ms="471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- testing.Admin_Module_Test -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite (0) -->
+</testng-results>

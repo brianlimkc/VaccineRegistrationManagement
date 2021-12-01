@@ -1,0 +1,254 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>35/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Dec 01 12:09:16 SGT 2021</td>
+</tr>
+<tr><td>Total time:</td><td>80 seconds (80029 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testing.Admin_Module_Test.adminAssignRoomTest()'><b>adminAssignRoomTest</b><br>Test class: testing.Admin_Module_Test<br>Parameters: Joyce H Brewton, Test Medical Center, Room 1, true</td>
+<td></td>
+<td>2</td>
+<td>testing.Admin_Module_Test@769f71a9</td></tr>
+<tr>
+<td title='testing.Admin_Module_Test.deleteRoom()'><b>deleteRoom</b><br>Test class: testing.Admin_Module_Test<br>Parameters: Test Medical Center, Room 1, true</td>
+<td></td>
+<td>1</td>
+<td>testing.Admin_Module_Test@769f71a9</td></tr>
+<tr>
+<td title='testing.Admin_Module_Test.addDoctor()'><b>addDoctor</b><br>Test class: testing.Admin_Module_Test<br>Parameters: Joyce H Brewton, S1330866G, laurie.reiche@gmail.com, 12345, AAAaaa123, 68524214, 21071985, Doctor, MD, false</td>
+<td></td>
+<td>4</td>
+<td>testing.Admin_Module_Test@769f71a9</td></tr>
+<tr>
+<td title='testing.Admin_Module_Test.addRoom()'><b>addRoom</b><br>Test class: testing.Admin_Module_Test<br>Parameters: Test Medical Center, , false</td>
+<td></td>
+<td>0</td>
+<td>testing.Admin_Module_Test@769f71a9</td></tr>
+<tr>
+<td title='testing.Admin_Module_Test.adminAsignDocTest()'><b>adminAsignDocTest</b><br>Test class: testing.Admin_Module_Test<br>Parameters: Joyce H Brewton, Test Medical Center, Room 2, true</td>
+<td></td>
+<td>2</td>
+<td>testing.Admin_Module_Test@769f71a9</td></tr>
+<tr>
+<td title='testing.Admin_Module_Test.addDoctor()'><b>addDoctor</b><br>Test class: testing.Admin_Module_Test<br>Parameters: Joyce H Brewton, S1342324Q, laurie.reiche@gmail.com, AAAaaa123, AAAaaa123, 68524214, 21071985, Doctor, MD, false</td>
+<td></td>
+<td>5</td>
+<td>testing.Admin_Module_Test@769f71a9</td></tr>
+<tr>
+<td title='testing.Admin_Module_Test.addDoctor()'><b>addDoctor</b><br>Test class: testing.Admin_Module_Test<br>Parameters: Joyce H Brewton, S1330866G, laurie.reiche@gmail.com, AAAaaa123, AAAaaa123, 68524214, 21071985, Doctor, MD, true</td>
+<td></td>
+<td>3</td>
+<td>testing.Admin_Module_Test@769f71a9</td></tr>
+<tr>
+<td title='testing.Admin_Module_Test.addCenter()'><b>addCenter</b><br>Test class: testing.Admin_Module_Test<br>Parameters: , , , , abcdef, false</td>
+<td></td>
+<td>0</td>
+<td>testing.Admin_Module_Test@769f71a9</td></tr>
+<tr>
+<td title='testing.Admin_Module_Test.editCenter()'><b>editCenter</b><br>Test class: testing.Admin_Module_Test<br>Parameters: Test Medical Center, , , , , , false</td>
+<td></td>
+<td>1</td>
+<td>testing.Admin_Module_Test@769f71a9</td></tr>
+<tr>
+<td title='testing.Admin_Module_Test.deleteRoom()'><b>deleteRoom</b><br>Test class: testing.Admin_Module_Test<br>Parameters: Test Medical Center, Room 2, true</td>
+<td></td>
+<td>1</td>
+<td>testing.Admin_Module_Test@769f71a9</td></tr>
+<tr>
+<td title='testing.Admin_Module_Test.addRoom()'><b>addRoom</b><br>Test class: testing.Admin_Module_Test<br>Parameters: Test Medical Center, Room 2, true</td>
+<td></td>
+<td>1</td>
+<td>testing.Admin_Module_Test@769f71a9</td></tr>
+<tr>
+<td title='testing.Admin_Module_Test.editRoom()'><b>editRoom</b><br>Test class: testing.Admin_Module_Test<br>Parameters: Test Medical Center, Room 1, Room 1, true</td>
+<td></td>
+<td>1</td>
+<td>testing.Admin_Module_Test@769f71a9</td></tr>
+<tr>
+<td title='testing.Admin_Module_Test.addCenter()'><b>addCenter</b><br>Test class: testing.Admin_Module_Test<br>Parameters: , , , abcdef, , false</td>
+<td></td>
+<td>0</td>
+<td>testing.Admin_Module_Test@769f71a9</td></tr>
+<tr>
+<td title='testing.Admin_Module_Test.addDoctor()'><b>addDoctor</b><br>Test class: testing.Admin_Module_Test<br>Parameters: , , , , , , , , , false</td>
+<td></td>
+<td>2</td>
+<td>testing.Admin_Module_Test@769f71a9</td></tr>
+<tr>
+<td title='testing.Admin_Module_Test.addDoctor()'><b>addDoctor</b><br>Test class: testing.Admin_Module_Test<br>Parameters: Charles B Perry, S1330866G, franco2008@gmail.com, AAAaaa123, AAAaaa123, 68541478, 01091975, Doctor, MD, true</td>
+<td></td>
+<td>4</td>
+<td>testing.Admin_Module_Test@769f71a9</td></tr>
+<tr>
+<td title='testing.Admin_Module_Test.approveDoc()'><b>approveDoc</b><br>Test class: testing.Admin_Module_Test<br>Parameters: Joyce H Brewton, true, true</td>
+<td></td>
+<td>1</td>
+<td>testing.Admin_Module_Test@769f71a9</td></tr>
+<tr>
+<td title='testing.Admin_Module_Test.deleteDoctor()'><b>deleteDoctor</b><br>Test class: testing.Admin_Module_Test<br>Parameters: Joyce H Brewton, true</td>
+<td></td>
+<td>1</td>
+<td>testing.Admin_Module_Test@769f71a9</td></tr>
+<tr>
+<td title='testing.Admin_Module_Test.adminAsignDocTest()'><b>adminAsignDocTest</b><br>Test class: testing.Admin_Module_Test<br>Parameters: Joyce H Brewton, Test Medical Center, Room 1, true</td>
+<td></td>
+<td>3</td>
+<td>testing.Admin_Module_Test@769f71a9</td></tr>
+<tr>
+<td title='testing.Admin_Module_Test.editRoom()'><b>editRoom</b><br>Test class: testing.Admin_Module_Test<br>Parameters: Test Medical Center, Room 1, , true</td>
+<td></td>
+<td>1</td>
+<td>testing.Admin_Module_Test@769f71a9</td></tr>
+<tr>
+<td title='testing.Admin_Module_Test.addDoctor()'><b>addDoctor</b><br>Test class: testing.Admin_Module_Test<br>Parameters: Joyce H Brewton, S1330866G, laurie.reiche@gmail.com, AAAaaa123, AAAaaa123, 68524214, 01012020, Doctor, MD, false</td>
+<td></td>
+<td>3</td>
+<td>testing.Admin_Module_Test@769f71a9</td></tr>
+<tr>
+<td title='testing.Admin_Module_Test.addDoctor()'><b>addDoctor</b><br>Test class: testing.Admin_Module_Test<br>Parameters: Joyce H Brewton, S1330866G, laurie.reiche@gmail.com, AAAaaa123, 12345, 68524214, 21071985, Doctor, MD, false</td>
+<td></td>
+<td>3</td>
+<td>testing.Admin_Module_Test@769f71a9</td></tr>
+<tr>
+<td title='testing.Admin_Module_Test.deleteDoctor()'><b>deleteDoctor</b><br>Test class: testing.Admin_Module_Test<br>Parameters: Charles B Perry, true</td>
+<td></td>
+<td>1</td>
+<td>testing.Admin_Module_Test@769f71a9</td></tr>
+<tr>
+<td title='testing.Admin_Module_Test.editCenter()'><b>editCenter</b><br>Test class: testing.Admin_Module_Test<br>Parameters: Test Medical Center, , , , abcdef, , false</td>
+<td></td>
+<td>1</td>
+<td>testing.Admin_Module_Test@769f71a9</td></tr>
+<tr>
+<td title='testing.Admin_Module_Test.adminAssignRoomTest()'><b>adminAssignRoomTest</b><br>Test class: testing.Admin_Module_Test<br>Parameters: Charles B Perry, Test Medical Center, Room 1, true</td>
+<td></td>
+<td>2</td>
+<td>testing.Admin_Module_Test@769f71a9</td></tr>
+<tr>
+<td title='testing.Admin_Module_Test.adminAsignDocTest()'><b>adminAsignDocTest</b><br>Test class: testing.Admin_Module_Test<br>Parameters: Joyce H Brewton, Set to Empty, Set to Empty, true</td>
+<td></td>
+<td>3</td>
+<td>testing.Admin_Module_Test@769f71a9</td></tr>
+<tr>
+<td title='testing.Admin_Module_Test.addDoctor()'><b>addDoctor</b><br>Test class: testing.Admin_Module_Test<br>Parameters: Joyce H Brewton, S1330866G, abcxyz, AAAaaa123, AAAaaa123, 68524214, 21071985, Doctor, MD, false</td>
+<td></td>
+<td>4</td>
+<td>testing.Admin_Module_Test@769f71a9</td></tr>
+<tr>
+<td title='testing.Admin_Module_Test.approveDoc()'><b>approveDoc</b><br>Test class: testing.Admin_Module_Test<br>Parameters: Charles B Perry, true, true</td>
+<td></td>
+<td>1</td>
+<td>testing.Admin_Module_Test@769f71a9</td></tr>
+<tr>
+<td title='testing.Admin_Module_Test.deleteCenter()'><b>deleteCenter</b><br>Test class: testing.Admin_Module_Test<br>Parameters: Test Medical Center, true</td>
+<td></td>
+<td>1</td>
+<td>testing.Admin_Module_Test@769f71a9</td></tr>
+<tr>
+<td title='testing.Admin_Module_Test.adminAssignRoomTest()'><b>adminAssignRoomTest</b><br>Test class: testing.Admin_Module_Test<br>Parameters: Set to Empty, Test Medical Center, Room 1, true</td>
+<td></td>
+<td>2</td>
+<td>testing.Admin_Module_Test@769f71a9</td></tr>
+<tr>
+<td title='testing.Admin_Module_Test.addCenter()'><b>addCenter</b><br>Test class: testing.Admin_Module_Test<br>Parameters: , , , , , false</td>
+<td></td>
+<td>0</td>
+<td>testing.Admin_Module_Test@769f71a9</td></tr>
+<tr>
+<td title='testing.Admin_Module_Test.addRoom()'><b>addRoom</b><br>Test class: testing.Admin_Module_Test<br>Parameters: Test Medical Center, Room 1, true</td>
+<td></td>
+<td>1</td>
+<td>testing.Admin_Module_Test@769f71a9</td></tr>
+<tr>
+<td title='testing.Admin_Module_Test.addDoctor()'><b>addDoctor</b><br>Test class: testing.Admin_Module_Test<br>Parameters: Joyce H Brewton, S1330866G, laurie.reiche@gmail.com, AAAaaa123, AAAaaa123, abcdefg, 21071985, Doctor, MD, false</td>
+<td></td>
+<td>4</td>
+<td>testing.Admin_Module_Test@769f71a9</td></tr>
+<tr>
+<td title='testing.Admin_Module_Test.editCenter()'><b>editCenter</b><br>Test class: testing.Admin_Module_Test<br>Parameters: Test Medical Center, Test Medical Center, Pfizer, ABC Central Blk 123, 666666, 88888888, true</td>
+<td></td>
+<td>1</td>
+<td>testing.Admin_Module_Test@769f71a9</td></tr>
+<tr>
+<td title='testing.Admin_Module_Test.addCenter()'><b>addCenter</b><br>Test class: testing.Admin_Module_Test<br>Parameters: Test Medical Center, Pfizer, ABC Central Blk 123, 666666, 88888888, true</td>
+<td></td>
+<td>1</td>
+<td>testing.Admin_Module_Test@769f71a9</td></tr>
+<tr>
+<td title='testing.Admin_Module_Test.editCenter()'><b>editCenter</b><br>Test class: testing.Admin_Module_Test<br>Parameters: Test Medical Center, , , , , abcdef, false</td>
+<td></td>
+<td>1</td>
+<td>testing.Admin_Module_Test@769f71a9</td></tr>
+</table><p>
+</body>
+</html>

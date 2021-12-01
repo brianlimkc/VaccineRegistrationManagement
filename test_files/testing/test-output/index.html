@@ -1,0 +1,1835 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">3 suites</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite__1_" class="navigator-link">
+              <span class="suite-name border-passed">Suite (1)</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite__1_" class="navigator-link ">
+                    <span>doctorTest.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite__1_" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite__1_" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite__1_" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite__1_" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite__1_" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite__1_" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">25 methods,   25 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite__1_" class="hide-methods passed suite-Suite__1_"> (hide)</a> <!-- hide-methods passed suite-Suite__1_ -->
+                      <a href="#" panel-name="suite-Suite__1_" class="show-methods passed suite-Suite__1_"> (show)</a> <!-- show-methods passed suite-Suite__1_ -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite__1_">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__1_" title="testing.Doctor_Module_Test" class="method navigator-link" hash-for-method="approveDoc(Dr John Doe, true, true)">approveDoc(Dr John Doe, true, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__1_" title="testing.Doctor_Module_Test" class="method navigator-link" hash-for-method="deleteDoctor(Dr John Doe, true)">deleteDoctor(Dr John Doe, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__1_" title="testing.Doctor_Module_Test" class="method navigator-link" hash-for-method="docAssignOwnRosterTestOne">docAssignOwnRosterTestOne</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__1_" title="testing.Doctor_Module_Test" class="method navigator-link" hash-for-method="docAssignOwnRosterTestTwo(Dr John Doe, Buona Vista Community Club, Room 1, true)">docAssignOwnRosterTestTwo(Dr John Doe, Buona Vista Community Club, Room 1, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__1_" title="testing.Doctor_Module_Test" class="method navigator-link" hash-for-method="docAssignOwnRosterTestTwo(Dr John Doe, Set to Empty, Set to Empty, true)">docAssignOwnRosterTestTwo(Dr John Doe, Set to Empty, Set to Empty, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__1_" title="testing.Doctor_Module_Test" class="method navigator-link" hash-for-method="docAssignOwnRosterTestTwo(Dr John Doe, Radin Mas Community Club, Room A, true)">docAssignOwnRosterTestTwo(Dr John Doe, Radin Mas Community Club, Room A, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__1_" title="testing.Doctor_Module_Test" class="method navigator-link" hash-for-method="editProfileTest(Dr John Doe, johndoe@cmail.com, AAAaaa123, AAAaaa123, 88888888, true)">editProfileTest(Dr John Doe, johndoe@cmail.com, AAAaaa123, AAAaaa123, 88888888, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__1_" title="testing.Doctor_Module_Test" class="method navigator-link" hash-for-method="editProfileTest(Dr John Doe, johndoe@cmail.com, 12345, AAAaaa123, 88888888, false)">editProfileTest(Dr John Doe, johndoe@cmail.com, 12345, AAAaaa123, 88888888, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__1_" title="testing.Doctor_Module_Test" class="method navigator-link" hash-for-method="editProfileTest(, , , , , false)">editProfileTest(, , , , , false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__1_" title="testing.Doctor_Module_Test" class="method navigator-link" hash-for-method="editProfileTest(Dr John Doe, johndoe@cmail.com, AAAaaa123, 12345, 88888888, false)">editProfileTest(Dr John Doe, johndoe@cmail.com, AAAaaa123, 12345, 88888888, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__1_" title="testing.Doctor_Module_Test" class="method navigator-link" hash-for-method="editProfileTest(Dr John Doe, johndoe@cmail.com, AAAaaa123, AAAaaa123, abcdefg, false)">editProfileTest(Dr John Doe, johndoe@cmail.com, AAAaaa123, AAAaaa123, abcdefg, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__1_" title="testing.Doctor_Module_Test" class="method navigator-link" hash-for-method="editProfileTest(Dr John Doe, abcxyz, AAAaaa123, AAAaaa123, 88888888, false)">editProfileTest(Dr John Doe, abcxyz, AAAaaa123, AAAaaa123, 88888888, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__1_" title="testing.Doctor_Module_Test" class="method navigator-link" hash-for-method="loginTest(invalidID, AAAaaa123, false)">loginTest(invalidID, AAAaaa123, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__1_" title="testing.Doctor_Module_Test" class="method navigator-link" hash-for-method="loginTest(, , false)">loginTest(, , false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__1_" title="testing.Doctor_Module_Test" class="method navigator-link" hash-for-method="loginTest(johndoe@cmail.com, AAAaaa123, true)">loginTest(johndoe@cmail.com, AAAaaa123, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__1_" title="testing.Doctor_Module_Test" class="method navigator-link" hash-for-method="loginTest(johndoe@cmail.com, invalidPW, false)">loginTest(johndoe@cmail.com, invalidPW, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__1_" title="testing.Doctor_Module_Test" class="method navigator-link" hash-for-method="registerTest(Dr John Doe, S1627678B, johndoe@cmail.com, AAAaaa123, AAAaaa123, 88888888, 01011990, Doctor, MD, fal...)">registerTest(Dr John Doe, S1627678B, johndoe@cmail.com, AAAaaa123, AAAaaa123, 88888888, 01011990, Doctor, MD, fal...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__1_" title="testing.Doctor_Module_Test" class="method navigator-link" hash-for-method="registerTest(Dr John Doe, S1627678B, johndoe@cmail.com, AAAaaa123, 12345, 88888888, 01011990, Doctor, MD, false)">registerTest(Dr John Doe, S1627678B, johndoe@cmail.com, AAAaaa123, 12345, 88888888, 01011990, Doctor, MD, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__1_" title="testing.Doctor_Module_Test" class="method navigator-link" hash-for-method="registerTest(, , , , , , , , , false)">registerTest(, , , , , , , , , false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__1_" title="testing.Doctor_Module_Test" class="method navigator-link" hash-for-method="registerTest(Dr John Doe, S1627678B, johndoe@cmail.com, AAAaaa123, AAAaaa123, 88888888, 01012020, Doctor, MD, fal...)">registerTest(Dr John Doe, S1627678B, johndoe@cmail.com, AAAaaa123, AAAaaa123, 88888888, 01012020, Doctor, MD, fal...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__1_" title="testing.Doctor_Module_Test" class="method navigator-link" hash-for-method="registerTest(Dr John Doe, S1627678B, johndoe@cmail.com, AAAaaa123, AAAaaa123, 88888888, 01011990, Doctor, MD, tru...)">registerTest(Dr John Doe, S1627678B, johndoe@cmail.com, AAAaaa123, AAAaaa123, 88888888, 01011990, Doctor, MD, tru...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__1_" title="testing.Doctor_Module_Test" class="method navigator-link" hash-for-method="registerTest(Dr John Doe, S1342324Q, johndoe@cmail.com, AAAaaa123, AAAaaa123, 88888888, 01011990, Doctor, MD, fal...)">registerTest(Dr John Doe, S1342324Q, johndoe@cmail.com, AAAaaa123, AAAaaa123, 88888888, 01011990, Doctor, MD, fal...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__1_" title="testing.Doctor_Module_Test" class="method navigator-link" hash-for-method="registerTest(Dr John Doe, S1627678B, johndoe@cmail.com, 12345, AAAaaa123, 88888888, 01011990, Doctor, MD, false)">registerTest(Dr John Doe, S1627678B, johndoe@cmail.com, 12345, AAAaaa123, 88888888, 01011990, Doctor, MD, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__1_" title="testing.Doctor_Module_Test" class="method navigator-link" hash-for-method="registerTest(Dr John Doe, S1627678B, abcxyz, AAAaaa123, AAAaaa123, 88888888, 01011990, Doctor, MD, false)">registerTest(Dr John Doe, S1627678B, abcxyz, AAAaaa123, AAAaaa123, 88888888, 01011990, Doctor, MD, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__1_" title="testing.Doctor_Module_Test" class="method navigator-link" hash-for-method="registerTest(Dr John Doe, S1627678B, johndoe@cmail.com, AAAaaa123, AAAaaa123, abcdefg, 01011990, Doctor, MD, fals...)">registerTest(Dr John Doe, S1627678B, johndoe@cmail.com, AAAaaa123, AAAaaa123, abcdefg, 01011990, Doctor, MD, fals...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite__1_ -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite__0_" class="navigator-link">
+              <span class="suite-name border-passed">Suite (0)</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite__0_" class="navigator-link ">
+                    <span>adminTest.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite__0_" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite__0_" class="navigator-link ">
+                    <span>11 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite__0_" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite__0_" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite__0_" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite__0_" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">35 methods,   35 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite__0_" class="hide-methods passed suite-Suite__0_"> (hide)</a> <!-- hide-methods passed suite-Suite__0_ -->
+                      <a href="#" panel-name="suite-Suite__0_" class="show-methods passed suite-Suite__0_"> (show)</a> <!-- show-methods passed suite-Suite__0_ -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite__0_">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__0_" title="testing.Admin_Module_Test" class="method navigator-link" hash-for-method="addCenter(, , , , abcdef, false)">addCenter(, , , , abcdef, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__0_" title="testing.Admin_Module_Test" class="method navigator-link" hash-for-method="addCenter(, , , abcdef, , false)">addCenter(, , , abcdef, , false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__0_" title="testing.Admin_Module_Test" class="method navigator-link" hash-for-method="addCenter(, , , , , false)">addCenter(, , , , , false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__0_" title="testing.Admin_Module_Test" class="method navigator-link" hash-for-method="addCenter(Test Medical Center, Pfizer, ABC Central Blk 123, 666666, 88888888, true)">addCenter(Test Medical Center, Pfizer, ABC Central Blk 123, 666666, 88888888, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__0_" title="testing.Admin_Module_Test" class="method navigator-link" hash-for-method="addDoctor(Joyce H Brewton, S1330866G, laurie.reiche@gmail.com, 12345, AAAaaa123, 68524214, 21071985, Doctor, M...)">addDoctor(Joyce H Brewton, S1330866G, laurie.reiche@gmail.com, 12345, AAAaaa123, 68524214, 21071985, Doctor, M...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__0_" title="testing.Admin_Module_Test" class="method navigator-link" hash-for-method="addDoctor(Joyce H Brewton, S1342324Q, laurie.reiche@gmail.com, AAAaaa123, AAAaaa123, 68524214, 21071985, Docto...)">addDoctor(Joyce H Brewton, S1342324Q, laurie.reiche@gmail.com, AAAaaa123, AAAaaa123, 68524214, 21071985, Docto...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__0_" title="testing.Admin_Module_Test" class="method navigator-link" hash-for-method="addDoctor(Joyce H Brewton, S1330866G, laurie.reiche@gmail.com, AAAaaa123, AAAaaa123, 68524214, 21071985, Docto...)">addDoctor(Joyce H Brewton, S1330866G, laurie.reiche@gmail.com, AAAaaa123, AAAaaa123, 68524214, 21071985, Docto...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__0_" title="testing.Admin_Module_Test" class="method navigator-link" hash-for-method="addDoctor(, , , , , , , , , false)">addDoctor(, , , , , , , , , false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__0_" title="testing.Admin_Module_Test" class="method navigator-link" hash-for-method="addDoctor(Charles B Perry, S1330866G, franco2008@gmail.com, AAAaaa123, AAAaaa123, 68541478, 01091975, Doctor, ...)">addDoctor(Charles B Perry, S1330866G, franco2008@gmail.com, AAAaaa123, AAAaaa123, 68541478, 01091975, Doctor, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__0_" title="testing.Admin_Module_Test" class="method navigator-link" hash-for-method="addDoctor(Joyce H Brewton, S1330866G, laurie.reiche@gmail.com, AAAaaa123, AAAaaa123, 68524214, 01012020, Docto...)">addDoctor(Joyce H Brewton, S1330866G, laurie.reiche@gmail.com, AAAaaa123, AAAaaa123, 68524214, 01012020, Docto...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__0_" title="testing.Admin_Module_Test" class="method navigator-link" hash-for-method="addDoctor(Joyce H Brewton, S1330866G, laurie.reiche@gmail.com, AAAaaa123, 12345, 68524214, 21071985, Doctor, M...)">addDoctor(Joyce H Brewton, S1330866G, laurie.reiche@gmail.com, AAAaaa123, 12345, 68524214, 21071985, Doctor, M...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__0_" title="testing.Admin_Module_Test" class="method navigator-link" hash-for-method="addDoctor(Joyce H Brewton, S1330866G, abcxyz, AAAaaa123, AAAaaa123, 68524214, 21071985, Doctor, MD, false)">addDoctor(Joyce H Brewton, S1330866G, abcxyz, AAAaaa123, AAAaaa123, 68524214, 21071985, Doctor, MD, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__0_" title="testing.Admin_Module_Test" class="method navigator-link" hash-for-method="addDoctor(Joyce H Brewton, S1330866G, laurie.reiche@gmail.com, AAAaaa123, AAAaaa123, abcdefg, 21071985, Doctor...)">addDoctor(Joyce H Brewton, S1330866G, laurie.reiche@gmail.com, AAAaaa123, AAAaaa123, abcdefg, 21071985, Doctor...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__0_" title="testing.Admin_Module_Test" class="method navigator-link" hash-for-method="addRoom(Test Medical Center, , false)">addRoom(Test Medical Center, , false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__0_" title="testing.Admin_Module_Test" class="method navigator-link" hash-for-method="addRoom(Test Medical Center, Room 2, true)">addRoom(Test Medical Center, Room 2, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__0_" title="testing.Admin_Module_Test" class="method navigator-link" hash-for-method="addRoom(Test Medical Center, Room 1, true)">addRoom(Test Medical Center, Room 1, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__0_" title="testing.Admin_Module_Test" class="method navigator-link" hash-for-method="adminAsignDocTest(Joyce H Brewton, Test Medical Center, Room 2, true)">adminAsignDocTest(Joyce H Brewton, Test Medical Center, Room 2, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__0_" title="testing.Admin_Module_Test" class="method navigator-link" hash-for-method="adminAsignDocTest(Joyce H Brewton, Test Medical Center, Room 1, true)">adminAsignDocTest(Joyce H Brewton, Test Medical Center, Room 1, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__0_" title="testing.Admin_Module_Test" class="method navigator-link" hash-for-method="adminAsignDocTest(Joyce H Brewton, Set to Empty, Set to Empty, true)">adminAsignDocTest(Joyce H Brewton, Set to Empty, Set to Empty, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__0_" title="testing.Admin_Module_Test" class="method navigator-link" hash-for-method="adminAssignRoomTest(Joyce H Brewton, Test Medical Center, Room 1, true)">adminAssignRoomTest(Joyce H Brewton, Test Medical Center, Room 1, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__0_" title="testing.Admin_Module_Test" class="method navigator-link" hash-for-method="adminAssignRoomTest(Charles B Perry, Test Medical Center, Room 1, true)">adminAssignRoomTest(Charles B Perry, Test Medical Center, Room 1, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__0_" title="testing.Admin_Module_Test" class="method navigator-link" hash-for-method="adminAssignRoomTest(Set to Empty, Test Medical Center, Room 1, true)">adminAssignRoomTest(Set to Empty, Test Medical Center, Room 1, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__0_" title="testing.Admin_Module_Test" class="method navigator-link" hash-for-method="approveDoc(Joyce H Brewton, true, true)">approveDoc(Joyce H Brewton, true, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__0_" title="testing.Admin_Module_Test" class="method navigator-link" hash-for-method="approveDoc(Charles B Perry, true, true)">approveDoc(Charles B Perry, true, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__0_" title="testing.Admin_Module_Test" class="method navigator-link" hash-for-method="deleteCenter(Test Medical Center, true)">deleteCenter(Test Medical Center, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__0_" title="testing.Admin_Module_Test" class="method navigator-link" hash-for-method="deleteDoctor(Joyce H Brewton, true)">deleteDoctor(Joyce H Brewton, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__0_" title="testing.Admin_Module_Test" class="method navigator-link" hash-for-method="deleteDoctor(Charles B Perry, true)">deleteDoctor(Charles B Perry, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__0_" title="testing.Admin_Module_Test" class="method navigator-link" hash-for-method="deleteRoom(Test Medical Center, Room 1, true)">deleteRoom(Test Medical Center, Room 1, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__0_" title="testing.Admin_Module_Test" class="method navigator-link" hash-for-method="deleteRoom(Test Medical Center, Room 2, true)">deleteRoom(Test Medical Center, Room 2, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__0_" title="testing.Admin_Module_Test" class="method navigator-link" hash-for-method="editCenter(Test Medical Center, , , , , , false)">editCenter(Test Medical Center, , , , , , false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__0_" title="testing.Admin_Module_Test" class="method navigator-link" hash-for-method="editCenter(Test Medical Center, , , , abcdef, , false)">editCenter(Test Medical Center, , , , abcdef, , false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__0_" title="testing.Admin_Module_Test" class="method navigator-link" hash-for-method="editCenter(Test Medical Center, Test Medical Center, Pfizer, ABC Central Blk 123, 666666, 88888888, true)">editCenter(Test Medical Center, Test Medical Center, Pfizer, ABC Central Blk 123, 666666, 88888888, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__0_" title="testing.Admin_Module_Test" class="method navigator-link" hash-for-method="editCenter(Test Medical Center, , , , , abcdef, false)">editCenter(Test Medical Center, , , , , abcdef, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__0_" title="testing.Admin_Module_Test" class="method navigator-link" hash-for-method="editRoom(Test Medical Center, Room 1, Room 1, true)">editRoom(Test Medical Center, Room 1, Room 1, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite__0_" title="testing.Admin_Module_Test" class="method navigator-link" hash-for-method="editRoom(Test Medical Center, Room 1, , true)">editRoom(Test Medical Center, Room 1, , true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite__0_ -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+        </div> <!-- panel Suite -->
+        <div panel-name="suite-Suite__1_" class="panel Suite__1_">
+          <div class="suite-Suite__1_-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testing.Doctor_Module_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="approveDoc(Dr John Doe, true, true)">
+                  </a> <!-- approveDoc(Dr John Doe, true, true) -->
+                  <span class="method-name">approveDoc</span>
+                  <span class="parameters">(Dr John Doe, true, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteDoctor(Dr John Doe, true)">
+                  </a> <!-- deleteDoctor(Dr John Doe, true) -->
+                  <span class="method-name">deleteDoctor</span>
+                  <span class="parameters">(Dr John Doe, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="docAssignOwnRosterTestOne">
+                  </a> <!-- docAssignOwnRosterTestOne -->
+                  <span class="method-name">docAssignOwnRosterTestOne</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="docAssignOwnRosterTestTwo(Dr John Doe, Buona Vista Community Club, Room 1, true)">
+                  </a> <!-- docAssignOwnRosterTestTwo(Dr John Doe, Buona Vista Community Club, Room 1, true) -->
+                  <span class="method-name">docAssignOwnRosterTestTwo</span>
+                  <span class="parameters">(Dr John Doe, Buona Vista Community Club, Room 1, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="docAssignOwnRosterTestTwo(Dr John Doe, Set to Empty, Set to Empty, true)">
+                  </a> <!-- docAssignOwnRosterTestTwo(Dr John Doe, Set to Empty, Set to Empty, true) -->
+                  <span class="method-name">docAssignOwnRosterTestTwo</span>
+                  <span class="parameters">(Dr John Doe, Set to Empty, Set to Empty, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="docAssignOwnRosterTestTwo(Dr John Doe, Radin Mas Community Club, Room A, true)">
+                  </a> <!-- docAssignOwnRosterTestTwo(Dr John Doe, Radin Mas Community Club, Room A, true) -->
+                  <span class="method-name">docAssignOwnRosterTestTwo</span>
+                  <span class="parameters">(Dr John Doe, Radin Mas Community Club, Room A, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editProfileTest(Dr John Doe, johndoe@cmail.com, AAAaaa123, AAAaaa123, 88888888, true)">
+                  </a> <!-- editProfileTest(Dr John Doe, johndoe@cmail.com, AAAaaa123, AAAaaa123, 88888888, true) -->
+                  <span class="method-name">editProfileTest</span>
+                  <span class="parameters">(Dr John Doe, johndoe@cmail.com, AAAaaa123, AAAaaa123, 88888888, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editProfileTest(Dr John Doe, johndoe@cmail.com, 12345, AAAaaa123, 88888888, false)">
+                  </a> <!-- editProfileTest(Dr John Doe, johndoe@cmail.com, 12345, AAAaaa123, 88888888, false) -->
+                  <span class="method-name">editProfileTest</span>
+                  <span class="parameters">(Dr John Doe, johndoe@cmail.com, 12345, AAAaaa123, 88888888, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editProfileTest(, , , , , false)">
+                  </a> <!-- editProfileTest(, , , , , false) -->
+                  <span class="method-name">editProfileTest</span>
+                  <span class="parameters">(, , , , , false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editProfileTest(Dr John Doe, johndoe@cmail.com, AAAaaa123, 12345, 88888888, false)">
+                  </a> <!-- editProfileTest(Dr John Doe, johndoe@cmail.com, AAAaaa123, 12345, 88888888, false) -->
+                  <span class="method-name">editProfileTest</span>
+                  <span class="parameters">(Dr John Doe, johndoe@cmail.com, AAAaaa123, 12345, 88888888, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editProfileTest(Dr John Doe, johndoe@cmail.com, AAAaaa123, AAAaaa123, abcdefg, false)">
+                  </a> <!-- editProfileTest(Dr John Doe, johndoe@cmail.com, AAAaaa123, AAAaaa123, abcdefg, false) -->
+                  <span class="method-name">editProfileTest</span>
+                  <span class="parameters">(Dr John Doe, johndoe@cmail.com, AAAaaa123, AAAaaa123, abcdefg, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editProfileTest(Dr John Doe, abcxyz, AAAaaa123, AAAaaa123, 88888888, false)">
+                  </a> <!-- editProfileTest(Dr John Doe, abcxyz, AAAaaa123, AAAaaa123, 88888888, false) -->
+                  <span class="method-name">editProfileTest</span>
+                  <span class="parameters">(Dr John Doe, abcxyz, AAAaaa123, AAAaaa123, 88888888, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest(invalidID, AAAaaa123, false)">
+                  </a> <!-- loginTest(invalidID, AAAaaa123, false) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(invalidID, AAAaaa123, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest(, , false)">
+                  </a> <!-- loginTest(, , false) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(, , false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest(johndoe@cmail.com, AAAaaa123, true)">
+                  </a> <!-- loginTest(johndoe@cmail.com, AAAaaa123, true) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(johndoe@cmail.com, AAAaaa123, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest(johndoe@cmail.com, invalidPW, false)">
+                  </a> <!-- loginTest(johndoe@cmail.com, invalidPW, false) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(johndoe@cmail.com, invalidPW, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerTest(Dr John Doe, S1627678B, johndoe@cmail.com, AAAaaa123, AAAaaa123, 88888888, 01011990, Doctor, MD, fal...)">
+                  </a> <!-- registerTest(Dr John Doe, S1627678B, johndoe@cmail.com, AAAaaa123, AAAaaa123, 88888888, 01011990, Doctor, MD, fal...) -->
+                  <span class="method-name">registerTest</span>
+                  <span class="parameters">(Dr John Doe, S1627678B, johndoe@cmail.com, AAAaaa123, AAAaaa123, 88888888, 01011990, Doctor, MD, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerTest(Dr John Doe, S1627678B, johndoe@cmail.com, AAAaaa123, 12345, 88888888, 01011990, Doctor, MD, false)">
+                  </a> <!-- registerTest(Dr John Doe, S1627678B, johndoe@cmail.com, AAAaaa123, 12345, 88888888, 01011990, Doctor, MD, false) -->
+                  <span class="method-name">registerTest</span>
+                  <span class="parameters">(Dr John Doe, S1627678B, johndoe@cmail.com, AAAaaa123, 12345, 88888888, 01011990, Doctor, MD, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerTest(, , , , , , , , , false)">
+                  </a> <!-- registerTest(, , , , , , , , , false) -->
+                  <span class="method-name">registerTest</span>
+                  <span class="parameters">(, , , , , , , , , false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerTest(Dr John Doe, S1627678B, johndoe@cmail.com, AAAaaa123, AAAaaa123, 88888888, 01012020, Doctor, MD, fal...)">
+                  </a> <!-- registerTest(Dr John Doe, S1627678B, johndoe@cmail.com, AAAaaa123, AAAaaa123, 88888888, 01012020, Doctor, MD, fal...) -->
+                  <span class="method-name">registerTest</span>
+                  <span class="parameters">(Dr John Doe, S1627678B, johndoe@cmail.com, AAAaaa123, AAAaaa123, 88888888, 01012020, Doctor, MD, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerTest(Dr John Doe, S1627678B, johndoe@cmail.com, AAAaaa123, AAAaaa123, 88888888, 01011990, Doctor, MD, tru...)">
+                  </a> <!-- registerTest(Dr John Doe, S1627678B, johndoe@cmail.com, AAAaaa123, AAAaaa123, 88888888, 01011990, Doctor, MD, tru...) -->
+                  <span class="method-name">registerTest</span>
+                  <span class="parameters">(Dr John Doe, S1627678B, johndoe@cmail.com, AAAaaa123, AAAaaa123, 88888888, 01011990, Doctor, MD, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerTest(Dr John Doe, S1342324Q, johndoe@cmail.com, AAAaaa123, AAAaaa123, 88888888, 01011990, Doctor, MD, fal...)">
+                  </a> <!-- registerTest(Dr John Doe, S1342324Q, johndoe@cmail.com, AAAaaa123, AAAaaa123, 88888888, 01011990, Doctor, MD, fal...) -->
+                  <span class="method-name">registerTest</span>
+                  <span class="parameters">(Dr John Doe, S1342324Q, johndoe@cmail.com, AAAaaa123, AAAaaa123, 88888888, 01011990, Doctor, MD, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerTest(Dr John Doe, S1627678B, johndoe@cmail.com, 12345, AAAaaa123, 88888888, 01011990, Doctor, MD, false)">
+                  </a> <!-- registerTest(Dr John Doe, S1627678B, johndoe@cmail.com, 12345, AAAaaa123, 88888888, 01011990, Doctor, MD, false) -->
+                  <span class="method-name">registerTest</span>
+                  <span class="parameters">(Dr John Doe, S1627678B, johndoe@cmail.com, 12345, AAAaaa123, 88888888, 01011990, Doctor, MD, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerTest(Dr John Doe, S1627678B, abcxyz, AAAaaa123, AAAaaa123, 88888888, 01011990, Doctor, MD, false)">
+                  </a> <!-- registerTest(Dr John Doe, S1627678B, abcxyz, AAAaaa123, AAAaaa123, 88888888, 01011990, Doctor, MD, false) -->
+                  <span class="method-name">registerTest</span>
+                  <span class="parameters">(Dr John Doe, S1627678B, abcxyz, AAAaaa123, AAAaaa123, 88888888, 01011990, Doctor, MD, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerTest(Dr John Doe, S1627678B, johndoe@cmail.com, AAAaaa123, AAAaaa123, abcdefg, 01011990, Doctor, MD, fals...)">
+                  </a> <!-- registerTest(Dr John Doe, S1627678B, johndoe@cmail.com, AAAaaa123, AAAaaa123, abcdefg, 01011990, Doctor, MD, fals...) -->
+                  <span class="method-name">registerTest</span>
+                  <span class="parameters">(Dr John Doe, S1627678B, johndoe@cmail.com, AAAaaa123, AAAaaa123, abcdefg, 01011990, Doctor, MD, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite__1_-class-passed -->
+        </div> <!-- panel Suite__1_ -->
+        <div panel-name="suite-Suite__0_" class="panel Suite__0_">
+          <div class="suite-Suite__0_-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testing.Admin_Module_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addCenter(, , , , abcdef, false)">
+                  </a> <!-- addCenter(, , , , abcdef, false) -->
+                  <span class="method-name">addCenter</span>
+                  <span class="parameters">(, , , , abcdef, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addCenter(, , , abcdef, , false)">
+                  </a> <!-- addCenter(, , , abcdef, , false) -->
+                  <span class="method-name">addCenter</span>
+                  <span class="parameters">(, , , abcdef, , false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addCenter(, , , , , false)">
+                  </a> <!-- addCenter(, , , , , false) -->
+                  <span class="method-name">addCenter</span>
+                  <span class="parameters">(, , , , , false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addCenter(Test Medical Center, Pfizer, ABC Central Blk 123, 666666, 88888888, true)">
+                  </a> <!-- addCenter(Test Medical Center, Pfizer, ABC Central Blk 123, 666666, 88888888, true) -->
+                  <span class="method-name">addCenter</span>
+                  <span class="parameters">(Test Medical Center, Pfizer, ABC Central Blk 123, 666666, 88888888, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addDoctor(Joyce H Brewton, S1330866G, laurie.reiche@gmail.com, 12345, AAAaaa123, 68524214, 21071985, Doctor, M...)">
+                  </a> <!-- addDoctor(Joyce H Brewton, S1330866G, laurie.reiche@gmail.com, 12345, AAAaaa123, 68524214, 21071985, Doctor, M...) -->
+                  <span class="method-name">addDoctor</span>
+                  <span class="parameters">(Joyce H Brewton, S1330866G, laurie.reiche@gmail.com, 12345, AAAaaa123, 68524214, 21071985, Doctor, MD, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addDoctor(Joyce H Brewton, S1342324Q, laurie.reiche@gmail.com, AAAaaa123, AAAaaa123, 68524214, 21071985, Docto...)">
+                  </a> <!-- addDoctor(Joyce H Brewton, S1342324Q, laurie.reiche@gmail.com, AAAaaa123, AAAaaa123, 68524214, 21071985, Docto...) -->
+                  <span class="method-name">addDoctor</span>
+                  <span class="parameters">(Joyce H Brewton, S1342324Q, laurie.reiche@gmail.com, AAAaaa123, AAAaaa123, 68524214, 21071985, Doctor, MD, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addDoctor(Joyce H Brewton, S1330866G, laurie.reiche@gmail.com, AAAaaa123, AAAaaa123, 68524214, 21071985, Docto...)">
+                  </a> <!-- addDoctor(Joyce H Brewton, S1330866G, laurie.reiche@gmail.com, AAAaaa123, AAAaaa123, 68524214, 21071985, Docto...) -->
+                  <span class="method-name">addDoctor</span>
+                  <span class="parameters">(Joyce H Brewton, S1330866G, laurie.reiche@gmail.com, AAAaaa123, AAAaaa123, 68524214, 21071985, Doctor, MD, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addDoctor(, , , , , , , , , false)">
+                  </a> <!-- addDoctor(, , , , , , , , , false) -->
+                  <span class="method-name">addDoctor</span>
+                  <span class="parameters">(, , , , , , , , , false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addDoctor(Charles B Perry, S1330866G, franco2008@gmail.com, AAAaaa123, AAAaaa123, 68541478, 01091975, Doctor, ...)">
+                  </a> <!-- addDoctor(Charles B Perry, S1330866G, franco2008@gmail.com, AAAaaa123, AAAaaa123, 68541478, 01091975, Doctor, ...) -->
+                  <span class="method-name">addDoctor</span>
+                  <span class="parameters">(Charles B Perry, S1330866G, franco2008@gmail.com, AAAaaa123, AAAaaa123, 68541478, 01091975, Doctor, MD, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addDoctor(Joyce H Brewton, S1330866G, laurie.reiche@gmail.com, AAAaaa123, AAAaaa123, 68524214, 01012020, Docto...)">
+                  </a> <!-- addDoctor(Joyce H Brewton, S1330866G, laurie.reiche@gmail.com, AAAaaa123, AAAaaa123, 68524214, 01012020, Docto...) -->
+                  <span class="method-name">addDoctor</span>
+                  <span class="parameters">(Joyce H Brewton, S1330866G, laurie.reiche@gmail.com, AAAaaa123, AAAaaa123, 68524214, 01012020, Doctor, MD, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addDoctor(Joyce H Brewton, S1330866G, laurie.reiche@gmail.com, AAAaaa123, 12345, 68524214, 21071985, Doctor, M...)">
+                  </a> <!-- addDoctor(Joyce H Brewton, S1330866G, laurie.reiche@gmail.com, AAAaaa123, 12345, 68524214, 21071985, Doctor, M...) -->
+                  <span class="method-name">addDoctor</span>
+                  <span class="parameters">(Joyce H Brewton, S1330866G, laurie.reiche@gmail.com, AAAaaa123, 12345, 68524214, 21071985, Doctor, MD, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addDoctor(Joyce H Brewton, S1330866G, abcxyz, AAAaaa123, AAAaaa123, 68524214, 21071985, Doctor, MD, false)">
+                  </a> <!-- addDoctor(Joyce H Brewton, S1330866G, abcxyz, AAAaaa123, AAAaaa123, 68524214, 21071985, Doctor, MD, false) -->
+                  <span class="method-name">addDoctor</span>
+                  <span class="parameters">(Joyce H Brewton, S1330866G, abcxyz, AAAaaa123, AAAaaa123, 68524214, 21071985, Doctor, MD, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addDoctor(Joyce H Brewton, S1330866G, laurie.reiche@gmail.com, AAAaaa123, AAAaaa123, abcdefg, 21071985, Doctor...)">
+                  </a> <!-- addDoctor(Joyce H Brewton, S1330866G, laurie.reiche@gmail.com, AAAaaa123, AAAaaa123, abcdefg, 21071985, Doctor...) -->
+                  <span class="method-name">addDoctor</span>
+                  <span class="parameters">(Joyce H Brewton, S1330866G, laurie.reiche@gmail.com, AAAaaa123, AAAaaa123, abcdefg, 21071985, Doctor, MD, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addRoom(Test Medical Center, , false)">
+                  </a> <!-- addRoom(Test Medical Center, , false) -->
+                  <span class="method-name">addRoom</span>
+                  <span class="parameters">(Test Medical Center, , false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addRoom(Test Medical Center, Room 2, true)">
+                  </a> <!-- addRoom(Test Medical Center, Room 2, true) -->
+                  <span class="method-name">addRoom</span>
+                  <span class="parameters">(Test Medical Center, Room 2, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addRoom(Test Medical Center, Room 1, true)">
+                  </a> <!-- addRoom(Test Medical Center, Room 1, true) -->
+                  <span class="method-name">addRoom</span>
+                  <span class="parameters">(Test Medical Center, Room 1, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="adminAsignDocTest(Joyce H Brewton, Test Medical Center, Room 2, true)">
+                  </a> <!-- adminAsignDocTest(Joyce H Brewton, Test Medical Center, Room 2, true) -->
+                  <span class="method-name">adminAsignDocTest</span>
+                  <span class="parameters">(Joyce H Brewton, Test Medical Center, Room 2, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="adminAsignDocTest(Joyce H Brewton, Test Medical Center, Room 1, true)">
+                  </a> <!-- adminAsignDocTest(Joyce H Brewton, Test Medical Center, Room 1, true) -->
+                  <span class="method-name">adminAsignDocTest</span>
+                  <span class="parameters">(Joyce H Brewton, Test Medical Center, Room 1, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="adminAsignDocTest(Joyce H Brewton, Set to Empty, Set to Empty, true)">
+                  </a> <!-- adminAsignDocTest(Joyce H Brewton, Set to Empty, Set to Empty, true) -->
+                  <span class="method-name">adminAsignDocTest</span>
+                  <span class="parameters">(Joyce H Brewton, Set to Empty, Set to Empty, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="adminAssignRoomTest(Joyce H Brewton, Test Medical Center, Room 1, true)">
+                  </a> <!-- adminAssignRoomTest(Joyce H Brewton, Test Medical Center, Room 1, true) -->
+                  <span class="method-name">adminAssignRoomTest</span>
+                  <span class="parameters">(Joyce H Brewton, Test Medical Center, Room 1, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="adminAssignRoomTest(Charles B Perry, Test Medical Center, Room 1, true)">
+                  </a> <!-- adminAssignRoomTest(Charles B Perry, Test Medical Center, Room 1, true) -->
+                  <span class="method-name">adminAssignRoomTest</span>
+                  <span class="parameters">(Charles B Perry, Test Medical Center, Room 1, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="adminAssignRoomTest(Set to Empty, Test Medical Center, Room 1, true)">
+                  </a> <!-- adminAssignRoomTest(Set to Empty, Test Medical Center, Room 1, true) -->
+                  <span class="method-name">adminAssignRoomTest</span>
+                  <span class="parameters">(Set to Empty, Test Medical Center, Room 1, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="approveDoc(Joyce H Brewton, true, true)">
+                  </a> <!-- approveDoc(Joyce H Brewton, true, true) -->
+                  <span class="method-name">approveDoc</span>
+                  <span class="parameters">(Joyce H Brewton, true, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="approveDoc(Charles B Perry, true, true)">
+                  </a> <!-- approveDoc(Charles B Perry, true, true) -->
+                  <span class="method-name">approveDoc</span>
+                  <span class="parameters">(Charles B Perry, true, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteCenter(Test Medical Center, true)">
+                  </a> <!-- deleteCenter(Test Medical Center, true) -->
+                  <span class="method-name">deleteCenter</span>
+                  <span class="parameters">(Test Medical Center, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteDoctor(Joyce H Brewton, true)">
+                  </a> <!-- deleteDoctor(Joyce H Brewton, true) -->
+                  <span class="method-name">deleteDoctor</span>
+                  <span class="parameters">(Joyce H Brewton, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteDoctor(Charles B Perry, true)">
+                  </a> <!-- deleteDoctor(Charles B Perry, true) -->
+                  <span class="method-name">deleteDoctor</span>
+                  <span class="parameters">(Charles B Perry, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteRoom(Test Medical Center, Room 1, true)">
+                  </a> <!-- deleteRoom(Test Medical Center, Room 1, true) -->
+                  <span class="method-name">deleteRoom</span>
+                  <span class="parameters">(Test Medical Center, Room 1, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteRoom(Test Medical Center, Room 2, true)">
+                  </a> <!-- deleteRoom(Test Medical Center, Room 2, true) -->
+                  <span class="method-name">deleteRoom</span>
+                  <span class="parameters">(Test Medical Center, Room 2, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editCenter(Test Medical Center, , , , , , false)">
+                  </a> <!-- editCenter(Test Medical Center, , , , , , false) -->
+                  <span class="method-name">editCenter</span>
+                  <span class="parameters">(Test Medical Center, , , , , , false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editCenter(Test Medical Center, , , , abcdef, , false)">
+                  </a> <!-- editCenter(Test Medical Center, , , , abcdef, , false) -->
+                  <span class="method-name">editCenter</span>
+                  <span class="parameters">(Test Medical Center, , , , abcdef, , false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editCenter(Test Medical Center, Test Medical Center, Pfizer, ABC Central Blk 123, 666666, 88888888, true)">
+                  </a> <!-- editCenter(Test Medical Center, Test Medical Center, Pfizer, ABC Central Blk 123, 666666, 88888888, true) -->
+                  <span class="method-name">editCenter</span>
+                  <span class="parameters">(Test Medical Center, Test Medical Center, Pfizer, ABC Central Blk 123, 666666, 88888888, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editCenter(Test Medical Center, , , , , abcdef, false)">
+                  </a> <!-- editCenter(Test Medical Center, , , , , abcdef, false) -->
+                  <span class="method-name">editCenter</span>
+                  <span class="parameters">(Test Medical Center, , , , , abcdef, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editRoom(Test Medical Center, Room 1, Room 1, true)">
+                  </a> <!-- editRoom(Test Medical Center, Room 1, Room 1, true) -->
+                  <span class="method-name">editRoom</span>
+                  <span class="parameters">(Test Medical Center, Room 1, Room 1, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editRoom(Test Medical Center, Room 1, , true)">
+                  </a> <!-- editRoom(Test Medical Center, Room 1, , true) -->
+                  <span class="method-name">editRoom</span>
+                  <span class="parameters">(Test Medical Center, Room 1, , true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite__0_-class-passed -->
+        </div> <!-- panel Suite__0_ -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/brianlim/Projects/vaccine_registration_management/test_files/testing/master.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;suite-files&gt;
+    &lt;suite-file path=&quot;./adminTest.xml&quot;/&gt;
+    &lt;suite-file path=&quot;./doctorTest.xml&quot;/&gt;
+  &lt;/suite-files&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="test-xml-Suite__1_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/brianlim/Projects/vaccine_registration_management/test_files/testing/doctorTest.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite (1)&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testing.Doctor_Module_Test&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite (1) --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="test-xml-Suite__0_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/brianlim/Projects/vaccine_registration_management/test_files/testing/adminTest.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite (0)&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testing.Admin_Module_Test&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite (0) --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite__1_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite (1)</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite__0_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite (0)</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite__1_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite (1)</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite__0_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite (0)</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">addCenterTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">addCenter</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">addDocTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">addDoctor</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">addRoomTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">addRoom</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">approveDocTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">approveDoc</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">assignDocTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">adminAsignDocTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">assignRoomTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">adminAssignRoomTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">deleteCenterTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">deleteCenter</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">deleteDocTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">deleteDoctor</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">deleteRoomTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">deleteRoom</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">editCenterTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">editCenter</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">editRoomTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">editRoom</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(0);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 0 ms</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite__1_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite (1)</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite__1_');
+function tableData_Suite__1_() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(25);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'approveDoc')
+data.setCell(0, 2, 'testing.Doctor_Module_Test')
+data.setCell(0, 3, 7180);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'registerTest')
+data.setCell(1, 2, 'testing.Doctor_Module_Test')
+data.setCell(1, 3, 6180);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'registerTest')
+data.setCell(2, 2, 'testing.Doctor_Module_Test')
+data.setCell(2, 3, 4995);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'registerTest')
+data.setCell(3, 2, 'testing.Doctor_Module_Test')
+data.setCell(3, 3, 3395);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'registerTest')
+data.setCell(4, 2, 'testing.Doctor_Module_Test')
+data.setCell(4, 3, 3007);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'registerTest')
+data.setCell(5, 2, 'testing.Doctor_Module_Test')
+data.setCell(5, 3, 2990);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'registerTest')
+data.setCell(6, 2, 'testing.Doctor_Module_Test')
+data.setCell(6, 3, 2957);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'registerTest')
+data.setCell(7, 2, 'testing.Doctor_Module_Test')
+data.setCell(7, 3, 2916);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'registerTest')
+data.setCell(8, 2, 'testing.Doctor_Module_Test')
+data.setCell(8, 3, 2883);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'registerTest')
+data.setCell(9, 2, 'testing.Doctor_Module_Test')
+data.setCell(9, 3, 2875);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'docAssignOwnRosterTestTwo')
+data.setCell(10, 2, 'testing.Doctor_Module_Test')
+data.setCell(10, 3, 2137);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'editProfileTest')
+data.setCell(11, 2, 'testing.Doctor_Module_Test')
+data.setCell(11, 3, 2062);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'editProfileTest')
+data.setCell(12, 2, 'testing.Doctor_Module_Test')
+data.setCell(12, 3, 1976);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'docAssignOwnRosterTestTwo')
+data.setCell(13, 2, 'testing.Doctor_Module_Test')
+data.setCell(13, 3, 1972);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'docAssignOwnRosterTestTwo')
+data.setCell(14, 2, 'testing.Doctor_Module_Test')
+data.setCell(14, 3, 1945);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'editProfileTest')
+data.setCell(15, 2, 'testing.Doctor_Module_Test')
+data.setCell(15, 3, 1558);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'editProfileTest')
+data.setCell(16, 2, 'testing.Doctor_Module_Test')
+data.setCell(16, 3, 1482);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'editProfileTest')
+data.setCell(17, 2, 'testing.Doctor_Module_Test')
+data.setCell(17, 3, 1481);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'docAssignOwnRosterTestOne')
+data.setCell(18, 2, 'testing.Doctor_Module_Test')
+data.setCell(18, 3, 1344);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'editProfileTest')
+data.setCell(19, 2, 'testing.Doctor_Module_Test')
+data.setCell(19, 3, 1192);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'loginTest')
+data.setCell(20, 2, 'testing.Doctor_Module_Test')
+data.setCell(20, 3, 1133);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'loginTest')
+data.setCell(21, 2, 'testing.Doctor_Module_Test')
+data.setCell(21, 3, 1090);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'loginTest')
+data.setCell(22, 2, 'testing.Doctor_Module_Test')
+data.setCell(22, 3, 540);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'deleteDoctor')
+data.setCell(23, 2, 'testing.Doctor_Module_Test')
+data.setCell(23, 3, 455);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'loginTest')
+data.setCell(24, 2, 'testing.Doctor_Module_Test')
+data.setCell(24, 3, 356);
+window.suiteTableData['Suite__1_']= { tableData: data, tableDiv: 'times-div-Suite__1_'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Suite__1_">
+              </div> <!-- times-div-Suite__1_ -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite__0_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite (0)</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite__0_');
+function tableData_Suite__0_() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(35);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'addDoctor')
+data.setCell(0, 2, 'testing.Admin_Module_Test')
+data.setCell(0, 3, 5200);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'addDoctor')
+data.setCell(1, 2, 'testing.Admin_Module_Test')
+data.setCell(1, 3, 4369);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'addDoctor')
+data.setCell(2, 2, 'testing.Admin_Module_Test')
+data.setCell(2, 3, 4099);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'addDoctor')
+data.setCell(3, 2, 'testing.Admin_Module_Test')
+data.setCell(3, 3, 4050);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'addDoctor')
+data.setCell(4, 2, 'testing.Admin_Module_Test')
+data.setCell(4, 3, 4024);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'addDoctor')
+data.setCell(5, 2, 'testing.Admin_Module_Test')
+data.setCell(5, 3, 3980);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'adminAsignDocTest')
+data.setCell(6, 2, 'testing.Admin_Module_Test')
+data.setCell(6, 3, 3756);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'addDoctor')
+data.setCell(7, 2, 'testing.Admin_Module_Test')
+data.setCell(7, 3, 3651);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'addDoctor')
+data.setCell(8, 2, 'testing.Admin_Module_Test')
+data.setCell(8, 3, 3561);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'adminAsignDocTest')
+data.setCell(9, 2, 'testing.Admin_Module_Test')
+data.setCell(9, 3, 3283);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'adminAssignRoomTest')
+data.setCell(10, 2, 'testing.Admin_Module_Test')
+data.setCell(10, 3, 2812);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'adminAssignRoomTest')
+data.setCell(11, 2, 'testing.Admin_Module_Test')
+data.setCell(11, 3, 2770);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'adminAssignRoomTest')
+data.setCell(12, 2, 'testing.Admin_Module_Test')
+data.setCell(12, 3, 2753);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'adminAsignDocTest')
+data.setCell(13, 2, 'testing.Admin_Module_Test')
+data.setCell(13, 3, 2743);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'addDoctor')
+data.setCell(14, 2, 'testing.Admin_Module_Test')
+data.setCell(14, 3, 2671);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'approveDoc')
+data.setCell(15, 2, 'testing.Admin_Module_Test')
+data.setCell(15, 3, 1872);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'deleteDoctor')
+data.setCell(16, 2, 'testing.Admin_Module_Test')
+data.setCell(16, 3, 1798);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'deleteDoctor')
+data.setCell(17, 2, 'testing.Admin_Module_Test')
+data.setCell(17, 3, 1795);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'editCenter')
+data.setCell(18, 2, 'testing.Admin_Module_Test')
+data.setCell(18, 3, 1696);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'editCenter')
+data.setCell(19, 2, 'testing.Admin_Module_Test')
+data.setCell(19, 3, 1675);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'addCenter')
+data.setCell(20, 2, 'testing.Admin_Module_Test')
+data.setCell(20, 3, 1601);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'editRoom')
+data.setCell(21, 2, 'testing.Admin_Module_Test')
+data.setCell(21, 3, 1584);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'deleteRoom')
+data.setCell(22, 2, 'testing.Admin_Module_Test')
+data.setCell(22, 3, 1421);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'deleteRoom')
+data.setCell(23, 2, 'testing.Admin_Module_Test')
+data.setCell(23, 3, 1407);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'approveDoc')
+data.setCell(24, 2, 'testing.Admin_Module_Test')
+data.setCell(24, 3, 1366);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'editRoom')
+data.setCell(25, 2, 'testing.Admin_Module_Test')
+data.setCell(25, 3, 1293);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'editCenter')
+data.setCell(26, 2, 'testing.Admin_Module_Test')
+data.setCell(26, 3, 1205);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'addRoom')
+data.setCell(27, 2, 'testing.Admin_Module_Test')
+data.setCell(27, 3, 1160);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'addRoom')
+data.setCell(28, 2, 'testing.Admin_Module_Test')
+data.setCell(28, 3, 1144);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'deleteCenter')
+data.setCell(29, 2, 'testing.Admin_Module_Test')
+data.setCell(29, 3, 1134);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'editCenter')
+data.setCell(30, 2, 'testing.Admin_Module_Test')
+data.setCell(30, 3, 1109);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'addCenter')
+data.setCell(31, 2, 'testing.Admin_Module_Test')
+data.setCell(31, 3, 803);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'addCenter')
+data.setCell(32, 2, 'testing.Admin_Module_Test')
+data.setCell(32, 3, 748);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'addCenter')
+data.setCell(33, 2, 'testing.Admin_Module_Test')
+data.setCell(33, 3, 731);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'addRoom')
+data.setCell(34, 2, 'testing.Admin_Module_Test')
+data.setCell(34, 3, 550);
+window.suiteTableData['Suite__0_']= { tableData: data, tableDiv: 'times-div-Suite__0_'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Suite__0_">
+              </div> <!-- times-div-Suite__0_ -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite__1_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite (1)</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite__0_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite (0)</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite__1_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite__0_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">1 ignored method</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testing.Admin_Module_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">loginTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite__1_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testing.Doctor_Module_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">initialise</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="test-method">
+                <span class="method-name">registerTest(, , , , , , , , , false)</span>
+                <span class="method-start">2369 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerTest(Dr John Doe, S1342324Q, johndoe@cmail.com, AAAaaa123, AAAaaa123, 88888888, 01011990, Doctor, MD, fal...)</span>
+                <span class="method-start">8552 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerTest(Dr John Doe, S1627678B, abcxyz, AAAaaa123, AAAaaa123, 88888888, 01011990, Doctor, MD, false)</span>
+                <span class="method-start">13557 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerTest(Dr John Doe, S1627678B, johndoe@cmail.com, 12345, AAAaaa123, 88888888, 01011990, Doctor, MD, false)</span>
+                <span class="method-start">16515 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerTest(Dr John Doe, S1627678B, johndoe@cmail.com, AAAaaa123, 12345, 88888888, 01011990, Doctor, MD, false)</span>
+                <span class="method-start">19432 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerTest(Dr John Doe, S1627678B, johndoe@cmail.com, AAAaaa123, AAAaaa123, abcdefg, 01011990, Doctor, MD, fals...)</span>
+                <span class="method-start">22318 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerTest(Dr John Doe, S1627678B, johndoe@cmail.com, AAAaaa123, AAAaaa123, 88888888, 01012020, Doctor, MD, fal...)</span>
+                <span class="method-start">25311 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerTest(Dr John Doe, S1627678B, johndoe@cmail.com, AAAaaa123, AAAaaa123, 88888888, 01011990, Doctor, MD, tru...)</span>
+                <span class="method-start">28187 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerTest(Dr John Doe, S1627678B, johndoe@cmail.com, AAAaaa123, AAAaaa123, 88888888, 01011990, Doctor, MD, fal...)</span>
+                <span class="method-start">31585 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginTest(, , false)</span>
+                <span class="method-start">34607 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginTest(invalidID, AAAaaa123, false)</span>
+                <span class="method-start">34964 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginTest(johndoe@cmail.com, invalidPW, false)</span>
+                <span class="method-start">35505 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginTest(johndoe@cmail.com, AAAaaa123, true)</span>
+                <span class="method-start">36640 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">editProfileTest(, , , , , false)</span>
+                <span class="method-start">37732 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">editProfileTest(Dr John Doe, abcxyz, AAAaaa123, AAAaaa123, 88888888, false)</span>
+                <span class="method-start">38925 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">editProfileTest(Dr John Doe, johndoe@cmail.com, 12345, AAAaaa123, 88888888, false)</span>
+                <span class="method-start">40407 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">editProfileTest(Dr John Doe, johndoe@cmail.com, AAAaaa123, 12345, 88888888, false)</span>
+                <span class="method-start">42475 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">editProfileTest(Dr John Doe, johndoe@cmail.com, AAAaaa123, AAAaaa123, abcdefg, false)</span>
+                <span class="method-start">43957 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">editProfileTest(Dr John Doe, johndoe@cmail.com, AAAaaa123, AAAaaa123, 88888888, true)</span>
+                <span class="method-start">45516 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">docAssignOwnRosterTestOne</span>
+                <span class="method-start">47493 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">approveDoc(Dr John Doe, true, true)</span>
+                <span class="method-start">48839 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">docAssignOwnRosterTestTwo(Dr John Doe, Radin Mas Community Club, Room A, true)</span>
+                <span class="method-start">56052 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">docAssignOwnRosterTestTwo(Dr John Doe, Buona Vista Community Club, Room 1, true)</span>
+                <span class="method-start">57998 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">docAssignOwnRosterTestTwo(Dr John Doe, Set to Empty, Set to Empty, true)</span>
+                <span class="method-start">59974 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteDoctor(Dr John Doe, true)</span>
+                <span class="method-start">62118 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-suite after">
+                <span class="method-name">end</span>
+                <span class="method-start">62606 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite__0_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testing.Admin_Module_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">loginAdmin</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="test-method">
+                <span class="method-name">addDoctor(, , , , , , , , , false)</span>
+                <span class="method-start">14750 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addDoctor(Joyce H Brewton, S1342324Q, laurie.reiche@gmail.com, AAAaaa123, AAAaaa123, 68524214, 21071985, Docto...)</span>
+                <span class="method-start">17428 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addDoctor(Joyce H Brewton, S1330866G, abcxyz, AAAaaa123, AAAaaa123, 68524214, 21071985, Doctor, MD, false)</span>
+                <span class="method-start">22633 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addDoctor(Joyce H Brewton, S1330866G, laurie.reiche@gmail.com, 12345, AAAaaa123, 68524214, 21071985, Doctor, M...)</span>
+                <span class="method-start">27007 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addDoctor(Joyce H Brewton, S1330866G, laurie.reiche@gmail.com, AAAaaa123, 12345, 68524214, 21071985, Doctor, M...)</span>
+                <span class="method-start">31114 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addDoctor(Joyce H Brewton, S1330866G, laurie.reiche@gmail.com, AAAaaa123, AAAaaa123, abcdefg, 21071985, Doctor...)</span>
+                <span class="method-start">34769 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addDoctor(Joyce H Brewton, S1330866G, laurie.reiche@gmail.com, AAAaaa123, AAAaaa123, 68524214, 01012020, Docto...)</span>
+                <span class="method-start">38822 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addDoctor(Joyce H Brewton, S1330866G, laurie.reiche@gmail.com, AAAaaa123, AAAaaa123, 68524214, 21071985, Docto...)</span>
+                <span class="method-start">42388 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addDoctor(Charles B Perry, S1330866G, franco2008@gmail.com, AAAaaa123, AAAaaa123, 68541478, 01091975, Doctor, ...)</span>
+                <span class="method-start">46370 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">approveDoc(Joyce H Brewton, true, true)</span>
+                <span class="method-start">50432 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">approveDoc(Charles B Perry, true, true)</span>
+                <span class="method-start">52306 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addCenter(, , , , , false)</span>
+                <span class="method-start">53676 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addCenter(, , , abcdef, , false)</span>
+                <span class="method-start">54482 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addCenter(, , , , abcdef, false)</span>
+                <span class="method-start">55214 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addCenter(Test Medical Center, Pfizer, ABC Central Blk 123, 666666, 88888888, true)</span>
+                <span class="method-start">55966 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">editCenter(Test Medical Center, , , , , , false)</span>
+                <span class="method-start">57585 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">editCenter(Test Medical Center, , , , abcdef, , false)</span>
+                <span class="method-start">58793 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">editCenter(Test Medical Center, , , , , abcdef, false)</span>
+                <span class="method-start">59903 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">editCenter(Test Medical Center, Test Medical Center, Pfizer, ABC Central Blk 123, 666666, 88888888, true)</span>
+                <span class="method-start">61582 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addRoom(Test Medical Center, , false)</span>
+                <span class="method-start">63282 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addRoom(Test Medical Center, Room 1, true)</span>
+                <span class="method-start">63833 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addRoom(Test Medical Center, Room 2, true)</span>
+                <span class="method-start">64994 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">editRoom(Test Medical Center, Room 1, , true)</span>
+                <span class="method-start">66140 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">editRoom(Test Medical Center, Room 1, Room 1, true)</span>
+                <span class="method-start">67725 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">adminAsignDocTest(Joyce H Brewton, Test Medical Center, Room 1, true)</span>
+                <span class="method-start">69023 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">adminAsignDocTest(Joyce H Brewton, Test Medical Center, Room 2, true)</span>
+                <span class="method-start">72308 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">adminAsignDocTest(Joyce H Brewton, Set to Empty, Set to Empty, true)</span>
+                <span class="method-start">75054 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">adminAssignRoomTest(Joyce H Brewton, Test Medical Center, Room 1, true)</span>
+                <span class="method-start">78814 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">adminAssignRoomTest(Charles B Perry, Test Medical Center, Room 1, true)</span>
+                <span class="method-start">81569 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">adminAssignRoomTest(Set to Empty, Test Medical Center, Room 1, true)</span>
+                <span class="method-start">84345 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteDoctor(Joyce H Brewton, true)</span>
+                <span class="method-start">87160 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteDoctor(Charles B Perry, true)</span>
+                <span class="method-start">88962 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteRoom(Test Medical Center, Room 1, true)</span>
+                <span class="method-start">90762 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteRoom(Test Medical Center, Room 2, true)</span>
+                <span class="method-start">92170 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteCenter(Test Medical Center, true)</span>
+                <span class="method-start">93595 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-suite after">
+                <span class="method-name">logout</span>
+                <span class="method-start">94842 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
